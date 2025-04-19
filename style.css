@@ -1,93 +1,93 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Assistência Técnica em Goiânia - Cell City</title>
+  <meta name="description" content="Troca de tela, conserto de celular e acessórios em Goiânia com garantia. Cell City é assistência técnica de confiança.">
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; background: #f8f8f8; color: #333; line-height: 1.6; }
+    .container { width: 80%; margin: auto; overflow: hidden; }
+    .header-flex { display: flex; align-items: center; justify-content: space-between; }
+    .logo { height: 30px; }
+    nav ul { list-style: none; display: flex; gap: 20px; }
+    nav ul li a { color: #fff; text-decoration: none; font-weight: bold; }
+    header { background: #004d00; color: #fff; padding: 20px 0; }
+    .hero { background: #e4ffe4; padding: 60px 0; text-align: center; }
+    .hero h2 { color: #004d00; margin-bottom: 20px; }
+    .btn-whatsapp {
+      display: inline-flex; align-items: center; gap: 10px;
+      background-color: #25d366; color: white; text-decoration: none;
+      padding: 12px 20px; border-radius: 8px; font-weight: bold;
+      margin-top: 20px; transition: background 0.3s ease;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    }
+    .btn-whatsapp img { width: 24px; height: 24px; }
+    .btn-whatsapp:hover { background-color: #1eb250; }
+    .banner-imagem img {
+      width: 100%; margin: 40px 0; border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .services { padding: 40px 0; background: #fff; text-align: center; }
+    .services h3 { margin-top: 20px; color: #004d00; }
+    .services ul {
+      list-style: disc; padding-left: 20px; margin-top: 10px;
+      text-align: left; max-width: 400px; margin-left: auto; margin-right: auto;
+    }
+    footer {
+      background: #004d00; color: #fff; text-align: center;
+      padding: 20px 0; font-size: 14px; margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container header-flex">
+      <img src="logo.png" alt="Logo Cell City" class="logo" />
+      <nav>
+        <ul>
+          <li><a href="#">Início</a></li>
+          <li><a href="#">Serviços</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-body {
-  font-family: Arial, sans-serif;
-  background: #f8f8f8;
-  color: #333;
-  line-height: 1.6;
-}
+  <section class="hero">
+    <div class="container">
+      <h2>Bem-vindo à Cell City</h2>
+      <p>Especialistas em troca de tela e reparos rápidos!</p>
+      <a href="https://wa.me/5562981605863" class="btn-whatsapp" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" />
+        Fale Conosco no WhatsApp
+      </a>
+    </div>
+  </section>
 
-.container {
-  width: 80%;
-  margin: auto;
-  overflow: hidden;
-}
+  <section class="banner-imagem">
+    <div class="container">
+      <img src="celular-aberto.jpg" alt="Banner de celular quebrado" />
+    </div>
+  </section>
 
-.header-flex {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+  <section class="services">
+    <div class="container">
+      <h2>Nossos Serviços</h2>
 
-.logo {
-  height: 30px;
-}
+      <h3>Conserto e Manutenção de Celulares</h3>
+      <ul>
+        <li>Troca de tela</li>
+        <li>Substituição de bateria</li>
+        <li>Reparo de conector de carga</li>
+        <li>Limpeza interna e externa</li>
+      </ul>
 
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-header {
-  background: #004d00;
-  color: #fff;
-  padding: 20px 0;
-}
-
-.hero {
-  background: #e4ffe4;
-  padding: 60px 0;
-  text-align: center;
-}
-
-.hero h2 {
-  color: #004d00;
-  margin-bottom: 20px;
-}
-
-.hero .btn {
-  background: #004d00;
-  color: #fff;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-  margin-top: 10px;
-  display: inline-block;
-}
-
-.banner-imagem img {
-  width: 100%;
-  margin: 40px 0;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-}
-
-.services {
-  padding: 40px 0;
-  background: #fff;
-  text-align: center;
-}
-
-.services .service {
-  margin-bottom: 20px;
-}
-
-footer {
-  background: #004d00;
-  color: #fff;
-  text-align: center;
-  padding: 20px 0;
-  font-size: 14px;
-  margin-top: 40px;
-}
+      <h3>Formatação de Celulares</h3>
+      <ul>
+        <li>Formatação completa</li>
+        <li>Limpeza de vírus</li>
+        <li>Restauração de sistema</li>
+        <li>Atualizações de software</li>
+      </ul>
