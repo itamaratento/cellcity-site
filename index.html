@@ -5,9 +5,190 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cell City - Assistência Técnica em Goiânia</title>
   <meta name="description" content="Conserto de celular, troca de tela, formatação de celular e manutenção de computadores em Goiânia. Atendimento rápido com garantia." />
-  <meta name="keywords" content="assistência técnica, conserto de celular, troca de tela, formatação, computador, Goiânia, Cell City" />
-  <meta name="author" content="Cell City" />
   <link rel="stylesheet" href="style.css" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8f8f8;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .container {
+      width: 90%;
+      margin: auto;
+    }
+
+    .header-flex {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      height: 30px;
+    }
+
+    .menu-toggle {
+      display: none;
+      background-color: #004d00;
+      border: none;
+      color: white;
+      font-size: 20px;
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    nav ul li {
+      position: relative;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .submenu {
+      display: none;
+      position: absolute;
+      top: 30px;
+      left: 0;
+      background-color: #004d00;
+      padding: 10px;
+      border-radius: 5px;
+      z-index: 1000;
+      flex-direction: column;
+    }
+
+    .submenu li {
+      margin: 5px 0;
+    }
+
+    .submenu li a {
+      font-size: 14px;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    nav ul li:hover .submenu {
+      display: flex;
+    }
+
+    header {
+      background: #004d00;
+      color: #fff;
+      padding: 20px 0;
+    }
+
+    .hero {
+      background: #e4ffe4;
+      padding: 60px 0;
+      text-align: center;
+    }
+
+    .hero h1 {
+      color: #004d00;
+      margin-bottom: 20px;
+      font-size: 26px;
+    }
+
+    .btn-whatsapp {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background-color: #25d366;
+      color: white;
+      text-decoration: none;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-weight: bold;
+      margin-top: 20px;
+      transition: background 0.3s ease;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn-whatsapp img {
+      width: 20px;
+      height: 20px;
+    }
+
+    .banner-imagem img {
+      width: 100%;
+      margin: 40px 0;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .services {
+      padding: 40px 0;
+      background: #fff;
+      text-align: center;
+    }
+
+    .services h2 {
+      font-size: 24px;
+      color: #004d00;
+      margin-bottom: 20px;
+    }
+
+    .services ul {
+      list-style: disc;
+      padding-left: 20px;
+      margin-top: 10px;
+      text-align: left;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    footer {
+      background: #004d00;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 14px;
+      margin-top: auto;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #004d00;
+        padding: 10px 0;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      nav ul.show {
+        display: flex;
+      }
+
+      nav ul li {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+      }
+
+      .submenu {
+        position: static;
+      }
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -33,42 +214,4 @@
   <section class="hero">
     <div class="container">
       <h1>Bem-vindo à Cell City</h1>
-      <p>Especialistas em troca de tela e reparos rápidos!</p>
-      <a href="https://wa.me/5562981605863" class="btn-whatsapp" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" />
-        Fale Conosco no WhatsApp
-      </a>
-    </div>
-  </section>
-
-  <section class="banner-imagem">
-    <div class="container">
-      <img src="celular-aberto.jpg" alt="Banner de celular quebrado" />
-    </div>
-  </section>
-
-  <section class="services">
-    <div class="container">
-      <h2>Nossos Serviços</h2>
-
-      <h3>Conserto e Manutenção de Celulares</h3>
-      <ul>
-        <li>Troca de tela</li>
-        <li>Substituição de bateria</li>
-        <li>Reparo de conector de carga</li>
-        <li>Limpeza interna e externa</li>
-      </ul>
-
-      <h3>Formatação de Celulares</h3>
-      <ul>
-        <li>Formatação completa</li>
-        <li>Limpeza de vírus</li>
-        <li>Restauração de sistema</li>
-        <li>Atualizações de software</li>
-      </ul>
-
-      <h3>Manutenção de Computadores</h3>
-      <ul>
-        <li>Formatação e reinstalação de Windows</li>
-        <li>Troca de HD ou SSD</li>
-        <li>Limpeza
+      <p>Especialistas em troca de tela e reparos rápidos!</p
