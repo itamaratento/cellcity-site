@@ -6,51 +6,10 @@ body {
   background-color: #f9f9f9;
 }
 
-.top-bar {
-  background-color: #2e7d32;
-  color: white;
-  padding: 10px;
-  font-weight: bold;
-}
-
-nav {
-  background-color: #000;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px;
-  gap: 20px;
-}
-
-.logo {
-  height: 50px;
-  margin-right: 20px;
-  cursor: pointer;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-  padding: 0;
-  margin: 0;
-}
-
-nav ul li {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-nav ul li a:hover {
-  text-decoration: underline;
-}
-
+/* Botão WhatsApp no topo */
 .whatsapp-top {
   background-color: #25D366;
   padding: 15px;
-  text-align: center;
 }
 
 .whatsapp-top a {
@@ -63,17 +22,20 @@ nav ul li a:hover {
   font-size: 16px;
 }
 
+/* Imagem reduzida */
 .imagem-topo {
-  margin: 30px auto 10px;
+  margin: 20px 0;
 }
 
-.img-ajustada {
-  width: 30%;
+.imagem-reduzida {
+  width: 15%;
+  max-width: 200px;
   display: block;
   margin: 0 auto;
   border-radius: 8px;
 }
 
+/* Conteúdo */
 .conteudo {
   padding: 20px;
   max-width: 800px;
@@ -82,7 +44,7 @@ nav ul li a:hover {
 }
 
 .conteudo h1 {
-  font-size: 26px;
+  font-size: 24px;
   color: #222;
 }
 
@@ -100,14 +62,14 @@ nav ul li a:hover {
 }
 
 .conteudo ul {
-  list-style-type: disc;
-  padding-left: 20px;
   text-align: left;
+  list-style-type: disc;
   max-width: 600px;
   margin: 20px auto;
+  padding-left: 20px;
 }
 
 .conteudo ul li {
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   font-size: 15px;
 }
