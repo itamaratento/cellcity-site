@@ -1,13 +1,19 @@
-body {
-  font-family: Arial, sans-serif;
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
   background-color: #f9f9f9;
+  color: #333;
   text-align: center;
 }
 
-.topo {
+.cabecalho {
   background-color: #000;
+  color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -15,43 +21,50 @@ body {
   flex-wrap: wrap;
 }
 
-.logo {
+.logo img {
   height: 50px;
 }
 
-.menu a {
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.menu ul li a {
   color: white;
   text-decoration: none;
-  margin-left: 20px;
   font-weight: bold;
+  font-size: 16px;
 }
 
 .promocao {
   background-color: #2e7d32;
   color: white;
-  padding: 15px;
-  font-size: 18px;
   font-weight: bold;
+  padding: 20px;
+  font-size: 18px;
 }
 
 .whatsapp {
-  margin: 20px 0;
+  margin: 25px 0;
 }
 
 .whatsapp a {
   background-color: #25d366;
   color: white;
+  text-decoration: none;
   padding: 15px 30px;
   border-radius: 30px;
-  font-size: 16px;
   font-weight: bold;
-  text-decoration: none;
+  font-size: 16px;
+  display: inline-block;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
 .imagem {
-  max-width: 400px;
-  margin: 20px auto;
+  max-width: 500px;
+  margin: 0 auto 30px auto;
 }
 
 .imagem img {
@@ -61,10 +74,10 @@ body {
 }
 
 main {
-  background: white;
+  background-color: white;
   padding: 30px;
   max-width: 800px;
-  margin: 0 auto 40px auto;
+  margin: 0 auto 50px auto;
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
@@ -76,15 +89,13 @@ main h1 {
 
 main h2 {
   font-size: 20px;
-  color: #333;
   margin-bottom: 20px;
 }
 
 main p {
   font-size: 16px;
   line-height: 1.6;
-  color: #444;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 main ul {
@@ -92,24 +103,20 @@ main ul {
   max-width: 600px;
   margin: 20px auto;
   padding-left: 20px;
-  color: #333;
   font-size: 16px;
 }
 
 /* RESPONSIVO */
 @media (max-width: 600px) {
-  .topo {
+  .cabecalho {
     flex-direction: column;
     align-items: center;
   }
 
-  .menu {
+  .menu ul {
+    flex-direction: column;
+    gap: 10px;
     margin-top: 10px;
-  }
-
-  .menu a {
-    display: block;
-    margin: 8px 0;
   }
 
   .imagem {
