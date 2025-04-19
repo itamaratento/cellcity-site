@@ -1,9 +1,11 @@
+/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* BASE */
 body {
   font-family: Arial, sans-serif;
   background: #f8f8f8;
@@ -16,13 +18,19 @@ body {
 .container {
   width: 90%;
   margin: auto;
-  overflow: hidden;
+}
+
+/* HEADER */
+header {
+  background: #004d00;
+  color: white;
+  padding: 20px 0;
 }
 
 .header-flex {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
 }
 
@@ -30,13 +38,13 @@ body {
   height: 30px;
 }
 
+/* MENU */
 .menu-toggle {
   display: none;
-  background-color: #004d00;
+  background: transparent;
   border: none;
+  font-size: 24px;
   color: white;
-  font-size: 20px;
-  padding: 10px;
   cursor: pointer;
 }
 
@@ -44,7 +52,6 @@ nav ul {
   list-style: none;
   display: flex;
   gap: 20px;
-  flex-wrap: wrap;
 }
 
 nav ul li {
@@ -52,11 +59,12 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #fff;
+  color: white;
   text-decoration: none;
   font-weight: bold;
 }
 
+/* SUBMENU */
 .submenu {
   display: none;
   position: absolute;
@@ -65,104 +73,91 @@ nav ul li a {
   background-color: #004d00;
   padding: 10px;
   border-radius: 5px;
-  z-index: 1000;
   flex-direction: column;
-}
-
-.submenu li {
-  margin: 5px 0;
-}
-
-.submenu li a {
-  font-size: 14px;
-  color: #fff;
-  text-decoration: none;
+  z-index: 999;
 }
 
 nav ul li:hover .submenu {
   display: flex;
 }
 
-header {
-  background: #004d00;
-  color: #fff;
-  padding: 20px 0;
+.submenu li a {
+  font-size: 14px;
 }
 
+/* HERO */
 .hero {
   background: #e4ffe4;
-  padding: 60px 0;
   text-align: center;
+  padding: 50px 0;
 }
 
 .hero h1 {
-  color: #004d00;
-  margin-bottom: 20px;
   font-size: 26px;
+  color: #004d00;
+  margin-bottom: 10px;
 }
 
+/* BANNER */
 .banner-imagem img {
   width: 100%;
-  margin: 40px 0;
+  max-width: 600px;
+  display: block;
+  margin: 40px auto;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
+/* SERVICES */
 .services {
+  background: white;
   padding: 40px 0;
-  background: #fff;
   text-align: center;
-}
-
-.services h2 {
-  font-size: 24px;
-  color: #004d00;
-  margin-bottom: 20px;
 }
 
 .services ul {
   list-style: disc;
-  padding-left: 20px;
-  margin-top: 10px;
-  text-align: left;
   max-width: 400px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
+  text-align: left;
+  padding-left: 20px;
 }
 
+/* FOOTER */
 footer {
   background: #004d00;
-  color: #fff;
+  color: white;
   text-align: center;
-  padding: 20px 0;
-  font-size: 14px;
+  padding: 20px;
   margin-top: auto;
 }
 
+/* WHATSAPP FLOAT */
 .whatsapp-float {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  z-index: 100;
+  z-index: 999;
 }
 
 .whatsapp-float img {
   width: 55px;
   height: 55px;
   border-radius: 50%;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
+/* MOBILE */
 @media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
   nav ul {
     display: none;
     flex-direction: column;
     background-color: #004d00;
-    padding: 10px 0;
-  }
-
-  .menu-toggle {
-    display: block;
+    padding: 10px;
   }
 
   nav ul.show {
@@ -170,12 +165,13 @@ footer {
   }
 
   nav ul li {
-    width: 100%;
     text-align: center;
     padding: 10px 0;
   }
 
   .submenu {
     position: static;
+    background-color: transparent;
+    padding: 0;
   }
 }
