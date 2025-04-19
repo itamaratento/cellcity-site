@@ -16,10 +16,7 @@
       min-height: 100vh;
     }
 
-    .container {
-      width: 90%;
-      margin: auto;
-    }
+    .container { width: 90%; margin: auto; }
 
     header {
       background: #004d00;
@@ -148,6 +145,7 @@
       nav ul li .submenu {
         display: none !important;
         position: static;
+        background-color: #004d00;
       }
 
       nav ul li.active .submenu {
@@ -168,8 +166,8 @@
       <nav>
         <ul id="menu">
           <li><a href="#">Início</a></li>
-          <li class="has-submenu" onclick="toggleMobileMenu(this)">
-            <a href="#">Serviços</a>
+          <li class="has-submenu">
+            <a href="#" onclick="toggleMobileSubmenu(event)">Serviços</a>
             <ul class="submenu">
               <li><a href="#">Conserto de Celulares</a></li>
               <li><a href="#">Formatação de Celulares</a></li>
@@ -220,10 +218,12 @@
   </a>
 
   <script>
-    function toggleMobileMenu(el) {
-      el.classList.toggle('active');
+    function toggleMobileSubmenu(event) {
+      event.preventDefault();
+      const parentLi = event.target.closest('.has-submenu');
+      parentLi.classList.toggle('active');
       document.querySelectorAll('.has-submenu').forEach(item => {
-        if (item !== el) item.classList.remove('active');
+        if (item !== parentLi) item.classList.remove('active');
       });
     }
   </script>
