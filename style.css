@@ -1,36 +1,101 @@
-body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  text-align: center;
+}
 
-.topo { background-color: #000; display: flex; justify-content: space-between; align-items: center; padding: 10px 20px; flex-wrap: wrap; }
-
-.logo { height: 50px; }
-
-nav ul { list-style: none; display: flex; gap: 20px; padding: 0; margin: 0; }
-
-nav ul li a { color: white; text-decoration: none; font-weight: bold; }
-
-nav ul li a:hover { text-decoration: underline; }
-
-.botao-whatsapp { background-color: #25d366; color: white; border: none; padding: 12px 25px; font-size: 18px; border-radius: 25px; margin: 20px auto; display: block; cursor: pointer; text-decoration: none; width: fit-content; }
-
-.imagem-destaque { display: block; margin: 0 auto; max-width: 90%; height: auto; }
-
-.container { max-width: 800px; margin: auto; padding: 20px; text-align: center; }
-
-ul { text-align: left; margin-top: 20px; margin-bottom: 20px; padding-left: 20px; }
-
-ul li { margin-bottom: 10px; }
-
-@media screen and (max-width: 600px) { .topo { flex-direction: column; align-items: flex-start; }
-
-nav ul {
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 10px;
+.topo {
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  color: white;
 }
 
 .logo {
+  height: 50px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+.container {
+  padding: 20px;
+}
+
+h1 {
+  font-size: 22px;
+  color: #111;
+  margin-top: 20px;
+}
+
+h3 {
+  color: #333;
+  font-size: 16px;
+}
+
+p {
+  color: #555;
+  max-width: 600px;
+  margin: 10px auto;
+}
+
+ul {
+  list-style: disc;
+  text-align: left;
+  max-width: 600px;
+  margin: 20px auto;
+  padding-left: 20px;
+  color: #333;
+}
+
+.cta {
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.imagem-principal {
+  max-width: 100%;
+  width: 360px;
+  height: auto;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.whatsapp-btn {
+  background-color: #25d366;
+  padding: 10px 0;
+}
+
+.whatsapp-btn a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+@media (max-width: 600px) {
+  .topo {
+    flex-direction: column;
+  }
+
+  .logo {
     margin-bottom: 10px;
-}
+  }
 
-}
+  nav a {
+    display: block;
+    margin: 5px 0;
+  }
 
+  .imagem-principal {
+    width: 280px;
+  }
+}
