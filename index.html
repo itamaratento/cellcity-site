@@ -6,31 +6,6 @@
   <title>Assistência Técnica em Goiânia - Cell City</title>
   <meta name="description" content="Troca de tela, conserto de celular e acessórios em Goiânia com garantia. Cell City é assistência técnica de confiança.">
   <link rel="stylesheet" href="style.css" />
-  <style>
-    .btn-whatsapp {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      background-color: #25d366;
-      color: white;
-      text-decoration: none;
-      padding: 12px 20px;
-      border-radius: 8px;
-      font-weight: bold;
-      margin-top: 20px;
-      transition: background 0.3s ease;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-    }
-
-    .btn-whatsapp img {
-      width: 20px;
-      height: 20px;
-    }
-
-    .btn-whatsapp:hover {
-      background-color: #1eb250;
-    }
-  </style>
 </head>
 <body>
   <header>
@@ -39,7 +14,14 @@
       <nav>
         <ul>
           <li><a href="#">Início</a></li>
-          <li><a href="#">Serviços</a></li>
+          <li>
+            <a href="#">Serviços</a>
+            <ul class="submenu">
+              <li><a href="#">Conserto de Celulares</a></li>
+              <li><a href="#">Formatação de Celulares</a></li>
+              <li><a href="#">Manutenção de Computadores</a></li>
+            </ul>
+          </li>
         </ul>
       </nav>
     </div>
@@ -84,18 +66,3 @@
 
       <h3>Manutenção de Computadores</h3>
       <ul>
-        <li>Formatação e reinstalação de Windows</li>
-        <li>Troca de HD ou SSD</li>
-        <li>Limpeza física e preventiva</li>
-        <li>Remoção de vírus e otimização</li>
-      </ul>
-    </div>
-  </section>
-
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Cell City Informática | Rua 6, nº 455, Setor Central - Goiânia</p>
-    </div>
-  </footer>
-</body>
-</html>
