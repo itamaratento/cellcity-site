@@ -12,7 +12,7 @@ body {
 }
 
 .container {
-  width: 80%;
+  width: 90%;
   margin: auto;
   overflow: hidden;
 }
@@ -21,17 +21,32 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .logo {
   height: 30px;
 }
 
+nav {
+  position: relative;
+}
+
+.menu-toggle {
+  display: none;
+  background-color: #004d00;
+  border: none;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  cursor: pointer;
+}
+
 nav ul {
   list-style: none;
   display: flex;
   gap: 20px;
-  position: relative;
+  flex-wrap: wrap;
 }
 
 nav ul li a {
@@ -146,4 +161,33 @@ footer {
   padding: 20px 0;
   font-size: 14px;
   margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    display: none;
+    width: 100%;
+    background-color: #004d00;
+    padding: 10px 0;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  nav ul li {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .submenu {
+    position: static;
+    padding-left: 0;
+  }
 }
