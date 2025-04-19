@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Cell City - Versão A</title>
-  <link rel="stylesheet" href="style-a.css" />
+  <title>Cell City - Versão B</title>
+  <link rel="stylesheet" href="style-b.css" />
 </head>
 <body>
 
@@ -14,8 +14,8 @@
       <nav>
         <ul class="menu">
           <li><a href="#">Início</a></li>
-          <li class="has-submenu" onclick="toggleSubmenu(this)">
-            <span class="menu-toggle">Serviços</span>
+          <li class="has-submenu">
+            <button class="menu-toggle" aria-haspopup="true" aria-expanded="false">Serviços</button>
             <ul class="submenu">
               <li><a href="#">Conserto de Celulares</a></li>
               <li><a href="#">Formatação de Celulares</a></li>
@@ -30,22 +30,13 @@
   <main>
     <section class="hero">
       <h1>Bem-vindo à Cell City</h1>
-      <p>Troca de tela e consertos com garantia!</p>
+      <p>Consertos rápidos e garantidos.</p>
     </section>
   </main>
 
   <footer>
     <p>&copy; 2025 Cell City Informática | Rua 6, nº 455, Setor Central - Goiânia</p>
   </footer>
-
-  <script>
-    function toggleSubmenu(element) {
-      element.classList.toggle("active");
-      document.querySelectorAll('.has-submenu').forEach(item => {
-        if (item !== element) item.classList.remove("active");
-      });
-    }
-  </script>
 
 </body>
 </html>
