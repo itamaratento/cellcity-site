@@ -6,96 +6,81 @@ body {
   text-align: center;
 }
 
-.topo {
-  background-color: #000;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
+.whatsapp-top {
+  background-color: #25D366;
+  padding: 10px;
+}
+
+.whatsapp-top a {
   color: white;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.topo {
+  background-color: #1a1a2e;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  flex-wrap: wrap;
 }
 
 .logo {
-  height: 50px;
+  height: 40px;
 }
 
 nav a {
   color: white;
+  margin-left: 15px;
   text-decoration: none;
-  margin: 0 10px;
   font-weight: bold;
 }
 
 .container {
-  padding: 20px;
+  padding: 30px 20px;
+  max-width: 800px;
+  margin: auto;
 }
 
-h1 {
-  font-size: 22px;
-  color: #111;
-  margin-top: 20px;
-}
-
-h3 {
-  color: #333;
-  font-size: 16px;
-}
-
-p {
-  color: #555;
-  max-width: 600px;
-  margin: 10px auto;
+.imagem-banner {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin: 20px auto;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
 
 ul {
-  list-style: disc;
   text-align: left;
   max-width: 600px;
   margin: 20px auto;
-  padding-left: 20px;
+}
+
+.destaque {
+  font-weight: bold;
+  margin-top: 30px;
   color: #333;
 }
 
-.cta {
-  font-weight: bold;
-  margin-top: 20px;
-}
-
-.imagem-principal {
-  max-width: 100%;
-  width: 360px;
-  height: auto;
-  border-radius: 10px;
-  margin: 20px 0;
-}
-
-.whatsapp-btn {
-  background-color: #25d366;
-  padding: 10px 0;
-}
-
-.whatsapp-btn a {
-  color: white;
-  font-weight: bold;
-  text-decoration: none;
-  font-size: 18px;
-}
-
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .topo {
     flex-direction: column;
+    align-items: center;
+  }
+
+  nav {
+    margin-top: 10px;
   }
 
   .logo {
     margin-bottom: 10px;
   }
 
-  nav a {
-    display: block;
-    margin: 5px 0;
-  }
-
-  .imagem-principal {
-    width: 280px;
+  .imagem-banner {
+    max-width: 90%;
   }
 }
