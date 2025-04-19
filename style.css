@@ -32,7 +32,7 @@ header {
 }
 
 .logo {
-  height: 90px; /* Logo aumentada */
+  height: 72px;
 }
 
 nav ul {
@@ -67,7 +67,6 @@ nav ul li a {
   z-index: 999;
 }
 
-/* Hover no computador */
 nav ul li:hover .submenu {
   display: flex;
 }
@@ -128,10 +127,9 @@ footer {
   box-shadow: 0 2px 10px rgba(0,0,0,0.3);
 }
 
-/* CELULAR */
+/* Modo Celular */
 @media (max-width: 768px) {
   nav ul {
-    display: flex !important;
     flex-direction: column;
     width: 100%;
     background-color: #004d00;
@@ -151,7 +149,7 @@ footer {
     background-color: #004d00;
   }
 
-  nav ul li.show-submenu .submenu {
+  nav ul li.active .submenu {
     display: flex !important;
   }
 
