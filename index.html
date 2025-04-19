@@ -8,36 +8,50 @@
 </head>
 <body>
 
-  <header class="header">
-    <div class="container">
-      <img src="logo.png" alt="Logo Cell City" class="logo">
-      <nav>
-        <ul class="menu">
-          <li><a href="#">Início</a></li>
-          <li class="has-submenu" onclick="toggleMenu(this)">
-            <span class="menu-toggle">Serviços</span>
-            <ul class="submenu">
-              <li><a href="#">Conserto de Celulares</a></li>
-              <li><a href="#">Formatação de Celulares</a></li>
-              <li><a href="#">Manutenção de Computadores</a></li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <img src="logo.png" alt="Logo Cell City" class="logo">
+        <nav>
+          <ul class="menu">
+            <li><a href="#">Início</a></li>
+            <li class="has-submenu" onclick="toggleMenu(this)">
+              <span class="menu-toggle">Serviços</span>
+              <ul class="submenu">
+                <li><a href="#">Conserto de Celulares</a></li>
+                <li><a href="#">Formatação de Celulares</a></li>
+                <li><a href="#">Manutenção de Computadores</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-  <main>
-    <section class="hero">
-      <h1>Bem-vindo à Cell City</h1>
-      <p>Troca de tela, formatação, reparos e manutenção com garantia!</p>
-      <img src="celular-aberto.jpg" alt="Celular em manutenção" class="banner-img">
-    </section>
-  </main>
+    <main class="main">
+      <section class="hero">
+        <h1>Bem-vindo à Cell City</h1>
+        <p>Troca de tela, formatação, reparos e manutenção com garantia!</p>
+        <img src="celular-aberto.jpg" alt="Celular em manutenção" class="banner-img">
+      </section>
 
-  <footer>
-    <p>&copy; 2025 Cell City Informática | Rua 6, nº 455, Setor Central - Goiânia</p>
-  </footer>
+      <section class="descricao">
+        <div class="descricao-content">
+          <h2>Por que escolher a Cell City?</h2>
+          <ul>
+            <li>Peças com procedência real e testadas</li>
+            <li>Garantia total em troca de tela e reparos</li>
+            <li>Atendimento técnico com agilidade</li>
+            <li>Mais de 10 anos de experiência no setor</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2025 Cell City Informática | Rua 6, nº 455, Setor Central - Goiânia</p>
+    </footer>
+  </div>
 
   <script>
     function toggleMenu(el) {
