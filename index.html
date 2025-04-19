@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cell City</title>
   <style>
     * {
@@ -59,6 +59,7 @@
       color: white;
       text-decoration: none;
       font-weight: bold;
+      cursor: pointer;
     }
 
     .submenu {
@@ -75,6 +76,12 @@
 
     nav ul li:hover .submenu {
       display: flex;
+    }
+
+    /* Mostra submenu apenas se classe .active for aplicada via clique */
+    nav ul li.show-submenu .submenu {
+      display: flex !important;
+      position: static;
     }
 
     .hero {
@@ -148,13 +155,13 @@
         padding: 10px 0;
       }
 
-      .submenu {
+      nav ul li .submenu {
+        display: none;
         position: static;
-        background-color: #004d00;
       }
 
-      .menu-toggle {
-        display: none;
+      nav ul li.show-submenu .submenu {
+        display: flex;
       }
     }
   </style>
@@ -167,8 +174,8 @@
       <nav>
         <ul id="menu">
           <li><a href="#">Início</a></li>
-          <li>
-            <a href="#">Serviços</a>
+          <li class="has-submenu" onclick="toggleSubmenu(this)">
+            <a>Serviços</a>
             <ul class="submenu">
               <li><a href="#">Conserto de Celulares</a></li>
               <li><a href="#">Formatação de Celulares</a></li>
@@ -217,6 +224,19 @@
   <a href="https://wa.me/5562981605863" class="whatsapp-float" target="_blank">
     <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp">
   </a>
+
+  <script>
+    function toggleSubmenu(el) {
+      // Fecha todos os submenus antes
+      document.querySelectorAll('.has-submenu').forEach(item => {
+        if (item !== el) {
+          item.classList.remove('show-submenu');
+        }
+      });
+
+      el.classList.toggle('show-submenu');
+    }
+  </script>
 
 </body>
 </html>
