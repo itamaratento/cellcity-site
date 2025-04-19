@@ -4,21 +4,20 @@ body {
   background: #f8f8f8;
 }
 
-.topo {
+.header-container {
   background: #004d00;
-  padding: 20px;
-  color: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding: 10px 20px;
 }
 
 .logo {
   height: 72px;
 }
 
-nav ul.menu {
+.menu {
   list-style: none;
   display: flex;
   gap: 20px;
@@ -26,45 +25,37 @@ nav ul.menu {
   margin: 0;
 }
 
-nav ul li {
+.menu li {
   position: relative;
 }
 
-.menu-toggle {
-  background: none;
-  border: none;
+.menu a, .menu-toggle {
   color: white;
+  text-decoration: none;
   font-weight: bold;
   cursor: pointer;
-  font-size: 16px;
 }
 
 .submenu {
   display: none;
   position: absolute;
+  background: #004d00;
+  padding: 10px;
   top: 100%;
   left: 0;
-  background-color: #004d00;
-  padding: 10px;
-  border-radius: 5px;
   flex-direction: column;
-  z-index: 10;
+  border-radius: 5px;
+  z-index: 999;
 }
 
-.has-submenu:focus-within .submenu {
+.has-submenu.ativo .submenu {
   display: flex;
 }
 
-nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-
 .hero {
-  text-align: center;
   padding: 50px 20px;
   background: #e4ffe4;
+  text-align: center;
 }
 
 footer {
@@ -76,10 +67,10 @@ footer {
 }
 
 @media (max-width: 768px) {
-  nav ul.menu {
+  .menu {
     flex-direction: column;
-    align-items: center;
     gap: 10px;
+    align-items: center;
   }
 
   .submenu {
