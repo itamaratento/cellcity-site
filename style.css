@@ -2,8 +2,16 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  text-align: center;
   background-color: #f4f4f4;
+  text-align: center;
+}
+
+.promocao {
+  background-color: #2e7d32;
+  color: white;
+  padding: 20px;
+  font-weight: bold;
+  font-size: 18px;
 }
 
 .topo {
@@ -15,7 +23,7 @@ body {
 }
 
 .logo {
-  height: 40px;
+  height: 50px;
 }
 
 nav ul {
@@ -36,17 +44,23 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
-.promocao {
-  background-color: #2e7d32;
+.whatsapp {
+  margin: 30px 0;
+}
+
+.whatsapp a {
+  background-color: #25d366;
   color: white;
+  text-decoration: none;
+  padding: 15px 30px;
+  border-radius: 30px;
   font-weight: bold;
-  padding: 25px;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .imagem-container {
-  margin: 30px auto;
-  max-width: 500px;
+  max-width: 450px;
+  margin: 0 auto 30px auto;
 }
 
 .imagem-celular {
@@ -54,42 +68,28 @@ nav ul li a:hover {
   border-radius: 10px;
 }
 
-.whatsapp {
-  margin: 25px 0;
-}
-
-.whatsapp a {
-  background-color: #25d366;
-  color: white;
-  text-decoration: none;
-  padding: 15px 25px;
-  border-radius: 30px;
-  font-weight: bold;
-  font-size: 16px;
-}
-
 main {
-  max-width: 800px;
-  margin: auto;
-  padding: 30px 20px;
   background-color: white;
+  padding: 30px;
+  max-width: 800px;
+  margin: 0 auto 50px auto;
   border-radius: 10px;
 }
 
 main h1 {
-  font-size: 24px;
+  font-size: 22px;
   margin-bottom: 10px;
 }
 
 main h2 {
-  font-size: 20px;
+  font-size: 18px;
   margin-bottom: 20px;
 }
 
 .lista-servicos {
-  text-align: left;
-  margin: 25px auto;
-  max-width: 600px;
   list-style: disc;
+  text-align: left;
+  max-width: 600px;
+  margin: 20px auto;
   padding-left: 20px;
 }
