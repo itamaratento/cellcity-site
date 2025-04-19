@@ -3,15 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cell City - Assistência Técnica em Goiânia</title>
-  <meta name="description" content="Conserto de celular, troca de tela, formatação de celular e manutenção de computadores em Goiânia. Atendimento rápido com garantia.">
-
+  <title>Cell City</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
 
     body {
       font-family: Arial, sans-serif;
@@ -22,15 +16,10 @@
       min-height: 100vh;
     }
 
-    .container {
-      width: 90%;
-      margin: auto;
-    }
-
     header {
       background: #004d00;
-      color: #fff;
-      padding: 20px 0;
+      padding: 20px;
+      color: white;
     }
 
     .header-flex {
@@ -78,7 +67,6 @@
       padding: 10px;
       border-radius: 5px;
       flex-direction: column;
-      z-index: 999;
     }
 
     nav ul li:hover .submenu {
@@ -91,44 +79,33 @@
       padding: 50px 0;
     }
 
-    .hero h1 {
-      color: #004d00;
-      font-size: 26px;
-      margin-bottom: 10px;
-    }
-
     .banner-imagem img {
       width: 100%;
-      margin: 40px 0;
+      max-width: 600px;
+      display: block;
+      margin: 40px auto;
       border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     }
 
     .services {
+      background: white;
       padding: 40px 0;
-      background: #fff;
       text-align: center;
-    }
-
-    .services h2 {
-      font-size: 24px;
-      color: #004d00;
-      margin-bottom: 20px;
     }
 
     .services ul {
       list-style: disc;
-      padding-left: 20px;
-      text-align: left;
       max-width: 400px;
-      margin: 0 auto;
+      margin: auto;
+      text-align: left;
+      padding-left: 20px;
     }
 
     footer {
       background: #004d00;
       color: white;
       text-align: center;
-      padding: 20px 0;
+      padding: 20px;
       margin-top: auto;
     }
 
@@ -143,7 +120,7 @@
       width: 55px;
       height: 55px;
       border-radius: 50%;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
     }
 
     @media (max-width: 768px) {
@@ -155,30 +132,29 @@
         display: none;
         flex-direction: column;
         background-color: #004d00;
-        width: 100%;
-        margin-top: 10px;
-        padding: 10px 0;
+        padding: 10px;
       }
 
       nav ul.show {
         display: flex;
       }
 
+      .submenu {
+        position: static;
+        background-color: transparent;
+        padding: 0;
+      }
+
       nav ul li {
         text-align: center;
         padding: 10px 0;
-      }
-
-      .submenu {
-        position: static;
-        background: none;
       }
     }
   </style>
 </head>
 <body>
   <header>
-    <div class="container header-flex">
+    <div class="header-flex container">
       <img src="logo.png" alt="Logo Cell City" class="logo" />
       <button class="menu-toggle" onclick="toggleMenu()">☰</button>
       <nav>
@@ -188,8 +164,8 @@
             <a href="#">Serviços</a>
             <ul class="submenu">
               <li><a href="#">Conserto de Celulares</a></li>
-              <li><a href="#">Formatação de Celulares</a></li>
-              <li><a href="#">Manutenção de Computadores</a></li>
+              <li><a href="#">Formatação</a></li>
+              <li><a href="#">Manutenção de PCs</a></li>
             </ul>
           </li>
         </ul>
@@ -198,27 +174,36 @@
   </header>
 
   <section class="hero">
-    <div class="container">
-      <h1>Bem-vindo à Cell City</h1>
-      <p>Especialistas em troca de tela e reparos rápidos!</p>
-    </div>
+    <h1>Bem-vindo à Cell City</h1>
+    <p>Troca de tela e consertos rápidos com garantia.</p>
   </section>
 
   <section class="banner-imagem">
-    <div class="container">
-      <img src="celular-aberto.jpg" alt="Banner de celular quebrado" />
-    </div>
+    <img src="celular-aberto.jpg" alt="Imagem celular quebrado" />
   </section>
 
   <section class="services">
-    <div class="container">
-      <h2>Nossos Serviços</h2>
-      <ul>
-        <li>Troca de tela</li>
-        <li>Formatação de celulares</li>
-        <li>Reparo em conector de carga</li>
-        <li>Limpeza interna</li>
-        <li>Manutenção de computadores</li>
-      </ul>
-    </div>
+    <h2>Nossos Serviços</h2>
+    <ul>
+      <li>Troca de tela</li>
+      <li>Formatação de celulares</li>
+      <li>Reparo de conector</li>
+      <li>Manutenção de computadores</li>
+    </ul>
   </section>
+
+  <footer>
+    <p>&copy; 2025 Cell City | Rua 6, nº 455, Setor Central - Goiânia</p>
+  </footer>
+
+  <a href="https://wa.me/5562981605863" class="whatsapp-float" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp" />
+  </a>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("menu").classList.toggle("show");
+    }
+  </script>
+</body>
+</html>
