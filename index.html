@@ -6,6 +6,7 @@
   <title>Cell City</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
+
     body {
       font-family: Arial, sans-serif;
       background: #f8f8f8;
@@ -14,7 +15,11 @@
       flex-direction: column;
       min-height: 100vh;
     }
-    .container { width: 90%; margin: auto; }
+
+    .container {
+      width: 90%;
+      margin: auto;
+    }
 
     header {
       background: #004d00;
@@ -30,7 +35,7 @@
     }
 
     .logo {
-      height: 30px;
+      height: 90px; /* Aumentado */
     }
 
     nav ul {
@@ -125,6 +130,7 @@
       box-shadow: 0 2px 10px rgba(0,0,0,0.3);
     }
 
+    /* Celular */
     @media (max-width: 768px) {
       nav ul {
         display: flex !important;
@@ -138,6 +144,7 @@
         width: 100%;
         text-align: center;
         padding: 10px 0;
+        position: relative;
       }
 
       nav ul li .submenu {
@@ -160,7 +167,7 @@
 
   <header>
     <div class="container header-flex">
-      <img src="logo.png" alt="Logo Cell City" class="logo">
+      <img src="logo.png" alt="Logo Cell City" class="logo" />
       <nav>
         <ul id="menu">
           <li><a href="#">Início</a></li>
@@ -186,49 +193,3 @@
     </section>
 
     <section class="banner-imagem">
-      <div class="container">
-        <img src="celular-aberto.jpg" alt="Celular quebrado">
-      </div>
-    </section>
-
-    <section class="services">
-      <div class="container">
-        <h2>Nossos Serviços</h2>
-        <ul>
-          <li>Troca de tela</li>
-          <li>Formatação de celulares</li>
-          <li>Reparo em conector</li>
-          <li>Limpeza interna</li>
-          <li>Manutenção de computadores</li>
-        </ul>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Cell City Informática | Rua 6, nº 455, Setor Central - Goiânia</p>
-    </div>
-  </footer>
-
-  <a href="https://wa.me/5562981605863" class="whatsapp-float" target="_blank">
-    <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp">
-  </a>
-
-  <script>
-    function toggleSubmenu(e, el) {
-      e.preventDefault();
-      const parentLi = el.parentElement;
-      parentLi.classList.toggle('show-submenu');
-
-      // Fecha outros submenus
-      document.querySelectorAll('.has-submenu').forEach(item => {
-        if (item !== parentLi) {
-          item.classList.remove('show-submenu');
-        }
-      });
-    }
-  </script>
-
-</body>
-</html>
