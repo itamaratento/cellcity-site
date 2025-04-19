@@ -9,10 +9,10 @@
 </head>
 <body>
 
-  <!-- Cabeçalho com logo e menu -->
   <header>
     <div class="container header-flex">
       <img src="logo.png" alt="Logo Cell City" class="logo" />
+      <!-- botão ☰ ocultado no celular -->
       <button class="menu-toggle" onclick="toggleMenu()">☰</button>
       <nav>
         <ul id="menu">
@@ -30,7 +30,6 @@
     </div>
   </header>
 
-  <!-- Seção de destaque -->
   <section class="hero">
     <div class="container">
       <h1>Bem-vindo à Cell City</h1>
@@ -38,14 +37,12 @@
     </div>
   </section>
 
-  <!-- Imagem de destaque -->
   <section class="banner-imagem">
     <div class="container">
       <img src="celular-aberto.jpg" alt="Celular quebrado" />
     </div>
   </section>
 
-  <!-- Seção de serviços -->
   <section class="services">
     <div class="container">
       <h2>Nossos Serviços</h2>
@@ -59,19 +56,16 @@
     </div>
   </section>
 
-  <!-- Rodapé -->
   <footer>
     <div class="container">
       <p>&copy; 2025 Cell City Informática | Rua 6, nº 455, Setor Central - Goiânia</p>
     </div>
   </footer>
 
-  <!-- Botão flutuante do WhatsApp -->
   <a href="https://wa.me/5562981605863" class="whatsapp-float" target="_blank">
     <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp" />
   </a>
 
-  <!-- Script para o menu no celular -->
   <script>
     function toggleMenu() {
       document.getElementById("menu").classList.toggle("show");
