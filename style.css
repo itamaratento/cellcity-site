@@ -52,6 +52,7 @@ nav ul li a {
   color: white;
   text-decoration: none;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .submenu {
@@ -126,6 +127,7 @@ footer {
   box-shadow: 0 2px 10px rgba(0,0,0,0.3);
 }
 
+/* Responsivo: Celular */
 @media (max-width: 768px) {
   nav ul {
     display: flex !important;
@@ -141,9 +143,16 @@ footer {
     padding: 10px 0;
   }
 
-  .submenu {
+  /* Submenu oculto no celular */
+  nav ul li .submenu {
+    display: none;
     position: static;
     background-color: #004d00;
+  }
+
+  /* Submenu aparece ao clicar */
+  nav ul li.show-submenu .submenu {
+    display: flex;
   }
 
   .menu-toggle {
