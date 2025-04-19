@@ -1,51 +1,36 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cell City Informática</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
 
-  <header class="cabecalho">
-    <div class="logo">
-      <img src="logo.png" alt="Logo Cell City" />
-    </div>
-    <nav class="menu">
-      <ul>
-        <li><a href="#">Início</a></li>
-        <li><a href="#">Serviços</a></li>
-        <li><a href="#">Contatos</a></li>
-      </ul>
-    </nav>
-  </header>
+.topo { background-color: #000; display: flex; justify-content: space-between; align-items: center; padding: 10px 20px; flex-wrap: wrap; }
 
-  <section class="promocao">
-    Promoção da semana: Troca de Tela com Brinde na Hora!
-  </section>
+.logo { height: 50px; }
 
-  <section class="whatsapp">
-    <a href="https://wa.me/5562981605863" target="_blank">Fale no WhatsApp</a>
-  </section>
+nav ul { list-style: none; display: flex; gap: 20px; padding: 0; margin: 0; }
 
-  <section class="imagem">
-    <img src="celular-aberto.jpg" alt="Celular aberto" />
-  </section>
+nav ul li a { color: white; text-decoration: none; font-weight: bold; }
 
-  <main>
-    <h1>Troca de Tela em Goiânia com Garantia</h1>
-    <h2>Cell City Informática</h2>
-    <p>A tela do seu celular quebrou? Na Cell City, você faz troca de tela com garantia real, rapidez e atendimento direto com o técnico.</p>
-    <p>Especialistas em iPhone, Samsung, Xiaomi e outros modelos, com peças de procedência e serviço profissional.</p>
-    <ul>
-      <li>Troca de Tela Trincada (com ou sem touch funcional)</li>
-      <li>Teste antes e depois da troca</li>
-      <li>Instalação com ferramentas adequadas</li>
-      <li>Garantia mínima de 30 dias no serviço e peça</li>
-    </ul>
-    <p><strong>Fale agora com um técnico no WhatsApp e receba seu orçamento gratuito!</strong></p>
-  </main>
+nav ul li a:hover { text-decoration: underline; }
 
-</body>
-</html>
+.botao-whatsapp { background-color: #25d366; color: white; border: none; padding: 12px 25px; font-size: 18px; border-radius: 25px; margin: 20px auto; display: block; cursor: pointer; text-decoration: none; width: fit-content; }
+
+.imagem-destaque { display: block; margin: 0 auto; max-width: 90%; height: auto; }
+
+.container { max-width: 800px; margin: auto; padding: 20px; text-align: center; }
+
+ul { text-align: left; margin-top: 20px; margin-bottom: 20px; padding-left: 20px; }
+
+ul li { margin-bottom: 10px; }
+
+@media screen and (max-width: 600px) { .topo { flex-direction: column; align-items: flex-start; }
+
+nav ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.logo {
+    margin-bottom: 10px;
+}
+
+}
+
