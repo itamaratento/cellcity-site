@@ -1,19 +1,169 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cell City - Assistência Técnica em Goiânia</title>
-  <meta name="description" content="Conserto de celular, troca de tela, formatação e manutenção de computadores em Goiânia. Atendimento rápido com garantia." />
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cell City</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8f8f8;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .container {
+      width: 90%;
+      margin: auto;
+    }
+
+    header {
+      background: #004d00;
+      color: white;
+      padding: 20px 0;
+    }
+
+    .header-flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      height: 30px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      background-color: #004d00;
+      padding: 10px 0;
+    }
+
+    nav ul li {
+      position: relative;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .submenu {
+      display: none;
+      position: absolute;
+      top: 30px;
+      left: 0;
+      background-color: #004d00;
+      padding: 10px;
+      border-radius: 5px;
+      flex-direction: column;
+      z-index: 999;
+    }
+
+    nav ul li:hover .submenu {
+      display: flex;
+    }
+
+    .hero {
+      background: #e4ffe4;
+      text-align: center;
+      padding: 50px 0;
+    }
+
+    .hero h1 {
+      color: #004d00;
+      font-size: 26px;
+      margin-bottom: 10px;
+    }
+
+    .banner-imagem img {
+      width: 100%;
+      max-width: 600px;
+      display: block;
+      margin: 40px auto;
+      border-radius: 10px;
+    }
+
+    .services {
+      background: white;
+      padding: 40px 0;
+      text-align: center;
+    }
+
+    .services ul {
+      list-style: disc;
+      max-width: 400px;
+      margin: auto;
+      text-align: left;
+      padding-left: 20px;
+    }
+
+    footer {
+      background: #004d00;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: auto;
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 999;
+    }
+
+    .whatsapp-float img {
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        display: flex !important;
+        flex-direction: column;
+        width: 100%;
+        background-color: #004d00;
+        padding: 10px;
+      }
+
+      nav ul li {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+      }
+
+      .submenu {
+        position: static;
+        background-color: #004d00;
+      }
+
+      .menu-toggle {
+        display: none;
+      }
+    }
+  </style>
 </head>
 <body>
 
   <header>
     <div class="container header-flex">
-      <img src="logo.png" alt="Logo Cell City" class="logo" />
-      <!-- botão ☰ ocultado no celular -->
-      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+      <img src="logo.png" alt="Logo Cell City" class="logo">
       <nav>
         <ul id="menu">
           <li><a href="#">Início</a></li>
@@ -39,38 +189,9 @@
 
   <section class="banner-imagem">
     <div class="container">
-      <img src="celular-aberto.jpg" alt="Celular quebrado" />
+      <img src="celular-aberto.jpg" alt="Celular quebrado">
     </div>
   </section>
 
   <section class="services">
-    <div class="container">
-      <h2>Nossos Serviços</h2>
-      <ul>
-        <li>Troca de tela</li>
-        <li>Formatação de celulares</li>
-        <li>Reparo em conector</li>
-        <li>Limpeza interna</li>
-        <li>Manutenção de computadores</li>
-      </ul>
-    </div>
-  </section>
-
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Cell City Informática | Rua 6, nº 455, Setor Central - Goiânia</p>
-    </div>
-  </footer>
-
-  <a href="https://wa.me/5562981605863" class="whatsapp-float" target="_blank">
-    <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp" />
-  </a>
-
-  <script>
-    function toggleMenu() {
-      document.getElementById("menu").classList.toggle("show");
-    }
-  </script>
-
-</body>
-</html>
+    <
