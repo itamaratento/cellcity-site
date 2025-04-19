@@ -7,6 +7,7 @@
 .contato h2 {
   color: #004d00;
   margin-bottom: 30px;
+  font-size: 28px;
 }
 
 .contato form {
@@ -19,20 +20,22 @@
 
 .contato input,
 .contato textarea {
-  padding: 10px;
+  padding: 12px;
+  font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  font-size: 16px;
+  resize: none;
 }
 
 .contato .btn {
   background: #004d00;
   color: #fff;
   padding: 12px;
+  font-size: 16px;
   border: none;
   border-radius: 5px;
-  font-size: 16px;
   cursor: pointer;
+  transition: background 0.3s ease;
 }
 
 .contato .btn:hover {
