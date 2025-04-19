@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cell City</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -35,7 +35,7 @@
     }
 
     .logo {
-      height: 90px; /* Aumentado */
+      height: 72px;
     }
 
     nav ul {
@@ -130,10 +130,8 @@
       box-shadow: 0 2px 10px rgba(0,0,0,0.3);
     }
 
-    /* Celular */
     @media (max-width: 768px) {
       nav ul {
-        display: flex !important;
         flex-direction: column;
         width: 100%;
         background-color: #004d00;
@@ -150,10 +148,9 @@
       nav ul li .submenu {
         display: none !important;
         position: static;
-        background-color: #004d00;
       }
 
-      nav ul li.show-submenu .submenu {
+      nav ul li.active .submenu {
         display: flex !important;
       }
 
@@ -167,12 +164,12 @@
 
   <header>
     <div class="container header-flex">
-      <img src="logo.png" alt="Logo Cell City" class="logo" />
+      <img src="logo.png" alt="Logo Cell City" class="logo">
       <nav>
         <ul id="menu">
           <li><a href="#">Início</a></li>
-          <li class="has-submenu">
-            <a onclick="toggleSubmenu(event, this)">Serviços</a>
+          <li class="has-submenu" onclick="toggleMobileMenu(this)">
+            <a href="#">Serviços</a>
             <ul class="submenu">
               <li><a href="#">Conserto de Celulares</a></li>
               <li><a href="#">Formatação de Celulares</a></li>
@@ -193,3 +190,43 @@
     </section>
 
     <section class="banner-imagem">
+      <div class="container">
+        <img src="celular-aberto.jpg" alt="Celular quebrado">
+      </div>
+    </section>
+
+    <section class="services">
+      <div class="container">
+        <h2>Nossos Serviços</h2>
+        <ul>
+          <li>Troca de tela</li>
+          <li>Formatação de celulares</li>
+          <li>Reparo em conector</li>
+          <li>Limpeza interna</li>
+          <li>Manutenção de computadores</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Cell City Informática | Rua 6, nº 455, Setor Central - Goiânia</p>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/5562981605863" class="whatsapp-float" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp">
+  </a>
+
+  <script>
+    function toggleMobileMenu(el) {
+      el.classList.toggle('active');
+      document.querySelectorAll('.has-submenu').forEach(item => {
+        if (item !== el) item.classList.remove('active');
+      });
+    }
+  </script>
+
+</body>
+</html>
