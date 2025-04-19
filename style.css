@@ -47,9 +47,11 @@ header {
 
 nav ul {
   list-style: none;
-  display: flex;
+  display: flex; /* Visível em todas as telas */
   gap: 20px;
   flex-wrap: wrap;
+  background-color: #004d00;
+  padding: 10px 0;
 }
 
 nav ul li {
@@ -135,27 +137,20 @@ footer {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
+/* Modo celular (mantém menu visível) */
 @media (max-width: 768px) {
   .menu-toggle {
-    display: block;
+    display: none; /* Oculta o botão ☰ */
   }
 
   nav ul {
-    display: none;
     flex-direction: column;
-    background-color: #004d00;
-    width: 100%;
-    padding: 10px 0;
-  }
-
-  nav ul.show {
-    display: flex;
+    gap: 10px;
   }
 
   nav ul li {
-    width: 100%;
     text-align: center;
-    padding: 10px 0;
+    width: 100%;
   }
 
   .submenu {
