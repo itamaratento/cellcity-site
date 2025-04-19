@@ -32,7 +32,7 @@ header {
 }
 
 .logo {
-  height: 30px;
+  height: 90px; /* Logo aumentada */
 }
 
 nav ul {
@@ -67,6 +67,7 @@ nav ul li a {
   z-index: 999;
 }
 
+/* Hover no computador */
 nav ul li:hover .submenu {
   display: flex;
 }
@@ -141,6 +142,7 @@ footer {
     width: 100%;
     text-align: center;
     padding: 10px 0;
+    position: relative;
   }
 
   nav ul li .submenu {
