@@ -38,20 +38,13 @@ header {
 
 .menu-toggle {
   display: none;
-  background: transparent;
-  border: none;
-  font-size: 24px;
-  color: white;
-  cursor: pointer;
 }
 
 nav ul {
   list-style: none;
-  display: flex; /* Visível em todas as telas */
+  display: flex;
   gap: 20px;
   flex-wrap: wrap;
-  background-color: #004d00;
-  padding: 10px 0;
 }
 
 nav ul li {
@@ -137,20 +130,24 @@ footer {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
-/* Modo celular (mantém menu visível) */
 @media (max-width: 768px) {
   .menu-toggle {
-    display: none; /* Oculta o botão ☰ */
+    display: none; /* Não mostra botão ☰ */
   }
 
   nav ul {
+    display: flex;
     flex-direction: column;
     gap: 10px;
+    background-color: #004d00;
+    width: 100%;
+    padding: 10px 0;
   }
 
   nav ul li {
-    text-align: center;
     width: 100%;
+    text-align: center;
+    padding: 10px 0;
   }
 
   .submenu {
