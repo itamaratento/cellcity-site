@@ -2,91 +2,105 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: #ffffff;
+  background: #f0f0f0;
 }
 
-.faixa-promocao {
-  background: #00a86b;
-  color: #fff;
-  padding: 15px;
-  text-align: center;
+.topbar {
+  background: #1e2a38;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 40px;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
   font-weight: bold;
-  font-size: 16px;
 }
 
-.container {
+.btn-zap-topo {
+  background: #25d366;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.banner {
+  background: #218c38;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+.conteudo {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 20px;
-  gap: 30px;
+  align-items: center;
+  background: white;
+  padding: 30px 10px;
 }
 
-.imagem-box img {
-  max-width: 320px;
-  width: 100%;
-  border-radius: 12px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+.imagem img {
+  width: 300px;
+  max-width: 100%;
+  border-radius: 8px;
 }
 
-.info-box {
-  max-width: 350px;
-  text-align: left;
+.texto {
+  max-width: 400px;
+  margin-left: 30px;
 }
 
-.info-box h1 {
+.texto h3 {
+  margin-top: 0;
   color: #222;
-  font-size: 22px;
-  margin-bottom: 15px;
 }
 
-.info-box ul {
+.texto ul {
   padding-left: 20px;
-  margin-bottom: 20px;
 }
 
-.info-box li {
+.texto li {
   margin-bottom: 10px;
   color: #333;
 }
 
-.botao-whatsapp {
-  display: inline-block;
-  background: #25D366;
+.btn-zap {
+  background: #25d366;
   color: white;
-  padding: 14px 22px;
+  padding: 12px 20px;
+  display: inline-block;
   text-decoration: none;
-  border-radius: 6px;
-  font-size: 16px;
   font-weight: bold;
-  transition: 0.3s;
+  margin-top: 15px;
+  border-radius: 4px;
 }
 
-.botao-whatsapp:hover {
-  background: #1ea856;
-}
-
-.rodape {
-  background: #1a1a2e;
+footer {
+  background: #1e2a38;
   color: white;
   text-align: center;
-  padding: 15px;
+  padding: 15px 10px;
   font-size: 14px;
-  margin-top: 30px;
 }
 
 @media (max-width: 768px) {
-  .container {
+  .conteudo {
     flex-direction: column;
-    align-items: center;
-    padding: 15px;
-  }
-
-  .info-box {
     text-align: center;
   }
 
-  .info-box ul {
-    text-align: left;
+  .texto {
+    margin: 20px 0 0 0;
   }
 }
