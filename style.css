@@ -100,9 +100,14 @@ header {
   text-align: center;
 }
 
-.hero h2 {
+.hero h1 {
   color: #004d00;
   margin-bottom: 20px;
+  font-size: 26px;
+}
+
+.hero p {
+  font-size: 16px;
 }
 
 .btn-whatsapp {
@@ -140,6 +145,12 @@ header {
   padding: 40px 0;
   background: #fff;
   text-align: center;
+}
+
+.services h2 {
+  font-size: 24px;
+  color: #004d00;
+  margin-bottom: 20px;
 }
 
 .services h3 {
@@ -189,8 +200,4 @@ footer {
     padding: 10px 0;
   }
 
-  .submenu {
-    position: static;
-    padding-left: 0;
-  }
-}
+  .submenu
