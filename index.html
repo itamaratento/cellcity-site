@@ -8,13 +8,13 @@
 </head>
 <body>
 
-  <header>
-    <div class="header-container">
+  <header class="header">
+    <div class="container">
       <img src="logo.png" alt="Logo Cell City" class="logo">
       <nav>
         <ul class="menu">
           <li><a href="#">Início</a></li>
-          <li class="has-submenu" onclick="abrirMenu(this)">
+          <li class="has-submenu" onclick="toggleMenu(this)">
             <span class="menu-toggle">Serviços</span>
             <ul class="submenu">
               <li><a href="#">Conserto de Celulares</a></li>
@@ -29,22 +29,9 @@
 
   <main>
     <section class="hero">
-      <div class="hero-content">
-        <h1>Bem-vindo à Cell City</h1>
-        <p>Troca de tela, formatação, reparos e manutenção com garantia!</p>
-      </div>
-    </section>
-
-    <section class="servicos">
-      <div class="servicos-content">
-        <h2>Principais serviços</h2>
-        <ul>
-          <li>Troca de tela</li>
-          <li>Reparo de conector</li>
-          <li>Formatação de celular</li>
-          <li>Manutenção de computadores</li>
-        </ul>
-      </div>
+      <h1>Bem-vindo à Cell City</h1>
+      <p>Especialistas em conserto de celular e manutenção técnica.</p>
+      <img src="celular-aberto.jpg" alt="Celular em manutenção" class="banner-img">
     </section>
   </main>
 
@@ -53,10 +40,10 @@
   </footer>
 
   <script>
-    function abrirMenu(el) {
-      el.classList.toggle('ativo');
+    function toggleMenu(el) {
+      el.classList.toggle("ativo");
       document.querySelectorAll('.has-submenu').forEach(item => {
-        if (item !== el) item.classList.remove('ativo');
+        if (item !== el) item.classList.remove("ativo");
       });
     }
   </script>
