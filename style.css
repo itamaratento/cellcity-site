@@ -52,10 +52,36 @@ body {
   display: flex;
 }
 
+main {
+  padding: 40px 20px;
+}
+
 .hero {
-  padding: 50px 20px;
   background: #e4ffe4;
   text-align: center;
+  padding: 50px 20px;
+}
+
+.hero-content h1 {
+  font-size: 28px;
+  color: #004d00;
+  margin-bottom: 10px;
+}
+
+.servicos {
+  background: #ffffff;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.servicos-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.servicos-content li {
+  margin: 8px 0;
+  font-weight: bold;
 }
 
 footer {
@@ -69,8 +95,8 @@ footer {
 @media (max-width: 768px) {
   .menu {
     flex-direction: column;
-    gap: 10px;
     align-items: center;
+    gap: 10px;
   }
 
   .submenu {
