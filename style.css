@@ -1,39 +1,39 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #ffffff;
+  color: #222;
   text-align: center;
 }
 
 .top-bar {
   background-color: #2e7d32;
   color: white;
-  padding: 10px;
   font-weight: bold;
+  padding: 25px 10px;
+  font-size: 18px;
 }
 
-nav {
-  background-color: #000;
-  color: white;
+.nav-header {
+  background-color: #111;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  padding: 10px;
-  gap: 20px;
+  justify-content: space-between;
+  padding: 10px 20px;
 }
 
 .logo {
   height: 50px;
-  margin-right: 40px;
-  margin-left: 20px;
+  cursor: pointer;
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  gap: 20px;
-  padding: 0;
+  gap: 25px;
   margin: 0;
+  padding: 0;
 }
 
 nav ul li a {
@@ -42,31 +42,65 @@ nav ul li a {
   font-weight: bold;
 }
 
-nav ul li a:hover {
-  text-decoration: underline;
+.conteudo {
+  max-width: 700px;
+  margin: 50px auto 30px;
+  padding: 0 20px;
 }
 
-main {
-  padding: 30px;
-  max-width: 800px;
-  margin: auto;
+.conteudo h1 {
+  font-size: 28px;
+  margin-bottom: 0;
 }
 
-.btn-whatsapp {
-  margin-top: 30px;
+.conteudo h2 {
+  font-size: 22px;
+  margin-top: 5px;
+  font-weight: 500;
 }
 
-.btn-whatsapp a {
-  background-color: #25D366;
-  color: white;
-  padding: 15px 30px;
-  text-decoration: none;
+.intro {
   font-size: 18px;
-  border-radius: 8px;
-  display: inline-block;
+  margin-top: 25px;
+}
+
+.descricao {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.vantagens {
+  list-style: none;
+  padding: 0;
+  margin: 30px 0;
+  text-align: left;
+}
+
+.vantagens li {
+  font-size: 16px;
+  margin: 12px 0;
+  display: flex;
+  align-items: center;
+}
+
+.vantagens .emoji {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.cta-texto {
+  margin: 50px 0 10px;
   font-weight: bold;
 }
 
-.btn-whatsapp a:hover {
-  background-color: #1ebe57;
+.botao-whatsapp {
+  display: inline-block;
+  background-color: #25D366;
+  color: white;
+  padding: 14px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 25px;
+  text-decoration: none;
+  margin-bottom: 50px;
 }
