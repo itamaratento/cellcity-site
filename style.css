@@ -40,13 +40,13 @@ nav ul li a:hover {
   background-color: #2e7d32;
   color: white;
   font-weight: bold;
-  padding: 15px;
-  font-size: 16px;
+  padding: 25px;
+  font-size: 20px;
 }
 
 .imagem-container {
   margin: 30px auto;
-  max-width: 600px;
+  max-width: 500px;
 }
 
 .imagem-celular {
@@ -55,7 +55,7 @@ nav ul li a:hover {
 }
 
 .whatsapp {
-  margin: 20px 0;
+  margin: 25px 0;
 }
 
 .whatsapp a {
@@ -71,12 +71,25 @@ nav ul li a:hover {
 main {
   max-width: 800px;
   margin: auto;
-  padding: 20px;
+  padding: 30px 20px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+main h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+main h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
 }
 
 .lista-servicos {
   text-align: left;
-  margin: 20px auto;
+  margin: 25px auto;
   max-width: 600px;
   list-style: disc;
+  padding-left: 20px;
 }
