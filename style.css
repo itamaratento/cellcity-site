@@ -1,106 +1,63 @@
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #ffffff;
-  color: #222;
   text-align: center;
+  background-color: #f5f5f5;
 }
 
-.top-bar {
-  background-color: #2e7d32;
+/* Botão do WhatsApp no topo */
+.whatsapp-top {
+  background-color: #25d366;
+  padding: 15px 0;
+}
+
+.whatsapp-top a {
   color: white;
   font-weight: bold;
-  padding: 25px 10px;
+  text-decoration: none;
   font-size: 18px;
-}
-
-.nav-header {
-  background-color: #111;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   padding: 10px 20px;
+  background-color: #128c7e;
+  border-radius: 30px;
 }
 
-.logo {
-  height: 50px;
-  cursor: pointer;
+.whatsapp-top a:hover {
+  background-color: #0f705d;
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 25px;
-  margin: 0;
-  padding: 0;
+/* Imagem do celular */
+.imagem-topo img {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-
+/* Conteúdo */
 .conteudo {
-  max-width: 700px;
-  margin: 50px auto 30px;
-  padding: 0 20px;
+  padding: 30px 20px;
 }
 
-.conteudo h1 {
-  font-size: 28px;
-  margin-bottom: 0;
+h1 {
+  color: #222;
+  margin-bottom: 20px;
 }
 
-.conteudo h2 {
-  font-size: 22px;
-  margin-top: 5px;
-  font-weight: 500;
-}
-
-.intro {
+.destaque {
+  font-weight: bold;
   font-size: 18px;
-  margin-top: 25px;
+  margin-bottom: 15px;
 }
 
-.descricao {
-  font-size: 16px;
-  margin: 10px 0;
-}
-
-.vantagens {
-  list-style: none;
-  padding: 0;
-  margin: 30px 0;
+ul {
   text-align: left;
+  max-width: 600px;
+  margin: 20px auto;
+  padding-left: 20px;
 }
 
-.vantagens li {
-  font-size: 16px;
-  margin: 12px 0;
-  display: flex;
-  align-items: center;
-}
-
-.vantagens .emoji {
-  margin-right: 10px;
-  font-size: 20px;
-}
-
-.cta-texto {
-  margin: 50px 0 10px;
-  font-weight: bold;
-}
-
-.botao-whatsapp {
-  display: inline-block;
-  background-color: #25D366;
-  color: white;
-  padding: 14px 30px;
-  font-size: 16px;
-  font-weight: bold;
-  border-radius: 25px;
-  text-decoration: none;
-  margin-bottom: 50px;
+ul li {
+  margin-bottom: 10px;
 }
