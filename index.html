@@ -11,8 +11,9 @@
   <header>
     <div class="container header-flex">
       <img src="logo.png" alt="Logo Cell City" class="logo" />
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
       <nav>
-        <ul>
+        <ul id="menu">
           <li><a href="#">Início</a></li>
           <li>
             <a href="#">Serviços</a>
@@ -47,7 +48,6 @@
   <section class="services">
     <div class="container">
       <h2>Nossos Serviços</h2>
-
       <h3>Conserto e Manutenção de Celulares</h3>
       <ul>
         <li>Troca de tela</li>
@@ -66,3 +66,25 @@
 
       <h3>Manutenção de Computadores</h3>
       <ul>
+        <li>Formatação e reinstalação de Windows</li>
+        <li>Troca de HD ou SSD</li>
+        <li>Limpeza física e preventiva</li>
+        <li>Remoção de vírus e otimização</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Cell City Informática | Rua 6, nº 455, Setor Central - Goiânia</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('menu');
+      menu.classList.toggle('show');
+    }
+  </script>
+</body>
+</html>
