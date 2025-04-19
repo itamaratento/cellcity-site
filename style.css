@@ -9,6 +9,9 @@ body {
   background: #f8f8f8;
   color: #333;
   line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .container {
@@ -49,14 +52,14 @@ nav ul {
   flex-wrap: wrap;
 }
 
+nav ul li {
+  position: relative;
+}
+
 nav ul li a {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
-}
-
-nav ul li {
-  position: relative;
 }
 
 .submenu {
@@ -160,7 +163,7 @@ footer {
   text-align: center;
   padding: 20px 0;
   font-size: 14px;
-  margin-top: 40px;
+  margin-top: auto;
 }
 
 @media (max-width: 768px) {
