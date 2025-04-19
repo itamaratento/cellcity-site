@@ -6,9 +6,9 @@
 
 body {
   font-family: Arial, sans-serif;
-  line-height: 1.6;
-  color: #333;
   background: #f8f8f8;
+  color: #333;
+  line-height: 1.6;
 }
 
 .container {
@@ -17,21 +17,14 @@ body {
   overflow: hidden;
 }
 
-header {
-  background: #004d00;
-  color: #fff;
-  padding: 20px 0;
-}
-
-.logo-menu {
+.header-flex {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 .logo {
-  height: 50px;
-  margin-right: 20px;
+  height: 30px;
 }
 
 nav ul {
@@ -46,6 +39,12 @@ nav ul li a {
   font-weight: bold;
 }
 
+header {
+  background: #004d00;
+  color: #fff;
+  padding: 20px 0;
+}
+
 .hero {
   background: #e4ffe4;
   padding: 60px 0;
@@ -53,18 +52,16 @@ nav ul li a {
 }
 
 .hero h2 {
-  margin-bottom: 20px;
   color: #004d00;
+  margin-bottom: 20px;
 }
 
 .hero .btn {
-  display: inline-block;
-  padding: 10px 20px;
   background: #004d00;
   color: #fff;
-  text-decoration: none;
+  padding: 10px 20px;
   border-radius: 5px;
-  margin-top: 10px;
+  text-decoration: none;
 }
 
 .banner-imagem img {
@@ -89,6 +86,6 @@ footer {
   color: #fff;
   text-align: center;
   padding: 20px 0;
-  margin-top: 40px;
   font-size: 14px;
+  margin-top: 40px;
 }
