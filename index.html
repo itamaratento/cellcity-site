@@ -5,12 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cell City</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
+    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       font-family: Arial, sans-serif;
       background: #f8f8f8;
@@ -19,11 +14,7 @@
       flex-direction: column;
       min-height: 100vh;
     }
-
-    .container {
-      width: 90%;
-      margin: auto;
-    }
+    .container { width: 90%; margin: auto; }
 
     header {
       background: #004d00;
@@ -65,7 +56,7 @@
     .submenu {
       display: none;
       position: absolute;
-      top: 30px;
+      top: 100%;
       left: 0;
       background-color: #004d00;
       padding: 10px;
@@ -76,12 +67,6 @@
 
     nav ul li:hover .submenu {
       display: flex;
-    }
-
-    /* Mostra submenu apenas se classe .active for aplicada via clique */
-    nav ul li.show-submenu .submenu {
-      display: flex !important;
-      position: static;
     }
 
     .hero {
@@ -156,12 +141,17 @@
       }
 
       nav ul li .submenu {
-        display: none;
+        display: none !important;
         position: static;
+        background-color: #004d00;
       }
 
       nav ul li.show-submenu .submenu {
-        display: flex;
+        display: flex !important;
+      }
+
+      nav ul li:hover .submenu {
+        display: none !important;
       }
     }
   </style>
@@ -174,8 +164,8 @@
       <nav>
         <ul id="menu">
           <li><a href="#">Início</a></li>
-          <li class="has-submenu" onclick="toggleSubmenu(this)">
-            <a>Serviços</a>
+          <li class="has-submenu">
+            <a onclick="toggleSubmenu(event, this)">Serviços</a>
             <ul class="submenu">
               <li><a href="#">Conserto de Celulares</a></li>
               <li><a href="#">Formatação de Celulares</a></li>
@@ -226,15 +216,17 @@
   </a>
 
   <script>
-    function toggleSubmenu(el) {
-      // Fecha todos os submenus antes
+    function toggleSubmenu(e, el) {
+      e.preventDefault();
+      const parentLi = el.parentElement;
+      parentLi.classList.toggle('show-submenu');
+
+      // Fecha outros submenus
       document.querySelectorAll('.has-submenu').forEach(item => {
-        if (item !== el) {
+        if (item !== parentLi) {
           item.classList.remove('show-submenu');
         }
       });
-
-      el.classList.toggle('show-submenu');
     }
   </script>
 
