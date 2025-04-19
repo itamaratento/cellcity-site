@@ -4,71 +4,139 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cell City - Assistência Técnica em Goiânia</title>
-  <meta name="description" content="Conserto de celular, troca de tela, formatação de celular e manutenção de computadores em Goiânia. Atendimento rápido com garantia." />
+  <meta name="description" content="Conserto de celular, troca de tela, formatação de celular e manutenção de computadores em Goiânia. Atendimento rápido com garantia.">
   <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header>
-    <div class="container header-flex">
-      <img src="logo.png" alt="Logo Cell City" class="logo" />
-      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-      <nav>
-        <ul id="menu">
-          <li><a href="#">Início</a></li>
-          <li>
-            <a href="#">Serviços</a>
-            <ul class="submenu">
-              <li><a href="#">Conserto de Celulares</a></li>
-              <li><a href="#">Formatação de Celulares</a></li>
-              <li><a href="#">Manutenção de Computadores</a></li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
 
-  <section class="hero">
-    <div class="container">
-      <h1>Bem-vindo à Cell City</h1>
-      <p>Especialistas em troca de tela e reparos rápidos!</p>
-    </div>
-  </section>
-
-  <section class="banner-imagem">
-    <div class="container">
-      <img src="celular-aberto.jpg" alt="Banner de celular quebrado" />
-    </div>
-  </section>
-
-  <section class="services">
-    <div class="container">
-      <h2>Nossos Serviços</h2>
-      <ul>
-        <li>Troca de tela</li>
-        <li>Formatação de celulares</li>
-        <li>Reparo em conector de carga</li>
-        <li>Limpeza interna</li>
-        <li>Manutenção de computadores</li>
-      </ul>
-    </div>
-  </section>
-
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Cell City Informática | Rua 6, nº 455, Setor Central - Goiânia</p>
-    </div>
-  </footer>
-
-  <a href="https://wa.me/5562981605863" class="whatsapp-float" target="_blank">
-    <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp" />
-  </a>
-
-  <script>
-    function toggleMenu() {
-      const menu = document.getElementById('menu');
-      menu.classList.toggle('show');
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8f8f8;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
     }
-  </script>
-</body>
-</html>
+
+    .container {
+      width: 90%;
+      margin: auto;
+    }
+
+    header {
+      background: #004d00;
+      color: #fff;
+      padding: 20px 0;
+    }
+
+    .header-flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      height: 30px;
+    }
+
+    .menu-toggle {
+      display: none;
+      background: transparent;
+      border: none;
+      font-size: 24px;
+      color: white;
+      cursor: pointer;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li {
+      position: relative;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .submenu {
+      display: none;
+      position: absolute;
+      top: 30px;
+      left: 0;
+      background-color: #004d00;
+      padding: 10px;
+      border-radius: 5px;
+      flex-direction: column;
+      z-index: 999;
+    }
+
+    nav ul li:hover .submenu {
+      display: flex;
+    }
+
+    .hero {
+      background: #e4ffe4;
+      text-align: center;
+      padding: 50px 0;
+    }
+
+    .hero h1 {
+      color: #004d00;
+      font-size: 26px;
+      margin-bottom: 10px;
+    }
+
+    .banner-imagem img {
+      width: 100%;
+      margin: 40px 0;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .services {
+      padding: 40px 0;
+      background: #fff;
+      text-align: center;
+    }
+
+    .services h2 {
+      font-size: 24px;
+      color: #004d00;
+      margin-bottom: 20px;
+    }
+
+    .services ul {
+      list-style: disc;
+      padding-left: 20px;
+      text-align: left;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    footer {
+      background: #004d00;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: auto;
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 999;
+    }
+
+    .whatsapp-float img {
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      box
