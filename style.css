@@ -1,90 +1,80 @@
-/* Alinhamento geral */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  background: #f4f4f4;
-  color: #111;
+  padding: 0;
   text-align: center;
+  background-color: #fefefe;
+  color: #111;
 }
 
-/* Topo */
-.barra-topo {
-  background: #005500;
-  padding: 8px;
-  color: white;
-  font-size: 14px;
-}
-.barra-topo a {
-  color: yellow;
-  margin: 0 10px;
-  text-decoration: none;
-}
-
-/* Logo */
-.logo {
-  width: 100px;
-  margin-top: 10px;
-}
-
-/* Cabeçalho */
-.header h1 {
-  margin-top: 10px;
-  font-size: 24px;
-}
-.subtexto {
-  font-size: 16px;
-}
-.subtexto.menor {
-  font-size: 14px;
-  color: #555;
-}
-
-/* Conteúdo principal */
-.conteudo {
-  background: #dfffe3;
+.container {
+  max-width: 900px;
+  margin: auto;
   padding: 20px;
 }
-.conteudo h2 {
-  font-size: 28px;
+
+.topo-voltar {
+  background-color: #f0f0f0;
+  padding: 8px;
+  font-size: 14px;
 }
-.descricao {
-  font-size: 18px;
-  margin-bottom: 20px;
-}
-.botao-whatsapp {
-  background-color: #25D366;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 25px;
+
+.topo-voltar a {
+  margin: 0 5px;
+  color: #006400;
   text-decoration: none;
   font-weight: bold;
-  display: inline-block;
-  margin-bottom: 20px;
 }
 
-/* Imagem */
-.imagem-campanha {
-  width: 90%;
-  max-width: 400px;
-  margin: 20px auto;
-  display: block;
+h1 {
+  font-size: 32px;
+  color: #111;
+}
+
+h2 {
+  margin-top: 20px;
+  color: #333;
+}
+
+.bloco-destaque {
+  background-color: #ddf4e4;
+  padding: 20px;
   border-radius: 10px;
+  margin: 20px auto;
 }
 
-/* Rodapé */
+.imagem-manutencao {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+}
+
+.botao-agendar {
+  display: inline-block;
+  background-color: #25d366;
+  color: white;
+  padding: 12px 25px;
+  margin-top: 20px;
+  border-radius: 30px;
+  font-size: 16px;
+  text-decoration: none;
+}
+
 .rodape {
-  background: #005500;
+  margin-top: 40px;
+  background-color: #006400;
   color: white;
   padding: 10px;
   font-size: 14px;
+  border-radius: 6px;
 }
 
-/* WhatsApp Flutuante */
 .whatsapp-flutuante {
   position: fixed;
+  width: 60px;
   bottom: 20px;
   right: 20px;
-}
-.whatsapp-flutuante img {
-  width: 50px;
+  z-index: 999;
 }
