@@ -25,6 +25,11 @@ body {
   text-align: center;
 }
 
+.header a,
+.header nav a {
+  color: #fff !important;
+}
+
 .logo {
   max-height: 72px;
 }
@@ -34,23 +39,25 @@ body {
 }
 
 .hero {
-  background-color: #e8ffe8;
+  background-color: rgba(0,128,0,0.9);
   text-align: center;
   padding: 24px 16px;
   border-radius: 8px;
+  color: #fff;
 }
 
 .hero h1 {
-  color: #007f00;
+  color: #ffffff;
   margin-bottom: 12px;
 }
 
 .hero p {
   font-size: 16px;
   margin-bottom: 24px;
+  padding: 0 10px;
 }
 
-.imagem-celular-mao {
+.imagem-celular-ajustada {
   max-width: 100%;
   border-radius: 12px;
   box-shadow: 0 4px 16px rgba(0,0,0,0.15);
@@ -74,11 +81,13 @@ body {
 .descricao-content h2 {
   color: #004d00;
   margin-bottom: 16px;
+  text-align: center;
 }
 
 .descricao-content ul {
   list-style-type: disc;
   padding-left: 20px;
+  text-align: left;
 }
 
 .footer {
