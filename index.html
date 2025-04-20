@@ -1,89 +1,36 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Assistência técnica de celular em Goiânia com garantia, peças originais e atendimento rápido. Cell City, Rua 6, Setor Central.">
-  <title>Cell City | Assistência Técnica em Goiânia</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manutenção de Computadores | Cell City</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <div class="barra-topo">
-    <p>Atendimento rápido com garantia real e peças com procedência. <strong>Cell City é confiança de verdade!</strong></p>
-  </div>
+  <header class="barra-topo">
+    <img src="logo.webp" alt="Logo Cell City" class="logo">
+    <nav class="menu">
+      <a href="index.html">Início</a>
+      <a href="formatacao.html">Formatação</a>
+      <a href="conserto.html">Conserto</a>
+    </nav>
+  </header>
 
-  <div class="wrapper">
-    <header class="header">
-      <div class="container">
-        <img src="logo.webp" alt="Logo Cell City" class="logo" loading="lazy">
-        <nav>
-          <ul class="menu">
-            <li><a href="#">Início</a></li>
-            <li class="has-submenu" onclick="toggleMenu(this)">
-              <span class="menu-toggle">Serviços</span>
-              <ul class="submenu">
-                <li><a href="#">📱 Conserto de Celulares</a></li>
-                <li><a href="#">⚙️ Formatação de Celulares</a></li>
-                <li><a href="#">💻 Manutenção de Computadores</a></li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+  <section class="destaque">
+    <h1>Seu computador está lento ou travando?</h1>
+    <p>Fazemos formatação com backup, limpeza interna, troca de pasta térmica, instalação de SSD, upgrades e muito mais.</p>
+    <a class="botao" href="https://wa.me/5562981605863" target="_blank">Agendar Atendimento</a>
+  </section>
 
-    <main class="main">
-      <section class="hero">
-        <div class="botao-fixo-topo">
-          <a href="https://wa.me/5562981605863" target="_blank">
-            <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp" style="width:20px; vertical-align:middle; margin-right:8px;" loading="lazy">
-            Chamar no WhatsApp
-          </a>
-        </div>
+  <section class="imagem-servico">
+    <img src="manutencao.webp" alt="Manutenção de Computadores">
+  </section>
 
-        <h1>Bem-vindo à Cell City</h1>
-        <p>Troca de tela, formatação, reparos e manutenção com garantia!</p>
-
-        <img src="celular.webp" alt="Imagem Celular" class="imagem-celular-mao" loading="lazy" fetchpriority="high">
-
-        <div class="selo-garantia">
-          <img src="selo-garantia.webp" alt="Selo de Garantia" style="width: 76px; height: auto;" loading="lazy">
-        </div>
-      </section>
-
-      <section class="descricao">
-        <div class="descricao-content">
-          <h2>Por que escolher a Cell City?</h2>
-          <ul>
-            <li>Peças com procedência real e testadas</li>
-            <li>Garantia total em troca de tela e reparos</li>
-            <li>Atendimento técnico com agilidade</li>
-            <li>Mais de 10 anos de experiência no setor</li>
-          </ul>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <p>&copy; 2025 Cell City Informática | Rua 6, nº 455, Setor Central - Goiânia</p>
-      <p class="credibilidade">Todos os serviços são realizados diretamente pela equipe técnica da Cell City, sem terceirização.</p>
-    </footer>
-  </div>
-
-  <a href="https://wa.me/5562981605863" class="whatsapp-float" target="_blank">
-    <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp" loading="lazy">
-  </a>
-
-  <script>
-    function toggleMenu(el) {
-      el.classList.toggle("ativo");
-      document.querySelectorAll('.has-submenu').forEach(item => {
-        if (item !== el) item.classList.remove("ativo");
-      });
-    }
-  </script>
+  <footer class="rodape">
+    <p>© 2025 Cell City - Rua 6, nº 455 - Setor Central - Goiânia</p>
+    <p>Atendimento técnico direto com garantia e sem terceirização.</p>
+  </footer>
 
 </body>
 </html>
