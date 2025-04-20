@@ -21,7 +21,7 @@ body {
   min-height: 100vh;
 }
 
-/* Barra do topo com frase de confiança */
+/* Frase de confiança no topo */
 .barra-topo {
   background: #e0ffe0;
   color: #006600;
@@ -84,7 +84,6 @@ body {
   display: flex;
 }
 
-/* Ícones no submenu */
 .submenu a i {
   margin-right: 6px;
 }
@@ -103,6 +102,7 @@ body {
   margin-bottom: 30px;
 }
 
+/* Botão fixo acima do bem-vindo */
 .botao-fixo-topo {
   margin-bottom: 20px;
 }
@@ -191,7 +191,7 @@ body {
   margin-top: 10px;
 }
 
-/* Botão flutuante inferior direito */
+/* Botão flutuante no canto inferior direito */
 .whatsapp-float {
   position: fixed;
   bottom: 20px;
@@ -206,7 +206,7 @@ body {
   box-shadow: 0 2px 10px rgba(0,0,0,0.3);
 }
 
-/* Responsivo */
+/* Responsivo para celular */
 @media (max-width: 768px) {
   .menu {
     flex-direction: column;
