@@ -1,9 +1,11 @@
+/* Reset e base */
 html, body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
   height: 100%;
-  background: #f0f0f0;
+  background-color: #000000; /* Fundo preto */
+  color: white; /* Texto branco para contraste */
   display: flex;
   flex-direction: column;
   max-width: 1200px;
@@ -11,7 +13,7 @@ html, body {
   padding: 0 15px;
 }
 
-/* Centralização geral */
+/* Alinhamento geral */
 .wrapper,
 section,
 header,
@@ -26,9 +28,9 @@ img {
   height: auto;
 }
 
-/* Menu e topo */
+/* Topo */
 header {
-  background-color: #005500;
+  background-color: #111111;
   color: white;
   padding: 12px 20px;
   display: flex;
@@ -60,7 +62,7 @@ header nav a {
 
 .botao-whatsapp {
   background-color: #25D366;
-  color: white;
+  color: black;
   padding: 12px 24px;
   border-radius: 30px;
   font-size: 16px;
@@ -69,14 +71,14 @@ header nav a {
   display: inline-block;
 }
 
-/* Imagem central */
+/* Imagem principal */
 .imagem-celular-ajustada {
   width: 90%;
   max-width: 600px;
   margin: 0 auto;
   display: block;
   border-radius: 8px;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 16px rgba(255,255,255,0.1);
 }
 
 /* Texto abaixo da imagem */
@@ -84,13 +86,13 @@ header nav a {
   text-align: center;
   font-size: 16px;
   margin: 15px auto 30px;
-  color: #222;
+  color: #dddddd;
   max-width: 90%;
 }
 
 /* Rodapé */
 .footer {
-  background-color: #004d00;
+  background-color: #111111;
   color: white;
   text-align: center;
   padding: 16px;
@@ -100,7 +102,7 @@ header nav a {
 
 .footer .credibilidade {
   font-size: 13px;
-  color: #cccccc;
+  color: #aaaaaa;
   margin-top: 6px;
 }
 
