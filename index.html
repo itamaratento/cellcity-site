@@ -5,14 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta name="description" content="Assistência técnica de celular em Goiânia com garantia, peças originais e atendimento rápido. Cell City, Rua 6, Setor Central.">
   <title>Cell City | Assistência Técnica em Goiânia</title>
-
-  <!-- Pré-carregamento do CSS para melhorar desempenho -->
-  <link rel="preload" href="style.css" as="style">
   <link rel="stylesheet" href="style.css" />
-
-  <!-- Font Awesome leve -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="all" />
-
 </head>
 <body>
 
@@ -23,16 +16,16 @@
   <div class="wrapper">
     <header class="header">
       <div class="container">
-        <img src="logo.png" alt="Logo Cell City" class="logo" loading="lazy">
+        <img src="logo.webp" alt="Logo Cell City" class="logo" loading="lazy">
         <nav>
           <ul class="menu">
             <li><a href="#">Início</a></li>
             <li class="has-submenu" onclick="toggleMenu(this)">
               <span class="menu-toggle">Serviços</span>
               <ul class="submenu">
-                <li><a href="#"><i class="fa-solid fa-mobile-screen-button"></i> Conserto de Celulares</a></li>
-                <li><a href="#"><i class="fa-solid fa-gear"></i> Formatação de Celulares</a></li>
-                <li><a href="#"><i class="fa-solid fa-laptop"></i> Manutenção de Computadores</a></li>
+                <li><a href="#">📱 Conserto de Celulares</a></li>
+                <li><a href="#">⚙️ Formatação de Celulares</a></li>
+                <li><a href="#">💻 Manutenção de Computadores</a></li>
               </ul>
             </li>
           </ul>
@@ -42,7 +35,6 @@
 
     <main class="main">
       <section class="hero">
-
         <div class="botao-fixo-topo">
           <a href="https://wa.me/5562981605863" target="_blank">
             <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp" style="width:20px; vertical-align:middle; margin-right:8px;" loading="lazy">
@@ -53,12 +45,10 @@
         <h1>Bem-vindo à Cell City</h1>
         <p>Troca de tela, formatação, reparos e manutenção com garantia!</p>
 
-        <!-- Imagem celular-aberto.jpg aumentada e com lazy -->
-        <img src="celular-aberto.jpg" alt="Imagem Celular Aberto" class="imagem-celular-mao" loading="lazy">
+        <img src="celular.webp" alt="Imagem Celular" class="imagem-celular-mao" loading="lazy" fetchpriority="high">
 
-        <!-- Selo de Garantia com lazy -->
         <div class="selo-garantia">
-          <img src="selo10.png" alt="Selo de Garantia" style="width: 76px; height: auto;" loading="lazy">
+          <img src="selo-garantia.webp" alt="Selo de Garantia" style="width: 76px; height: auto;" loading="lazy">
         </div>
       </section>
 
@@ -81,7 +71,6 @@
     </footer>
   </div>
 
-  <!-- Botão flutuante WhatsApp com lazy -->
   <a href="https://wa.me/5562981605863" class="whatsapp-float" target="_blank">
     <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp" loading="lazy">
   </a>
