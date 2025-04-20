@@ -1,46 +1,28 @@
-/* Base geral */
+/* Estrutura geral */
 html, body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  height: 100%;
   background-color: #000000;
   color: white;
-  display: flex;
-  flex-direction: column;
 }
 
-/* Container principal que alinha tudo */
+/* Container centralizador */
 .container {
-  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
-/* Alinhamento geral */
-.wrapper,
-section,
-header,
-footer {
+/* Centraliza conteúdo */
+header, nav, main, footer, section {
   text-align: center;
-}
-
-img {
-  display: block;
-  margin: 0 auto;
-  max-width: 100%;
-  height: auto;
 }
 
 /* Topo */
 header {
   background-color: #111111;
-  color: white;
-  padding: 12px 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding: 20px;
 }
 
 header .logo img {
@@ -48,14 +30,14 @@ header .logo img {
   margin-bottom: 10px;
 }
 
-header nav {
+nav {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 20px;
 }
 
-header nav a {
+nav a {
   color: white;
   text-decoration: none;
   font-weight: bold;
@@ -63,7 +45,6 @@ header nav a {
 
 /* Botão fixo no topo */
 .botao-fixo-topo {
-  text-align: center;
   margin: 20px 0;
 }
 
@@ -82,29 +63,26 @@ header nav a {
 .imagem-celular-ajustada {
   width: 90%;
   max-width: 600px;
-  margin: 0 auto;
-  display: block;
   border-radius: 8px;
   box-shadow: 0 4px 16px rgba(255,255,255,0.1);
+  margin: 20px auto;
+  display: block;
 }
 
 /* Texto abaixo da imagem */
 .texto-abaixo-imagem {
-  text-align: center;
   font-size: 16px;
-  margin: 15px auto 30px;
   color: #dddddd;
   max-width: 90%;
+  margin: 15px auto 30px;
 }
 
 /* Rodapé */
 .footer {
   background-color: #111111;
   color: white;
-  text-align: center;
   padding: 16px;
   font-size: 14px;
-  margin-top: auto;
 }
 
 .footer .credibilidade {
@@ -113,7 +91,7 @@ header nav a {
   margin-top: 6px;
 }
 
-/* WhatsApp flutuante */
+/* Botão flutuante */
 .whatsapp-float {
   position: fixed;
   bottom: 20px;
