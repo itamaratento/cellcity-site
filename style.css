@@ -5,103 +5,65 @@ body {
   color: #1c1c1c;
 }
 
-.barra-topo {
-  background-color: #004d00;
-  color: #fff;
-  font-size: 14px;
-  text-align: center;
-  padding: 6px 10px;
-}
-
-.wrapper {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 0 16px;
-}
-
-.header {
-  background-color: #004d00;
+/* TOPO FLEX */
+header {
+  background-color: #005500;
+  color: white;
+  padding: 10px 20px;
   display: flex;
-  justify-content: center;
   align-items: center;
-  padding: 12px 0;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.logo {
-  max-height: 72px;
+header .logo {
+  font-size: 20px;
+  font-weight: bold;
 }
 
-.main {
-  padding: 24px 0;
+header nav {
+  display: flex;
+  gap: 20px;
 }
 
-.hero {
-  background-color: rgba(0,128,0,0.9);
-  text-align: center;
-  padding: 24px 16px;
-  border-radius: 8px;
-  color: #fff;
+header nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
 
-.hero h1 {
-  color: #ffffff;
-  margin-bottom: 12px;
+header nav a:hover {
+  color: #aaffaa;
 }
 
-.hero p {
+/* LOGO IMAGEM CENTRALIZADA (SE USAR IMG) */
+.logo-img {
+  display: block;
+  margin: 0 auto;
+  max-width: 120px;
+}
+
+/* BOTÃO WHATSAPP FIXO NO TOPO */
+.botao-whatsapp {
+  background-color: #25D366;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 30px;
   font-size: 16px;
-  margin-bottom: 24px;
-  padding: 0 10px;
-}
-
-.imagem-celular-ajustada {
-  max-width: 100%;
-  border-radius: 12px;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
-  margin-bottom: 16px;
-}
-
-.selo-garantia img {
-  width: 76px;
-  height: auto;
-  margin-top: 8px;
-}
-
-.descricao {
-  background-color: #fff;
-  padding: 32px 16px;
-  margin-top: 24px;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-.descricao-content h2 {
-  color: #004d00;
-  margin-bottom: 16px;
+  font-weight: bold;
+  display: inline-block;
+  margin: 10px auto;
   text-align: center;
+  text-decoration: none;
+  transition: background 0.3s ease;
 }
 
-.descricao-content ul {
-  list-style-type: disc;
-  padding-left: 20px;
-  text-align: left;
+.botao-whatsapp:hover {
+  background-color: #1ebe5d;
 }
 
-.footer {
-  background-color: #004d00;
-  color: #fff;
-  text-align: center;
-  padding: 16px 8px;
-  font-size: 14px;
-  margin-top: 32px;
-}
-
-.footer .credibilidade {
-  font-size: 13px;
-  margin-top: 6px;
-  color: #cfcfcf;
-}
-
+/* BOTÃO FLUTUANTE INFERIOR */
 .whatsapp-float {
   position: fixed;
   bottom: 20px;
@@ -112,24 +74,4 @@ body {
 .whatsapp-float img {
   width: 55px;
   height: 55px;
-}
-
-.botao-fixo-topo {
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.botao-fixo-topo a {
-  display: inline-block;
-  background-color: #25d366;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 25px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background 0.3s ease;
-}
-
-.botao-fixo-topo a:hover {
-  background-color: #1ebe5d;
 }
