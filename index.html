@@ -5,13 +5,118 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Cell City | Página Inicial</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+    }
+
+    main {
+      flex: 1;
+    }
+
+    header {
+      background-color: #005500;
+      color: white;
+      padding: 12px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    header .logo img {
+      height: 60px;
+    }
+
+    header nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    header nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    header nav a:hover {
+      color: #aaffaa;
+    }
+
+    .botao-fixo-topo {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .botao-whatsapp {
+      background-color: #25D366;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 30px;
+      font-size: 16px;
+      font-weight: bold;
+      text-decoration: none;
+      display: inline-block;
+      transition: background 0.3s ease;
+    }
+
+    .botao-whatsapp:hover {
+      background-color: #1ebe5d;
+    }
+
+    .imagem-celular-ajustada {
+      max-width: 100%;
+      border-radius: 10px;
+      display: block;
+      margin: 20px auto 10px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    }
+
+    .texto-abaixo-imagem {
+      text-align: center;
+      font-size: 15px;
+      margin: 0 auto 30px;
+      color: #333;
+      max-width: 600px;
+    }
+
+    .footer {
+      background-color: #004d00;
+      color: white;
+      text-align: center;
+      padding: 16px;
+      font-size: 14px;
+    }
+
+    .footer .credibilidade {
+      font-size: 13px;
+      margin-top: 6px;
+      color: #cfcfcf;
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 999;
+    }
+
+    .whatsapp-float img {
+      width: 55px;
+      height: 55px;
+    }
+  </style>
 </head>
 <body>
 
-  <!-- TOPO -->
   <header>
     <div class="logo">
-      <img src="logo.webp" alt="Logo Cell City" style="height: 60px;" loading="lazy">
+      <img src="logo.webp" alt="Logo Cell City" loading="lazy">
     </div>
     <nav>
       <a href="#formatacao">Formatação</a>
@@ -20,29 +125,26 @@
     </nav>
   </header>
 
-  <!-- BOTÃO WHATSAPP FIXO -->
   <div class="botao-fixo-topo">
     <a class="botao-whatsapp" href="https://wa.me/5562981605863" target="_blank">
       Falar no WhatsApp
     </a>
   </div>
 
-  <!-- CONTEÚDO PRINCIPAL -->
   <main>
     <section class="hero">
-      <h1>Bem-vindo à Cell City</h1>
-      <p>Assistência técnica especializada em celulares e computadores.</p>
+      <h1 style="text-align: center;">Bem-vindo à Cell City</h1>
+      <p style="text-align: center;">Assistência técnica especializada em celulares e computadores.</p>
       <img src="celular.webp" alt="Celular em destaque" class="imagem-celular-ajustada" loading="lazy">
+      <p class="texto-abaixo-imagem">Formatamos celulares com segurança, backup, limpeza, atualização e total atenção ao seu aparelho.</p>
     </section>
   </main>
 
-  <!-- RODAPÉ -->
   <footer class="footer">
     <p>&copy; 2025 Cell City | Rua 6, nº 455, Setor Central - Goiânia</p>
     <p class="credibilidade">Todos os serviços são realizados diretamente pela equipe técnica da Cell City, sem terceirização.</p>
   </footer>
 
-  <!-- WHATSAPP FLUTUANTE -->
   <a href="https://wa.me/5562981605863" class="whatsapp-float" target="_blank">
     <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp">
   </a>
