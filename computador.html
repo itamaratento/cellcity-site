@@ -6,14 +6,92 @@
   <meta name="description" content="Formatação, limpeza, upgrades e manutenção de computadores com garantia. Atendimento na Cell City." />
   <title>Manutenção de Computadores | Cell City</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .barra-topo {
+      background-color: #222;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      font-size: 15px;
+    }
+
+    .wrapper {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .logo {
+      max-height: 60px;
+      margin: 20px auto;
+      display: block;
+    }
+
+    .menu {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .menu a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    main {
+      text-align: center;
+    }
+
+    .botao-whatsapp {
+      background-color: #25D366;
+      color: black;
+      padding: 12px 24px;
+      border-radius: 30px;
+      font-size: 16px;
+      font-weight: bold;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 20px;
+    }
+
+    img.imagem-ajustada {
+      max-width: 400px;
+      width: 100%;
+      margin: 30px auto 10px;
+      display: block;
+      border-radius: 10px;
+    }
+
+    .footer {
+      background-color: #111;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 999;
+    }
+
+    .whatsapp-float img {
+      width: 55px;
+      height: 55px;
+    }
+  </style>
 </head>
 <body>
+
   <div class="barra-topo">
-    <p>Formatação, upgrades e manutenção com garantia. <strong>Cell City é confiança de verdade!</strong></p>
+    Formatação, upgrades e manutenção com garantia. <strong>Cell City é confiança de verdade!</strong>
   </div>
 
   <div class="wrapper">
-    <header class="header">
+    <header>
       <img src="logo.webp" alt="Logo Cell City" class="logo" />
       <nav class="menu">
         <a href="index.html">Início</a>
@@ -25,9 +103,10 @@
     <main>
       <h1>Seu computador está lento ou travando?</h1>
       <p>Fazemos formatação com backup, limpeza interna, troca de pasta térmica, instalação de SSD e upgrades com garantia!</p>
+
       <a href="https://wa.me/5562981605863" class="botao-whatsapp">Agendar Atendimento</a>
 
-      <img src="manutencao.webp" alt="Serviço técnico Cell City" style="max-width: 400px; width: 100%; margin: 20px auto; display: block;" />
+      <img src="manutencao.webp" alt="Serviço técnico Cell City" class="imagem-ajustada" />
     </main>
 
     <footer class="footer">
@@ -38,5 +117,6 @@
   <a href="https://wa.me/5562981605863" class="whatsapp-float" target="_blank">
     <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp">
   </a>
+
 </body>
 </html>
