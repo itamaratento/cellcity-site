@@ -1,122 +1,68 @@
-/* Base */
-html, body {
+body {
   margin: 0;
-  padding: 0;
   font-family: Arial, sans-serif;
-  background-color: #000000;
-  color: white;
-}
-
-/* Container */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-/* Header */
-header {
-  background-color: #111;
+  background-color: #f4f4f4;
+  color: #000;
   text-align: center;
-  padding: 20px 0;
 }
 
-.logo img {
-  max-width: 180px;
-}
-
-nav {
+.barra-topo {
+  background-color: #004d00;
+  padding: 10px 20px;
   display: flex;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
   flex-wrap: wrap;
-  gap: 20px;
-  margin-top: 10px;
 }
 
-nav a {
+.logo {
+  height: 60px;
+}
+
+.menu a {
   color: white;
+  margin: 0 15px;
   text-decoration: none;
   font-weight: bold;
 }
 
-/* Main */
-main {
-  text-align: center;
-  padding: 20px 0;
+.destaque {
+  background-color: #e0f5e9;
+  padding: 40px 20px;
 }
 
-.imagem-ajustada {
-  width: 100%;
-  max-width: 600px;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(255,255,255,0.1);
-  margin: 20px auto;
-  display: block;
+.destaque h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
 }
 
-/* Botões */
-.botoes-centrais {
+.destaque p {
+  font-size: 20px;
+  max-width: 700px;
+  margin: auto;
+}
+
+.botao {
+  background-color: #25D366;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.imagem-servico img {
+  max-width: 100%;
+  height: auto;
   margin-top: 30px;
 }
 
-.botao-whatsapp {
-  background-color: #25D366;
-  color: black;
-  padding: 12px 24px;
-  border-radius: 30px;
-  font-size: 16px;
-  font-weight: bold;
-  text-decoration: none;
-  display: inline-block;
-  margin: 10px;
-}
-
-.botao-secundario {
-  background-color: #ffffff;
-  color: #111111;
-  border: none;
-  padding: 12px 24px;
-  border-radius: 30px;
-  font-size: 16px;
-  font-weight: bold;
-  cursor: pointer;
-  margin: 10px;
-}
-
-/* Rodapé */
-.footer {
-  background-color: #111;
-  text-align: center;
+.rodape {
+  background-color: #006400;
+  color: white;
   padding: 20px;
   font-size: 14px;
-}
-
-.footer .credibilidade {
-  font-size: 13px;
-  color: #aaaaaa;
-}
-
-/* Botão flutuante */
-.whatsapp-float {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 1000;
-}
-
-.whatsapp-float img {
-  width: 55px;
-  height: 55px;
-}
-
-/* Responsivo */
-@media (max-width: 768px) {
-  nav {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .botao-whatsapp, .botao-secundario {
-    width: 90%;
-  }
 }
