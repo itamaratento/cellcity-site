@@ -16,9 +16,8 @@ header {
   flex-wrap: wrap;
 }
 
-header .logo {
-  font-size: 20px;
-  font-weight: bold;
+header .logo img {
+  height: 60px;
 }
 
 header nav {
@@ -38,7 +37,7 @@ header nav a:hover {
   color: #aaffaa;
 }
 
-/* BOTÃO WHATSAPP FIXO */
+/* BOTÃO WHATSAPP FIXO NO TOPO */
 .botao-fixo-topo {
   text-align: center;
   margin: 20px 0;
@@ -60,7 +59,7 @@ header nav a:hover {
   background-color: #1ebe5d;
 }
 
-/* IMAGEM AJUSTADA */
+/* IMAGEM CENTRALIZADA */
 .imagem-celular-ajustada {
   max-width: 100%;
   border-radius: 10px;
@@ -84,7 +83,7 @@ header nav a:hover {
   color: #cfcfcf;
 }
 
-/* BOTÃO FLUTUANTE */
+/* BOTÃO FLUTUANTE DO WHATSAPP */
 .whatsapp-float {
   position: fixed;
   bottom: 20px;
