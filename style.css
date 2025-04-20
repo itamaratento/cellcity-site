@@ -1,4 +1,4 @@
-/* Reset e base */
+/* Base geral */
 html, body {
   margin: 0;
   padding: 0;
@@ -8,6 +8,14 @@ html, body {
   color: white;
   display: flex;
   flex-direction: column;
+}
+
+/* Container principal que alinha tudo */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 /* Alinhamento geral */
@@ -53,7 +61,7 @@ header nav a {
   font-weight: bold;
 }
 
-/* Botão do topo */
+/* Botão fixo no topo */
 .botao-fixo-topo {
   text-align: center;
   margin: 20px 0;
@@ -116,41 +124,4 @@ header nav a {
 .whatsapp-float img {
   width: 55px;
   height: 55px;
-}
-
-/* Alinhamento específico para telas maiores */
-@media (min-width: 768px) {
-  body {
-    align-items: center;
-  }
-
-  main, header, footer {
-    width: 100%;
-    max-width: 1200px;
-  }
-
-  .botao-fixo-topo,
-  .texto-abaixo-imagem,
-  .imagem-celular-ajustada {
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  header, footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-
-  header nav {
-    justify-content: center;
-    margin-top: 10px;
-  }
-
-  .footer p {
-    margin: 4px 0;
-  }
 }
