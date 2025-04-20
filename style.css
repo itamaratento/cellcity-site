@@ -1,80 +1,231 @@
-body {
-  font-family: Arial, sans-serif;
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f8f8f8;
+  position: relative;
+  min-height: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Faixa de confiança */
+.barra-topo {
+  background: #e0ffe0;
+  color: #006600;
   text-align: center;
-  background-color: #fefefe;
-  color: #111;
+  font-size: 13px;
+  padding: 6px 10px;
+}
+
+/* Cabeçalho e menu */
+.header {
+  background: #004d00;
+  padding: 10px 20px;
 }
 
 .container {
-  max-width: 900px;
-  margin: auto;
-  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.topo-voltar {
-  background-color: #f0f0f0;
-  padding: 8px;
-  font-size: 14px;
+.logo {
+  height: 72px;
 }
 
-.topo-voltar a {
-  margin: 0 5px;
-  color: #006400;
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu a, .menu-toggle {
+  color: white;
   text-decoration: none;
   font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
-h1 {
-  font-size: 32px;
-  color: #111;
-}
-
-h2 {
-  margin-top: 20px;
-  color: #333;
-}
-
-.bloco-destaque {
-  background-color: #ddf4e4;
-  padding: 20px;
-  border-radius: 10px;
-  margin: 20px auto;
-}
-
-.imagem-manutencao {
-  width: 100%;
-  max-width: 600px;
-  margin-top: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px #ccc;
-}
-
-.botao-agendar {
-  display: inline-block;
-  background-color: #25d366;
-  color: white;
-  padding: 12px 25px;
-  margin-top: 20px;
-  border-radius: 30px;
-  font-size: 16px;
-  text-decoration: none;
-}
-
-.rodape {
-  margin-top: 40px;
-  background-color: #006400;
-  color: white;
+.submenu {
+  display: none;
+  position: absolute;
+  background: #004d00;
+  top: 100%;
+  left: 0;
+  flex-direction: column;
   padding: 10px;
-  font-size: 14px;
-  border-radius: 6px;
+  border-radius: 5px;
 }
 
-.whatsapp-flutuante {
+.has-submenu.ativo .submenu {
+  display: flex;
+}
+
+.submenu a i {
+  margin-right: 6px;
+}
+
+/* Conteúdo principal */
+.main {
+  flex: 1;
+  padding: 40px 20px;
+  padding-bottom: 100px;
+}
+
+.hero {
+  background: #e4ffe4;
+  text-align: center;
+  padding: 40px 20px;
+  margin-bottom: 30px;
+}
+
+/* Botão fixo acima do "Bem-vindo" */
+.botao-fixo-topo {
+  margin-bottom: 20px;
+}
+
+.botao-fixo-topo a {
+  background: #25d366;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  display: inline-block;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  font-size: 14px;
+}
+
+.hero h1 {
+  color: #004d00;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+/* Imagem do celular aumentada em 20% */
+.imagem-celular-mao {
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+  margin: 20px auto;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+/* Selo de Garantia */
+.selo-garantia {
+  margin-top: 10px;
+}
+
+.selo-garantia img {
+  width: 76px;
+  height: auto;
+}
+
+/* Bloco de descrição */
+.descricao {
+  background: #ffffff;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.descricao-content h2 {
+  font-size: 22px;
+  color: #004d00;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.descricao-content ul {
+  list-style: disc;
+  max-width: 500px;
+  margin: auto;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.descricao-content li {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+/* Rodapé */
+.footer {
+  background: #004d00;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: auto;
+}
+
+.credibilidade {
+  font-size: 13px;
+  color: #ccc;
+  margin-top: 10px;
+}
+
+/* Botão flutuante do WhatsApp */
+.whatsapp-float {
   position: fixed;
-  width: 60px;
   bottom: 20px;
   right: 20px;
-  z-index: 999;
+  z-index: 9999;
+}
+
+.whatsapp-float img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+/* Responsivo para celular */
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .submenu {
+    position: static;
+    width: 100%;
+  }
+
+  .imagem-celular-mao {
+    max-width: 90%;
+  }
+
+  .descricao-content ul {
+    padding-left: 20px;
+  }
 }
