@@ -140,6 +140,17 @@ body {
   margin-bottom: 20px;
 }
 
+/* Imagem do rapaz segurando o celular (aumentada 20%) */
+.imagem-celular-mao {
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+  margin: 20px auto;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
 /* Selo de Garantia */
 .selo-garantia {
   margin-top: 10px;
@@ -220,7 +231,8 @@ body {
     width: 100%;
   }
 
-  .banner-img {
+  .banner-img,
+  .imagem-celular-mao {
     max-width: 90%;
   }
 
