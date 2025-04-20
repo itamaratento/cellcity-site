@@ -1,18 +1,93 @@
-<!-- Dentro da seção .hero -->
-<section class="hero">
-  <div class="botao-fixo-topo">
-    <a href="https://wa.me/5562981605863" target="_blank">
-      <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp" style="width:20px; vertical-align:middle; margin-right:8px;">
-      Chamar no WhatsApp
-    </a>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Assistência técnica de celular em Goiânia com garantia, peças originais e atendimento rápido. Cell City, Rua 6, Setor Central.">
+  <title>Cell City | Assistência Técnica em Goiânia</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Frase de confiança -->
+  <div class="barra-topo">
+    <p>Atendimento rápido com garantia real e peças com procedência. <strong>Cell City é confiança de verdade!</strong></p>
   </div>
 
-  <h1>Bem-vindo à Cell City</h1>
-  <p>Troca de tela, formatação, reparos e manutenção com garantia!</p>
-  <img src="celular-aberto.jpg" alt="Celular em manutenção" class="banner-img">
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <img src="logo.png" alt="Logo Cell City" class="logo">
+        <nav>
+          <ul class="menu">
+            <li><a href="#">Início</a></li>
+            <li class="has-submenu" onclick="toggleMenu(this)">
+              <span class="menu-toggle">Serviços</span>
+              <ul class="submenu">
+                <li><a href="#"><i class="fa-solid fa-mobile-screen-button"></i> Conserto de Celulares</a></li>
+                <li><a href="#"><i class="fa-solid fa-gear"></i> Formatação de Celulares</a></li>
+                <li><a href="#"><i class="fa-solid fa-laptop"></i> Manutenção de Computadores</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-  <!-- Novo selo -->
-  <div class="selo-garantia">
-    <img src="https://i.postimg.cc/MH5nK1Rs/selo-garantia-verde.png" alt="Selo de Garantia" style="max-width: 120px;">
+    <main class="main">
+      <section class="hero">
+
+        <!-- Botão do WhatsApp fixo acima do bem-vindo -->
+        <div class="botao-fixo-topo">
+          <a href="https://wa.me/5562981605863" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp" style="width:20px; vertical-align:middle; margin-right:8px;">
+            Chamar no WhatsApp
+          </a>
+        </div>
+
+        <h1>Bem-vindo à Cell City</h1>
+        <p>Troca de tela, formatação, reparos e manutenção com garantia!</p>
+        <img src="celular-aberto.jpg" alt="Celular em manutenção" class="banner-img">
+
+        <!-- Selo atualizado -->
+        <div class="selo-garantia">
+          <img src="https://i.postimg.cc/MH5nK1Rs/selo-garantia-verde.png" alt="Selo de Garantia" style="max-width: 120px;">
+        </div>
+      </section>
+
+      <section class="descricao">
+        <div class="descricao-content">
+          <h2>Por que escolher a Cell City?</h2>
+          <ul>
+            <li>Peças com procedência real e testadas</li>
+            <li>Garantia total em troca de tela e reparos</li>
+            <li>Atendimento técnico com agilidade</li>
+            <li>Mais de 10 anos de experiência no setor</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2025 Cell City Informática | Rua 6, nº 455, Setor Central - Goiânia</p>
+      <p class="credibilidade">Todos os serviços são realizados diretamente pela equipe técnica da Cell City, sem terceirização.</p>
+    </footer>
   </div>
-</section>
+
+  <!-- Botão flutuante do WhatsApp -->
+  <a href="https://wa.me/5562981605863" class="whatsapp-float" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp">
+  </a>
+
+  <script>
+    function toggleMenu(el) {
+      el.classList.toggle("ativo");
+      document.querySelectorAll('.has-submenu').forEach(item => {
+        if (item !== el) item.classList.remove("ativo");
+      });
+    }
+  </script>
+
+</body>
+</html>
