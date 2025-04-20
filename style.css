@@ -4,13 +4,13 @@ html, body {
   padding: 0;
   font-family: Arial, sans-serif;
   height: 100%;
-  background-color: #000000; /* Fundo preto */
+  background-color: #000000;
   color: white;
   display: flex;
   flex-direction: column;
 }
 
-/* Centralização padrão */
+/* Alinhamento geral */
 .wrapper,
 section,
 header,
@@ -25,24 +25,25 @@ img {
   height: auto;
 }
 
-/* Topo e menu */
+/* Topo */
 header {
   background-color: #111111;
   color: white;
   padding: 12px 20px;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  width: 100%;
 }
 
 header .logo img {
   height: 60px;
+  margin-bottom: 10px;
 }
 
 header nav {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
 }
 
@@ -69,7 +70,7 @@ header nav a {
   display: inline-block;
 }
 
-/* Imagem central */
+/* Imagem principal */
 .imagem-celular-ajustada {
   width: 90%;
   max-width: 600px;
@@ -117,7 +118,7 @@ header nav a {
   height: 55px;
 }
 
-/* CORREÇÃO DE ALINHAMENTO PARA DESKTOP */
+/* Alinhamento específico para telas maiores */
 @media (min-width: 768px) {
   body {
     align-items: center;
@@ -134,5 +135,22 @@ header nav a {
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  header, footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  header nav {
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .footer p {
+    margin: 4px 0;
   }
 }
