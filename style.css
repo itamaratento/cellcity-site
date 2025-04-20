@@ -5,7 +5,7 @@ body {
   color: #1c1c1c;
 }
 
-/* TOPO FLEX COM LOGO E MENU */
+/* TOPO */
 header {
   background-color: #005500;
   color: white;
@@ -38,7 +38,7 @@ header nav a:hover {
   color: #aaffaa;
 }
 
-/* BOTÃO WHATSAPP FIXO NO TOPO */
+/* BOTÃO WHATSAPP FIXO */
 .botao-fixo-topo {
   text-align: center;
   margin: 20px 0;
@@ -60,7 +60,7 @@ header nav a:hover {
   background-color: #1ebe5d;
 }
 
-/* IMAGEM CENTRALIZADA */
+/* IMAGEM AJUSTADA */
 .imagem-celular-ajustada {
   max-width: 100%;
   border-radius: 10px;
@@ -84,7 +84,7 @@ header nav a:hover {
   color: #cfcfcf;
 }
 
-/* WHATSAPP FLUTUANTE */
+/* BOTÃO FLUTUANTE */
 .whatsapp-float {
   position: fixed;
   bottom: 20px;
