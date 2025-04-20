@@ -10,7 +10,7 @@ body {
   color: #fff;
   font-size: 14px;
   text-align: center;
-  padding: 6px;
+  padding: 6px 10px;
 }
 
 .wrapper {
@@ -21,13 +21,10 @@ body {
 
 .header {
   background-color: #004d00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 12px 0;
-  text-align: center;
-}
-
-.header a,
-.header nav a {
-  color: #fff !important;
 }
 
 .logo {
@@ -119,6 +116,7 @@ body {
 
 .botao-fixo-topo {
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .botao-fixo-topo a {
