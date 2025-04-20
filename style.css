@@ -15,16 +15,22 @@ body {
   min-height: 100%;
 }
 
-/* Barra de confiança no topo */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Barra superior com texto de confiança */
 .barra-topo {
-  background: #e6f6e6;
-  color: #004d00;
+  background: #e0ffe0;
+  color: #006600;
   text-align: center;
-  font-size: 14px;
+  font-size: 13px;
   padding: 6px 10px;
 }
 
-/* Botão do WhatsApp no topo */
+/* Botão do WhatsApp discreto logo abaixo da barra */
 .whatsapp-topo {
   background: #25d366;
   text-align: center;
@@ -36,12 +42,6 @@ body {
   text-decoration: none;
   font-weight: bold;
   font-size: 14px;
-}
-
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
 }
 
 .header {
@@ -97,7 +97,7 @@ body {
 .main {
   flex: 1;
   padding: 40px 20px;
-  padding-bottom: 100px; /* espaço para botão flutuante */
+  padding-bottom: 100px;
 }
 
 .hero {
@@ -105,6 +105,22 @@ body {
   text-align: center;
   padding: 40px 20px;
   margin-bottom: 30px;
+}
+
+/* Botão fixo antes do Bem-vindo */
+.botao-fixo-topo {
+  margin-bottom: 20px;
+}
+
+.botao-fixo-topo a {
+  background: #25d366;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  display: inline-block;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
 .hero h1 {
@@ -127,7 +143,7 @@ body {
   margin-bottom: 20px;
 }
 
-/* Selo de Garantia */
+/* Selo de garantia */
 .selo-garantia {
   margin-top: 10px;
 }
@@ -177,7 +193,7 @@ body {
   margin-top: 10px;
 }
 
-/* WhatsApp fixo no canto inferior */
+/* Botão flutuante */
 .whatsapp-float {
   position: fixed;
   bottom: 20px;
