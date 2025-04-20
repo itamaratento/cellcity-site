@@ -2,101 +2,50 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Manutenção de computadores com garantia em Goiânia. Formatação, upgrades e limpeza." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Manutenção de Computadores | Cell City</title>
   <link rel="stylesheet" href="style.css" />
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background-color: #f8f8f8; /* fundo branco igual ao index */
-      font-family: Arial, sans-serif;
-      color: #333;
-    }
-
-    .barra-topo {
-      background-color: #005500;
-      padding: 10px;
-      text-align: center;
-      font-size: 14px;
-      color: white;
-    }
-
-    .logo {
-      display: block;
-      margin: 20px auto;
-      width: 100px;
-    }
-
-    .botao-wpp {
-      background-color: #25D366;
-      color: white;
-      font-size: 16px;
-      padding: 12px 24px;
-      border-radius: 30px;
-      text-decoration: none;
-      display: inline-block;
-      margin: 20px auto;
-      text-align: center;
-    }
-
-    .principal {
-      text-align: center;
-      padding: 20px;
-    }
-
-    .principal h2 {
-      color: #005500;
-    }
-
-    .imagem-computador {
-      max-width: 90%;
-      display: block;
-      margin: 20px auto;
-      border-radius: 8px;
-    }
-
-    .whatsapp-flutuante {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      width: 60px;
-    }
-
-    footer {
-      background-color: #005500;
-      color: white;
-      text-align: center;
-      padding: 15px;
-      font-size: 14px;
-      margin-top: 40px;
-    }
-  </style>
 </head>
 <body>
+  <div class="container">
 
-  <div class="barra-topo">
-    Atendimento especializado em computadores e notebooks. Confiança é Cell City!
+    <header>
+      <div class="logo">
+        <img src="logo.webp" alt="Logo Cell City" />
+      </div>
+      <nav>
+        <a href="index.html">Início</a>
+        <a href="formatacao.html">Formatação</a>
+        <a href="conserto.html">Conserto</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Manutenção de Computadores</h1>
+      <p>Seu computador está lento, travando ou superaquecendo?</p>
+      <p>Fazemos formatação com backup, limpeza interna, troca de pasta térmica, instalação de SSD, upgrades e muito mais.</p>
+
+      <img src="manutencao.webp" alt="Serviço de manutenção Cell City" class="imagem-ajustada" />
+
+      <div class="botoes-centrais">
+        <a href="https://wa.me/5562981605863" target="_blank" class="botao-whatsapp">
+          Agendar Atendimento via WhatsApp
+        </a>
+        <button onclick="location.href='conserto.html'" class="botao-secundario">
+          Ver Serviço de Conserto de Celular
+        </button>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2025 Cell City - Rua 6, nº 455 - Setor Central - Goiânia</p>
+      <p class="credibilidade">Atendimento técnico direto com garantia e sem terceirização.</p>
+    </footer>
+
   </div>
 
-  <img src="logo.png" alt="Logo Cell City" class="logo" />
-
-  <div class="principal">
-    <a href="index.html" class="botao-wpp">Voltar para Início</a>
-    <h2>Seu computador está lento ou travando?</h2>
-    <p>Fazemos formatação com backup, limpeza interna, troca de pasta térmica, instalação de SSD e upgrades com garantia!</p>
-
-    <img src="foto-computador.webp" alt="Serviço de manutenção" class="imagem-computador" />
-  </div>
-
-  <a href="https://wa.me/5562981605863" target="_blank">
-    <img src="wpp.png" alt="WhatsApp" class="whatsapp-flutuante" />
+  <a href="https://wa.me/5562981605863" class="whatsapp-float" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp">
   </a>
-
-  <footer>
-    © 2025 Cell City Informática | Todos os direitos reservados. Serviços terceirizados com procedência e garantia real.
-  </footer>
-
 </body>
 </html>
