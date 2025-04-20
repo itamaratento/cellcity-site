@@ -1,91 +1,94 @@
-/* === Ajustes gerais === */
-body {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
+html, body {
+  margin: 0;
+  padding: 0;
   font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
+  height: 100%;
+  background: #f0f0f0;
+  display: flex;
+  flex-direction: column;
 }
 
-/* === Centralização de imagens e seções === */
-img {
-  display: block;
-  margin: 0 auto;
-  max-width: 100%;
-  height: auto;
-}
-
-.wrapper,
-section,
-header,
-footer {
-  text-align: center;
-}
-
-/* === Cabeçalho / menu === */
-.barra-topo {
+header {
   background-color: #005500;
   color: white;
-  padding: 10px;
-  font-weight: bold;
-  font-size: 14px;
-}
-
-.header {
+  padding: 12px 20px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   align-items: center;
-  padding: 10px 0;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.header img {
-  max-height: 50px;
+header .logo img {
+  height: 60px;
 }
 
-.header nav a {
+header nav {
+  display: flex;
+  gap: 20px;
+}
+
+header nav a {
   color: white;
-  margin: 0 10px;
   text-decoration: none;
   font-weight: bold;
 }
 
-/* === Seção de boas-vindas === */
-.secao-destaque {
-  background-color: #e7ffe7;
-  padding: 30px 15px;
+.botao-fixo-topo {
+  text-align: center;
+  margin: 20px 0;
 }
 
-.secao-destaque h1 {
-  color: #007700;
-  font-size: 28px;
-  margin-bottom: 10px;
-}
-
-.secao-destaque p {
+.botao-whatsapp {
+  background-color: #25D366;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 30px;
   font-size: 16px;
-  color: #333;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
 }
 
-/* === Botão WhatsApp fixo === */
-.whatsapp-flutuante {
+.imagem-celular-ajustada {
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+.texto-abaixo-imagem {
+  text-align: center;
+  font-size: 16px;
+  margin: 15px auto 30px;
+  color: #222;
+  max-width: 90%;
+}
+
+.footer {
+  background-color: #004d00;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  font-size: 14px;
+  margin-top: auto;
+}
+
+.footer .credibilidade {
+  font-size: 13px;
+  color: #cccccc;
+  margin-top: 6px;
+}
+
+.whatsapp-float {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #25D366;
-  color: white;
-  padding: 14px;
-  border-radius: 50%;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
   z-index: 999;
-  font-size: 24px;
 }
 
-/* === Rodapé === */
-footer {
-  margin-top: 40px;
-  padding: 20px;
-  background-color: #004400;
-  color: white;
-  font-size: 14px;
+.whatsapp-float img {
+  width: 55px;
+  height: 55px;
 }
