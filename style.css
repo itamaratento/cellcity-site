@@ -1,94 +1,223 @@
-html, body {
+* {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
-  height: 100%;
-  background: #f0f0f0;
-  display: flex;
-  flex-direction: column;
+  box-sizing: border-box;
 }
 
-header {
-  background-color: #005500;
-  color: white;
-  padding: 12px 20px;
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f8f8f8;
+  position: relative;
+  min-height: 100%;
+}
+
+.wrapper {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Faixa superior */
+.barra-topo {
+  background: #e0ffe0;
+  color: #006600;
+  text-align: center;
+  font-size: 13px;
+  padding: 6px 10px;
+}
+
+/* Cabeçalho e menu */
+.header {
+  background: #004d00;
+  padding: 10px 20px;
+}
+
+.container {
+  display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
 }
 
-header .logo img {
-  height: 60px;
+.logo {
+  height: 72px;
 }
 
-header nav {
+/* Menu principal */
+.menu {
+  list-style: none;
   display: flex;
   gap: 20px;
 }
 
-header nav a {
+.menu li {
+  position: relative;
+}
+
+.menu a, .menu-toggle {
   color: white;
   text-decoration: none;
   font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  background: #004d00;
+  top: 100%;
+  left: 0;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 10;
+}
+
+.has-submenu.ativo .submenu {
+  display: flex;
+}
+
+/* Conteúdo principal */
+.main {
+  flex: 1;
+  padding: 40px 20px;
+  padding-bottom: 100px;
+}
+
+.hero {
+  background: #e4ffe4;
+  text-align: center;
+  padding: 40px 20px;
+  margin-bottom: 30px;
 }
 
 .botao-fixo-topo {
-  text-align: center;
-  margin: 20px 0;
+  margin-bottom: 20px;
 }
 
-.botao-whatsapp {
-  background-color: #25D366;
+.botao-fixo-topo a {
+  background: #25d366;
   color: white;
-  padding: 12px 24px;
-  border-radius: 30px;
-  font-size: 16px;
-  font-weight: bold;
   text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: bold;
   display: inline-block;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  font-size: 14px;
 }
 
-.imagem-celular-ajustada {
-  width: 90%;
+.hero h1 {
+  color: #004d00;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.imagem-celular-mao {
   max-width: 600px;
-  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  margin: 20px auto;
   display: block;
-  border-radius: 8px;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
 }
 
-.texto-abaixo-imagem {
+/* Selo */
+.selo-garantia {
+  margin-top: 10px;
+}
+
+.selo-garantia img {
+  width: 76px;
+  height: auto;
+}
+
+/* Descrição */
+.descricao {
+  background: #ffffff;
   text-align: center;
-  font-size: 16px;
-  margin: 15px auto 30px;
-  color: #222;
-  max-width: 90%;
+  padding: 30px 20px;
 }
 
+.descricao-content h2 {
+  font-size: 22px;
+  color: #004d00;
+  margin-bottom: 15px;
+}
+
+.descricao-content ul {
+  list-style: disc;
+  max-width: 500px;
+  margin: auto;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.descricao-content li {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+/* Rodapé */
 .footer {
-  background-color: #004d00;
+  background: #004d00;
   color: white;
   text-align: center;
-  padding: 16px;
-  font-size: 14px;
-  margin-top: auto;
+  padding: 20px;
 }
 
-.footer .credibilidade {
+.credibilidade {
   font-size: 13px;
-  color: #cccccc;
-  margin-top: 6px;
+  color: #ccc;
+  margin-top: 10px;
 }
 
+/* WhatsApp flutuante */
 .whatsapp-float {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  z-index: 999;
+  z-index: 9999;
 }
 
 .whatsapp-float img {
   width: 55px;
   height: 55px;
+  border-radius: 50%;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .submenu {
+    position: static;
+    width: 100%;
+  }
+
+  .imagem-celular-mao {
+    max-width: 90%;
+  }
+
+  .descricao-content ul {
+    padding-left: 20px;
+  }
 }
