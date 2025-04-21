@@ -40,7 +40,7 @@ body {
   cursor: pointer;
 }
 
-/* Menu */
+/* Menu desktop */
 .menu {
   list-style: none;
   display: flex;
@@ -179,12 +179,78 @@ body {
   height: 55px;
 }
 
-/* Responsivo: celular com logo centralizada */
+/* Menu mobile */
 @media (max-width: 768px) {
-  .header .container {
+  .menu {
+    display: none;
+  }
+
+  .menu-mobile {
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    gap: 12px;
+    background-color: #004d00;
+    padding: 12px 0;
+    flex-wrap: wrap;
+  }
+
+  .menu-mobile a,
+  .botao-servicos {
+    background-color: #006600;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+  }
+
+  .menu-mobile a:hover,
+  .botao-servicos:hover {
+    background-color: #009900;
+  }
+
+  .dropdown-mobile {
+    position: relative;
+  }
+
+  .submenu-mobile {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #007a2a;
+    border-radius: 6px;
+    margin-top: 6px;
+    width: max-content;
+    z-index: 999;
+  }
+
+  .submenu-mobile li {
+    list-style: none;
+  }
+
+  .submenu-mobile li a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid #006600;
+  }
+
+  .submenu-mobile li a:hover {
+    background-color: #009933;
+  }
+
+  .dropdown-mobile:hover .submenu-mobile {
+    display: block;
+  }
+
+  .header .container {
+    flex-direction: column;
     align-items: center;
   }
 
@@ -192,11 +258,6 @@ body {
     display: block;
     margin: 10px auto;
     max-width: 140px;
-  }
-
-  .menu {
-    flex-direction: column;
-    align-items: center;
   }
 
   .botao-central {
