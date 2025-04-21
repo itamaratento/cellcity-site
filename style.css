@@ -5,138 +5,199 @@
   box-sizing: border-box;
 }
 
-/* Geral */
+/* Corpo */
 body {
   font-family: Arial, sans-serif;
   background-color: #f8fff8;
   color: #111;
-  text-align: center;
 }
 
-/* Topo */
-.topo {
+/* Barra topo (frase verde acima) */
+.barra-topo {
+  background-color: #004d00;
+  color: white;
+  text-align: center;
+  padding: 8px;
+  font-size: 14px;
+}
+
+/* Wrapper central */
+.wrapper {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Header com logo e menu */
+.header {
   background-color: #004d00;
   padding: 10px 0;
 }
 
-/* Logo */
 .logo {
   width: 120px;
-  margin-bottom: 10px;
-}
-
-/* Navegação */
-nav {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 15px;
-}
-
-nav a,
-.dropdown-btn {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 15px;
-  padding: 10px;
-  background: transparent;
-  border: none;
+  display: block;
+  margin: 0 auto 10px;
   cursor: pointer;
 }
 
-/* Dropdown */
-.dropdown {
-  position: relative;
-  display: inline-block;
+/* Menu principal */
+.menu {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
-.dropdown-content {
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
+}
+
+/* Submenu (dropdown) */
+.dropdown {
+  position: relative;
+}
+
+.submenu {
   display: none;
   position: absolute;
   background-color: #007a00;
+  list-style: none;
+  padding: 10px 0;
+  margin-top: 5px;
+  border-radius: 5px;
   min-width: 200px;
-  z-index: 1;
-  text-align: left;
-  border-radius: 4px;
+  z-index: 999;
 }
 
-.dropdown-content a {
-  display: block;
-  padding: 10px;
+.submenu li {
+  padding: 8px 20px;
+}
+
+.submenu li a {
   color: white;
   text-decoration: none;
 }
 
-.dropdown-content a:hover {
-  background-color: #00aa00;
-}
-
-.dropdown:hover .dropdown-content {
+.dropdown:hover .submenu {
   display: block;
 }
 
-/* Responsivo para celular */
+/* Botão fixo no topo */
+.botao-fixo-topo {
+  background-color: #25D366;
+  text-align: center;
+  padding: 10px 0;
+  font-weight: bold;
+}
+
+.botao-fixo-topo a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* Conteúdo principal */
+.main {
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.imagem-celular-mao {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+/* Botão grande abaixo da imagem */
+button {
+  background-color: #25D366;
+  padding: 15px 30px;
+  border-radius: 10px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Descrição com lista */
+.descricao {
+  padding: 30px 20px;
+  background-color: #e9ffe9;
+  margin-top: 30px;
+  border-top: 2px solid #00aa00;
+}
+
+.descricao-content h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.descricao-content ul {
+  text-align: left;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.descricao-content li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+/* Rodapé */
+.footer {
+  background-color: #004d00;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 13px;
+}
+
+.footer .credibilidade {
+  margin-top: 8px;
+}
+
+/* WhatsApp flutuante */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
+.whatsapp-float img {
+  width: 55px;
+}
+
+/* Responsivo */
 @media (max-width: 768px) {
-  nav {
+  .menu {
     flex-direction: column;
     align-items: center;
   }
 
-  .dropdown-content {
+  .submenu {
     position: static;
     width: 100%;
   }
-}
 
-/* Conteúdo */
-.conteudo {
-  padding: 20px;
-}
-
-.imagem-destaque {
-  width: 100%;
-  max-width: 400px;
-  margin-top: 20px;
-  border-radius: 10px;
-}
-
-.imagem-servico img {
-  width: 100%;
-  max-width: 400px;
-  border-radius: 10px;
-  margin: 20px auto;
-}
-
-/* Botão WhatsApp principal */
-.botao-whatsapp {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 12px 24px;
-  background-color: #25D366;
-  color: white;
-  text-decoration: none;
-  border-radius: 30px;
-  font-weight: bold;
-}
-
-/* Rodapé */
-.rodape {
-  background-color: #004d00;
-  color: white;
-  font-size: 13px;
-  padding: 15px;
-  margin-top: 40px;
-}
-
-/* Botão WhatsApp flutuante */
-.flutuante {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 1000;
-}
-
-.flutuante img {
-  width: 55px;
+  .descricao-content ul {
+    padding: 0 10px;
+  }
 }
