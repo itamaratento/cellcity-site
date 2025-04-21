@@ -84,32 +84,35 @@ body {
   background-color: #006600;
 }
 
+/* SUBMENU ATUALIZADO */
 .submenu {
-  list-style: none; /* REMOVENDO BOLINHAS */
+  list-style: none;
   display: none;
   position: absolute;
-  background-color: #e0ffe0;
-  border: 1px solid #c0e0c0;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
   top: 100%;
   left: 0;
   flex-direction: column;
-  padding: 10px 15px;
+  padding: 10px 0;
   border-radius: 8px;
   z-index: 999;
-  min-width: 180px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  min-width: 200px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  text-align: center;
 }
 
 .submenu a {
   color: #004d00;
   font-weight: bold;
-  padding: 5px 0;
+  padding: 10px 15px;
   display: block;
-  transition: color 0.2s ease;
+  transition: background 0.3s ease, color 0.3s ease;
   text-decoration: none;
 }
 
 .submenu a:hover {
+  background-color: #e0ffe0;
   color: #006600;
 }
 
@@ -157,7 +160,7 @@ body {
   margin-bottom: 30px;
 }
 
-/* IMAGEM AJUSTADA PARA 20% */
+/* IMAGEM EM 20% */
 .imagem-celular-mao {
   width: 20%;
   max-width: 300px;
