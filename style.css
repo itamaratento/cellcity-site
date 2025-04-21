@@ -179,21 +179,24 @@ body {
   height: 55px;
 }
 
-/* Responsivo: celular */
+/* Responsivo: celular com logo centralizada */
 @media (max-width: 768px) {
-  .menu {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
   .header .container {
+    display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
   }
 
   .logo {
-    margin: 0 auto;
     display: block;
+    margin: 10px auto;
+    max-width: 140px;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
   }
 
   .botao-central {
