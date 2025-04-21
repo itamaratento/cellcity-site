@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -17,16 +16,19 @@
   <div class="wrapper">
     <header class="header">
       <div class="container">
-        <img src="logo.webp" alt="Logo Cell City" class="logo" loading="lazy">
+        <!-- LOGO COM REDIRECIONAMENTO -->
+        <img src="logo.webp" alt="Logo Cell City" class="logo" loading="lazy"
+             onclick="window.location.href='index.html'" style="cursor:pointer;">
+        
         <nav>
           <ul class="menu">
-            <li><a href="#">Início</a></li>
+            <li><a href="index.html">Início</a></li>
             <li class="has-submenu" onclick="toggleMenu(this)">
               <span class="menu-toggle">Serviços</span>
               <ul class="submenu">
-                <li><a href="#">📱 Conserto de Celulares</a></li>
-                <li><a href="#">⚙️ Formatação de Celulares</a></li>
-                <li><a href="#">💻 Manutenção de Computadores</a></li>
+                <li><a href="manutencao-celular.html">📱 Conserto de Celulares</a></li>
+                <li><a href="formatacao.html">⚙️ Formatação de Celulares</a></li>
+                <li><a href="manutencao-computador.html">💻 Manutenção de Computadores</a></li>
               </ul>
             </li>
           </ul>
