@@ -1,67 +1,142 @@
-<main class="main" style="padding: 20px; text-align: center;">
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  <section class="hero">
-    <div class="botao-fixo-topo" style="margin-bottom: 15px;">
-      <a href="https://wa.me/5562981605863" target="_blank" rel="noopener noreferrer" style="text-decoration: none; font-weight: bold; color: #25D366;">
-        <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp" style="width:20px; vertical-align:middle; margin-right:8px;" loading="lazy">
-        Chamar no WhatsApp
-      </a>
-    </div>
+/* Geral */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8fff8;
+  color: #111;
+  text-align: center;
+}
 
-    <h1 style="font-size: 2rem; color: #004d00;">Bem-vindo! </h1>
-    <h1 style="font-size: 2.2rem;">Cell City Informática</h1>
-    <p style="margin: 20px auto; max-width: 600px;">Formatamos seu computador com Windows e Office instalados – tudo pronto para uso!</p>
+/* Topo */
+.topo {
+  background-color: #004d00;
+  padding: 10px 0;
+}
 
-    <img src="tecnico-cellcity-manutencao-pc.webp" alt="Técnico da Cell City consertando computador" width="720" height="1080"
-         style="max-width: 100%; height: auto; border-radius: 10px; margin: 20px auto;" fetchpriority="high">
+/* Logo */
+.logo {
+  width: 120px;
+  margin-bottom: 10px;
+}
 
-    <div class="selo-garantia" style="text-align: center; margin-top: 20px;">
-      <img src="selo-garantia.webp" alt="Selo de Garantia" style="width: 76px; height: auto;" loading="lazy">
-    </div>
+/* Navegação */
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
 
-    <div style="display: flex; justify-content: center; margin-top: 20px;">
-      <a href="https://wa.me/5562981605863" target="_blank" style="text-decoration: none;">
-        <button style="
-          background-color: #25D366;
-          padding: 20px 35px;
-          border-radius: 12px;
-          color: white;
-          font-size: 21px;
-          border: none;
-          box-shadow: 0 4px 12px rgba(0,0,0,0.25);
-          display: flex;
-          align-items: center;
-          gap: 15px;
-        ">
-          <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp" style="width: 30px; height: 30px;">
-          (62) 98160-5863
-        </button>
-      </a>
-    </div>
-  </section>
+nav a,
+.dropdown-btn {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 10px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
 
-  <section class="descricao" style="margin-top: 40px;">
-    <div class="descricao-content" style="max-width: 720px; margin: auto;">
-      <h2 style="margin-bottom: 15px;">Manutenção Profissional de Computadores</h2>
-      <ul style="text-align: left; list-style-type: disc; padding-left: 40px;">
-        <li>Formatação completa com backup de segurança</li>
-        <li>Remoção de vírus, malwares e propagandas</li>
-        <li>Instalação de Windows original e drivers atualizados</li>
-        <li>Troca de HD, SSD, memória RAM e fonte</li>
-        <li>Limpeza interna e melhoria no desempenho do sistema</li>
-        <li>Mais de 20 anos de experiência em informática técnica</li>
-      </ul>
-    </div>
-  </section>
-</main>
+/* Dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
 
-<footer class="footer" style="background-color: #004d00; color: white; padding: 20px; margin-top: 40px;">
-  <p>&copy; 2025 Cell City Informática | Rua 6, nº 455, Setor Central - Goiânia</p>
-  <p style="font-size: 13px;">Todos os serviços são realizados diretamente pela equipe técnica da Cell City, sem terceirização.</p>
-</footer>
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #007a00;
+  min-width: 200px;
+  z-index: 1;
+  text-align: left;
+  border-radius: 4px;
+}
 
-<!-- Botão flutuante no canto da tela -->
-<a href="https://wa.me/5562981605863" target="_blank" aria-label="Abrir conversa no WhatsApp com a Cell City"
-   style="position: fixed; bottom: 20px; right: 20px; z-index: 999;">
-  <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp" style="width: 55px;" loading="lazy">
-</a>
+.dropdown-content a {
+  display: block;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background-color: #00aa00;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Responsivo para celular */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dropdown-content {
+    position: static;
+    width: 100%;
+  }
+}
+
+/* Conteúdo */
+.conteudo {
+  padding: 20px;
+}
+
+.imagem-destaque {
+  width: 100%;
+  max-width: 400px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.imagem-servico img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  margin: 20px auto;
+}
+
+/* Botão WhatsApp principal */
+.botao-whatsapp {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #25D366;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+/* Rodapé */
+.rodape {
+  background-color: #004d00;
+  color: white;
+  font-size: 13px;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+/* Botão WhatsApp flutuante */
+.flutuante {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.flutuante img {
+  width: 55px;
+}
