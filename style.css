@@ -78,6 +78,9 @@ body {
   flex-direction: column;
   padding: 10px;
   border-radius: 5px;
+  white-space: nowrap;
+  min-width: 200px;
+  z-index: 999;
 }
 
 .has-submenu.ativo .submenu {
@@ -227,5 +230,12 @@ body {
 
   .descricao-content ul {
     padding-left: 20px;
+  }
+}
+
+/* AJUSTE DE ALINHAMENTO DO MENU NO DESKTOP */
+@media (min-width: 769px) {
+  .menu {
+    margin-right: 40px; /* Ajuste sutil no desktop */
   }
 }
