@@ -155,8 +155,9 @@ body {
   margin-bottom: 30px;
 }
 
+/* IMAGEM REDUZIDA 50% */
 .imagem-celular-mao {
-  max-width: 600px;
+  max-width: 300px;
   width: 100%;
   height: auto;
   margin: 20px auto;
