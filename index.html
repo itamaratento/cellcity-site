@@ -4,8 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta name="description" content="Formatação de computadores, instalação de Windows e manutenção técnica especializada em Goiânia. Atendimento rápido com garantia na Cell City, Rua 6, Setor Central.">
-  <title>Cell City | Formatação e Manutenção de Computadores</title>
+  <title>Cell City | Formatação e Manutenção de Computadores em Goiânia</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="preload" as="image" href="tecnico-cellcity-manutencao-pc.webp" type="image/webp">
 </head>
 <body>
 
@@ -16,19 +17,16 @@
   <div class="wrapper">
     <header class="header">
       <div class="container">
-        <img src="logo.webp" alt="Logo Cell City" class="logo" onclick="window.location.href='index.html'" />
+        <!-- LOGO COM LINK FUNCIONAL PARA VOLTAR -->
+        <img src="logo.webp" alt="Logo Cell City" class="logo" loading="lazy" style="cursor:pointer;"
+             onclick="window.location.href='index.html'">
 
-        <ul class="menu">
-          <li><a href="index.html">Início</a></li>
-          <li>
-            <a href="#">Serviços</a>
-            <ul>
-              <li><a href="conserto.html">Conserto de Celulares</a></li>
-              <li><a href="formatacao.html">Formatação de Celulares</a></li>
-              <li><a href="computador.html">Manutenção de Computadores</a></li>
-            </ul>
-          </li>
-        </ul>
+        <nav>
+          <ul class="menu">
+            <!-- BOTÃO INÍCIO FUNCIONAL -->
+            <li><a href="index.html">Início</a></li>
+          </ul>
+        </nav>
       </div>
     </header>
 
@@ -41,20 +39,31 @@
           </a>
         </div>
 
-        <h1>Bem-vindo!</h1>
+        <h1>Bem-vindo! </h1>
         <h1>Cell City Informática</h1>
-        <p>Formatamos seu computador com Windows e Office instalados — tudo pronto para uso!</p>
+        <p>Formatamos seu computador com Windows e Office instalados – tudo pronto para uso!</p>
 
-        <img src="tecnico-cellcity-manutencao-pc.webp" alt="Técnico Cell City" width="720" height="1080" class="imagem-celular-mao">
+        <img src="tecnico-cellcity-manutencao-pc.webp" alt="Técnico da Cell City consertando computador" width="720" height="1080" class="imagem-celular-mao" fetchpriority="high">
 
-        <div class="selo-garantia">
-          <img src="selo-garantia.webp" alt="Selo de Garantia">
+        <div class="selo-garantia" style="text-align: center; margin-top: 20px;">
+          <img src="selo-garantia.webp" alt="Selo de Garantia" style="width: 76px; height: auto;" loading="lazy">
         </div>
 
-        <div class="botao-whatsapp-centro">
-          <a href="https://wa.me/5562981605863" target="_blank">
-            <button>
-              <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp">
+        <div style="display: flex; justify-content: center; margin-top: 20px;">
+          <a href="https://wa.me/5562981605863" target="_blank" style="text-decoration: none;">
+            <button style="
+              background-color: #25D366;
+              padding: 20px 35px;
+              border-radius: 12px;
+              color: white;
+              font-size: 21px;
+              border: none;
+              box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+              display: flex;
+              align-items: center;
+              gap: 15px;
+            ">
+              <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp" style="width: 30px; height: 30px;">
               (62) 98160-5863
             </button>
           </a>
@@ -82,9 +91,9 @@
     </footer>
   </div>
 
-  <!-- Botão flutuante -->
-  <a href="https://wa.me/5562981605863" class="whatsapp-float" target="_blank">
-    <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp">
+  <!-- Botão flutuante no canto da tela -->
+  <a href="https://wa.me/5562981605863" class="whatsapp-float" target="_blank" aria-label="Abrir conversa no WhatsApp com a Cell City">
+    <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp" loading="lazy">
   </a>
 
 </body>
