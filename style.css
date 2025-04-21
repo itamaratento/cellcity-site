@@ -50,7 +50,7 @@ body {
   list-style: none;
   display: flex;
   gap: 20px;
-  padding: 0;
+  padding: 10px 20px;
   margin: 0 auto;
   justify-content: center;
   position: relative;
@@ -58,6 +58,7 @@ body {
   transform: none;
   z-index: 999;
   background-color: #004d00;
+  border-radius: 6px;
 }
 
 .menu li {
@@ -242,6 +243,7 @@ body {
     gap: 10px;
     margin-top: 15px;
     background-color: #004d00;
+    border-radius: 6px;
   }
 
   .submenu {
