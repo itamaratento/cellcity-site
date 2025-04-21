@@ -1,203 +1,27 @@
-/* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Corpo */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f8fff8;
-  color: #111;
-}
-
-/* Barra topo (frase verde acima) */
-.barra-topo {
-  background-color: #004d00;
-  color: white;
-  text-align: center;
-  padding: 8px;
-  font-size: 14px;
-}
-
-/* Wrapper central */
-.wrapper {
-  width: 100%;
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-/* Header com logo e menu */
-.header {
-  background-color: #004d00;
-  padding: 10px 0;
-}
-
-.logo {
-  width: 120px;
-  display: block;
-  margin: 0 auto 10px;
-  cursor: pointer;
-}
-
-/* Menu principal */
-.menu {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.menu a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  padding: 10px;
-}
-
-/* Submenu (dropdown) */
-.dropdown {
-  position: relative;
-}
-
-.submenu {
-  display: none;
-  position: absolute;
-  background-color: #007a00;
-  list-style: none;
-  padding: 10px 0;
-  margin-top: 5px;
-  border-radius: 5px;
-  min-width: 200px;
-  z-index: 999;
-}
-
-.submenu li {
-  padding: 8px 20px;
-}
-
-.submenu li a {
-  color: white;
-  text-decoration: none;
-}
-
-.dropdown:hover .submenu {
-  display: block;
-}
-
-/* Botão fixo no topo */
 .botao-fixo-topo {
-  background-color: #25D366;
   text-align: center;
-  padding: 10px 0;
+  margin: 20px auto;
   font-weight: bold;
-}
-
-.botao-fixo-topo a {
-  color: white;
-  text-decoration: none;
   font-size: 16px;
 }
 
-/* Conteúdo principal */
-.main {
-  padding: 20px;
-  text-align: center;
-}
-
-h1 {
-  font-size: 26px;
-  margin-bottom: 10px;
-}
-
-.imagem-celular-mao {
-  width: 100%;
-  max-width: 420px;
-  border-radius: 10px;
-  margin-top: 15px;
-}
-
-/* Botão grande abaixo da imagem */
-button {
-  background-color: #25D366;
-  padding: 15px 30px;
-  border-radius: 10px;
-  color: white;
-  font-size: 18px;
-  font-weight: bold;
-  border: none;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-top: 20px;
-  cursor: pointer;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-}
-
-/* Descrição com lista */
-.descricao {
-  padding: 30px 20px;
-  background-color: #e9ffe9;
-  margin-top: 30px;
-  border-top: 2px solid #00aa00;
-}
-
-.descricao-content h2 {
-  font-size: 22px;
-  margin-bottom: 15px;
-}
-
-.descricao-content ul {
-  text-align: left;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.descricao-content li {
-  margin-bottom: 10px;
-  font-size: 16px;
-}
-
-/* Rodapé */
 .footer {
-  background-color: #004d00;
+  background-color: #006400;
   color: white;
   text-align: center;
-  padding: 20px;
-  font-size: 13px;
+  padding: 15px;
+  font-size: 14px;
+  margin-top: 40px;
 }
 
-.footer .credibilidade {
-  margin-top: 8px;
-}
-
-/* WhatsApp flutuante */
 .whatsapp-float {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  z-index: 999;
+  z-index: 99;
 }
 
 .whatsapp-float img {
-  width: 55px;
-}
-
-/* Responsivo */
-@media (max-width: 768px) {
-  .menu {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .submenu {
-    position: static;
-    width: 100%;
-  }
-
-  .descricao-content ul {
-    padding: 0 10px;
-  }
+  width: 60px;
+  height: 60px;
 }
