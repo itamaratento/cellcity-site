@@ -1,43 +1,169 @@
-@media (min-width: 768px) {
-  .menu-principal {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    padding: 10px 0;
-    background-color: #004d00;
-  }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+}
 
-  .menu-principal li {
-    position: relative;
-    list-style: none;
-  }
+.barra-topo {
+  background-color: #b6ffb3;
+  color: #003300;
+  text-align: center;
+  padding: 8px 0;
+  font-weight: bold;
+  font-size: 14px;
+}
 
-  .menu-principal li ul {
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    min-width: 220px;
-    background-color: #009900;
-    padding: 10px;
-    border-radius: 8px;
-    z-index: 100;
-  }
+.topo {
+  background-color: #001a00;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-left: 16px;
+  padding-right: 16px;
+}
 
-  .menu-principal li ul li {
-    padding: 5px 10px;
-  }
+.logo {
+  height: 60px;
+  cursor: pointer;
+}
 
-  .menu-principal li ul li a {
-    color: #fff;
-    text-decoration: none;
-  }
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
 
-  .menu-principal li:hover ul {
-    display: block;
-  }
+.menu li {
+  position: relative;
+}
 
-  .menu-principal li ul {
-    display: none;
+.menu li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 15px;
+  display: block;
+}
+
+.menu li ul.submenu {
+  display: none;
+  position: absolute;
+  background-color: #009933;
+  padding: 10px;
+  border-radius: 4px;
+  top: 100%;
+  left: 0;
+  min-width: 220px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.menu li:hover ul.submenu {
+  display: block;
+}
+
+.menu li ul.submenu li {
+  margin: 0;
+}
+
+.menu li ul.submenu li a:hover {
+  background-color: #007a29;
+}
+
+.apresentacao {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.imagem-celular-mao {
+  max-width: 90%;
+  height: auto;
+  margin-top: 20px;
+}
+
+.whatsapp-topo {
+  background-color: #25D366;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.descricao {
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.texto-descricao ul {
+  list-style: none;
+  padding: 0;
+  max-width: 700px;
+  margin: auto;
+  text-align: left;
+}
+
+.texto-descricao li {
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.selo img {
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+.botao-zap-centro a {
+  background-color: #25D366;
+  color: white;
+  padding: 14px 24px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+.rodape {
+  background-color: #003300;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 14px;
+}
+
+.credibilidade {
+  margin-top: 8px;
+  font-style: italic;
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
+.whatsapp-float img {
+  width: 48px;
+  height: 48px;
+}
+
+@media (max-width: 768px) {
+  .topo {
+    flex-direction: column;
+    align-items: center;
+  }
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
   }
 }
