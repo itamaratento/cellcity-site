@@ -155,10 +155,11 @@ body {
   margin-bottom: 30px;
 }
 
-/* IMAGEM REDUZIDA EM 83% */
+/* IMAGEM PROPORCIONAL À TELA – 15% */
 .imagem-celular-mao {
-  max-width: 100px;
-  width: 100%;
+  width: 15%;
+  max-width: 150px;
+  min-width: 80px;
   height: auto;
   margin: 20px auto;
   display: block;
@@ -251,7 +252,9 @@ body {
   }
 
   .imagem-celular-mao {
-    max-width: 90%;
+    width: 90%;
+    max-width: none;
+    min-width: unset;
   }
 
   .descricao-content ul {
