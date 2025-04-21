@@ -65,22 +65,19 @@ body {
   position: relative;
 }
 
-.menu a, .menu-toggle {
+.menu a,
+.menu-toggle {
   color: white;
   text-decoration: none;
   font-weight: bold;
   cursor: pointer;
-  display: flex;
+  display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
-}
-
-.menu-toggle {
-  background-color: #004d00;
-  color: white;
   padding: 8px 16px;
-  border-radius: 6px;
-  transition: background-color 0.3s ease;
+  line-height: 1.2;
+  height: 100%;
 }
 
 .menu-toggle:hover {
