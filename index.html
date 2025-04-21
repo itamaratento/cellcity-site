@@ -9,6 +9,13 @@
   <link rel="preload" as="image" href="tecnico-cellcity-manutencao-pc.webp" type="image/webp">
 
   <style>
+    .menu-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+
     .menu {
       display: flex;
       justify-content: center;
@@ -25,6 +32,7 @@
       text-decoration: none;
       font-weight: bold;
       color: #000;
+      font-size: 18px;
     }
 
     .whatsapp-float {
@@ -55,12 +63,14 @@
         <img src="logo.webp" alt="Logo Cell City" class="logo" loading="lazy" style="cursor:pointer;"
              onclick="window.location.href='index.html'">
 
-        <nav>
-          <ul class="menu">
-            <!-- BOTÃO INÍCIO CENTRALIZADO -->
-            <li><a href="index.html">Início</a></li>
-          </ul>
-        </nav>
+        <!-- MENU CENTRALIZADO -->
+        <div class="menu-container">
+          <nav>
+            <ul class="menu">
+              <li><a href="index.html">Início</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
 
