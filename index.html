@@ -1,29 +1,90 @@
-<!-- Apenas o trecho abaixo do menu, logo após o </header> -->
-<main class="main">
-  <!-- Botão fixo WhatsApp corretamente posicionado -->
-  <div class="botao-fixo-topo">
-    <a href="https://wa.me/5562981605863" target="_blank" rel="noopener noreferrer">
-      <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp" style="width:20px; vertical-align:middle; margin-right:8px;" loading="lazy">
-      Chamar no WhatsApp
-    </a>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Formatação de computadores, instalação de Windows e manutenção técnica especializada em Goiânia. Atendimento rápido com garantia na Cell City, Rua 6, Setor Central.">
+  <title>Cell City | Formatação e Manutenção de Computadores em Goiânia</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preload" as="image" href="tecnico-cellcity-manutencao-pc.webp" type="image/webp">
+</head>
+<body>
+
+  <div class="barra-topo">
+    <p>Atendimento rápido com garantia real e peças com procedência. <strong>Cell City é confiança de verdade!</strong></p>
   </div>
 
-  <!-- Conteúdo principal continua normalmente -->
-  <section class="hero">
-    <h1>Bem-vindo!</h1>
-    <h1>Cell City Informática</h1>
-    <p>Formatamos seu computador com Windows e Office instalados – tudo pronto para uso!</p>
-    <img src="tecnico-cellcity-manutencao-pc.webp" alt="Técnico da Cell City" class="imagem-celular-mao">
-  </section>
-</main>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <img src="logo.webp" alt="Logo Cell City" class="logo" loading="lazy" onclick="window.location.href='index.html'">
+        <nav>
+          <ul class="menu">
+            <li><a href="index.html">Início</a></li>
+            <li class="dropdown">
+              <a href="#">Serviços</a>
+              <ul class="submenu">
+                <li><a href="conserto.html">Conserto de Celulares</a></li>
+                <li><a href="formatacao.html">Formatação de Celulares</a></li>
+                <li><a href="computador.html">Manutenção de Computadores</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-<!-- Rodapé -->
-<footer class="footer">
-  <p>&copy; 2025 Cell City Informática | Rua 6, nº 455, Setor Central - Goiânia</p>
-  <p class="credibilidade">Todos os serviços são realizados diretamente pela equipe técnica da Cell City, sem terceirização.</p>
-</footer>
+    <div class="botao-fixo-topo">
+      <a href="https://wa.me/5562981605863" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp" style="width:20px; margin-right:8px;"> Chamar no WhatsApp
+      </a>
+    </div>
 
-<!-- Botão flutuante -->
-<a href="https://wa.me/5562981605863" class="whatsapp-float" target="_blank" aria-label="WhatsApp flutuante">
-  <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp" loading="lazy">
-</a>
+    <main class="main">
+      <section class="hero">
+        <h1>Bem-vindo!</h1>
+        <h1>Cell City Informática</h1>
+        <p>Formatamos seu computador com Windows e Office instalados – tudo pronto para uso!</p>
+
+        <img src="tecnico-cellcity-manutencao-pc.webp" alt="Técnico da Cell City consertando computador" width="720" height="1080" class="imagem-celular-mao">
+
+        <div class="selo-garantia">
+          <img src="selo-garantia.webp" alt="Selo de Garantia" style="width: 76px;">
+        </div>
+
+        <div class="cta-whatsapp">
+          <a href="https://wa.me/5562981605863" target="_blank">
+            <button>
+              <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp" style="width: 30px;"> (62) 98160-5863
+            </button>
+          </a>
+        </div>
+      </section>
+
+      <section class="descricao">
+        <div class="descricao-content">
+          <h2>Manutenção Profissional de Computadores</h2>
+          <ul>
+            <li>Formação completa com backup de segurança</li>
+            <li>Remoção de vírus, malwares e propagandas</li>
+            <li>Instalação de Windows original e drivers atualizados</li>
+            <li>Troca de HD, SSD, memória RAM e fonte</li>
+            <li>Limpeza interna e melhoria no desempenho</li>
+            <li>Mais de 20 anos de experiência em informática técnica</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2025 Cell City Informática | Rua 6, nº 455, Setor Central - Goiânia</p>
+      <p class="credibilidade">Todos os serviços são realizados diretamente pela equipe técnica da Cell City, sem terceirização.</p>
+    </footer>
+  </div>
+
+  <!-- Botão flutuante WhatsApp -->
+  <a href="https://wa.me/5562981605863" class="whatsapp-float" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp">
+  </a>
+</body>
+</html>
