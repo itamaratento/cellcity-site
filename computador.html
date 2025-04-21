@@ -3,8 +3,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Assistência técnica de celular e computador em Goiânia com garantia, peças originais e atendimento rápido. Cell City, Rua 6, Setor Central.">
+  <meta name="description" content="Troca de tela, manutenção de computadores e celulares com garantia em Goiânia. Cell City é confiança de verdade!">
   <title>Cell City | Assistência Técnica em Goiânia</title>
+
+  <!-- CSS crítico inline (apenas para conteúdo acima da dobra) -->
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; background: #f8f8f8; }
+    .barra-topo { background: #e0ffe0; color: #006600; text-align: center; font-size: 13px; padding: 6px 10px; }
+    .header { background: #004d00; padding: 10px 20px; text-align: center; }
+    .logo { width: 150px; height: auto; }
+    .hero { background: #e4ffe4; text-align: center; padding: 20px 10px; }
+    .imagem-celular-mao { width: 360px; height: 640px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.2); max-width: 100%; height: auto; }
+    .botao-whats { margin-top: 20px; display: inline-flex; align-items: center; background: #25D366; color: white; padding: 15px 25px; border-radius: 8px; text-decoration: none; font-size: 18px; font-weight: bold; gap: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
+  </style>
+
+  <!-- Fonte carregada de forma assíncrona -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" media="print" onload="this.onload=null;this.removeAttribute('media');">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"></noscript>
+
+  <!-- CSS completo -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -13,77 +32,30 @@
     <p>Atendimento rápido com garantia real e peças com procedência. <strong>Cell City é confiança de verdade!</strong></p>
   </div>
 
-  <div class="wrapper">
-    <header class="header">
-      <div class="container">
-        <img src="logo.webp" alt="Logo Cell City" class="logo" loading="lazy">
-        <nav>
-          <ul class="menu">
-            <li><a href="#">Início</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+  <header class="header">
+    <img src="logo.webp" alt="Logo Cell City" class="logo" loading="eager" width="150" height="auto">
+  </header>
 
-    <main class="main">
-      <section class="hero">
-        <div class="botao-fixo-topo">
-          <a href="https://wa.me/5562981605863" target="_blank" rel="noopener noreferrer">
-            <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp" style="width:20px; vertical-align:middle; margin-right:8px;" loading="lazy">
-            Chamar no WhatsApp
-          </a>
-        </div>
+  <main class="hero">
+    <h1>Bem-vindo à Cell City</h1>
+    <p>Troca de tela, formatação, reparos e manutenção com garantia!</p>
 
-        <h1>Bem-vindo à Cell City</h1>
-        <p>Troca de tela, formatação, reparos e manutenção com garantia!</p>
+    <!-- Imagem otimizada e sem loading="lazy" para melhorar LCP -->
+    <img src="https://raw.githubusercontent.com/itamarcellcity/cellcity-site/main/manutencao-cellcity.webp"
+         alt="Técnico realizando manutenção em computador na Cell City"
+         class="imagem-celular-mao"
+         width="360"
+         height="640"
+         fetchpriority="high">
 
-        <!-- Imagem atualizada de manutenção de computador -->
-        <img src="computador.webp" alt="Manutenção de Computador" class="imagem-celular-mao" loading="lazy" fetchpriority="high">
-
-        <div class="selo-garantia">
-          <img src="selo-garantia.webp" alt="Selo de Garantia" style="width: 76px; height: auto;" loading="lazy">
-        </div>
-      </section>
-
-      
-
-
-
-
-
-
-<section class="descricao">
-  <div class="descricao-content">
-    <h2>Manutenção Profissional de Computadores</h2>
-    <ul>
-      <li>Formatação completa com backup de segurança</li>
-      <li>Remoção de vírus, malwares e propagandas</li>
-      <li>Instalação de Windows original e drivers atualizados</li>
-      <li>Troca de HD, SSD, memória RAM e fonte</li>
-      <li>Limpeza interna e melhoria no desempenho do sistema</li>
-      <li>Mais de 20 anos de experiência em informática técnica</li>
-    </ul>
-  </div>
-</section>
-
-
-
-
-
-
-
-
-    </main>
-
-    <footer class="footer">
-      <p>&copy; 2025 Cell City Informática | Rua 6, nº 455, Setor Central - Goiânia</p>
-      <p class="credibilidade">Todos os serviços são realizados diretamente pela equipe técnica da Cell City, sem terceirização.</p>
-    </footer>
-  </div>
-
-  <a href="https://wa.me/5562981605863" class="whatsapp-float" target="_blank" aria-label="Abrir conversa no WhatsApp com a Cell City">
-    <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp" loading="lazy">
-  </a>
+    <!-- Botão WhatsApp -->
+    <div class="botao-whats">
+      <a href="https://wa.me/5562981605863?text=Olá%20Cell%20City!%20Gostaria%20de%20um%20orçamento." class="botao-whats" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp" width="24" height="24">
+        Fale com um técnico agora!
+      </a>
+    </div>
+  </main>
 
 </body>
 </html>
