@@ -2,78 +2,95 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Formatação de computadores, instalação de Windows e manutenção técnica especializada em Goiânia. Atendimento rápido com garantia na Cell City, Rua 6, Setor Central.">
-  <title>Cell City | Manutenção de Computadores</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cell City | Informática</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    .barra-topo {
+      background-color: #b3ffb3;
+      padding: 8px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 14px;
+    }
+    .header {
+      background-color: #003300;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+    }
+    .header img.logo {
+      height: 50px;
+    }
+    .menu {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+    }
+    .menu li {
+      position: relative;
+    }
+    .menu a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .submenu {
+      display: none;
+      position: absolute;
+      top: 30px;
+      right: 0;
+      background-color: #00b300;
+      padding: 10px;
+      border-radius: 8px;
+      min-width: 200px;
+    }
+    .submenu a {
+      display: block;
+      padding: 6px;
+      color: white;
+      text-decoration: none;
+    }
+    .menu li:hover .submenu {
+      display: block;
+    }
+    @media (max-width: 768px) {
+      .header {
+        flex-direction: column;
+      }
+      .menu {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
 </head>
 <body>
-
   <div class="barra-topo">
-    <p>Atendimento rápido com garantia real e peças com procedência. <strong>Cell City é confiança de verdade!</strong></p>
+    Atendimento rápido com garantia real e peças com procedência. <strong>Cell City é confiança de verdade!</strong>
   </div>
 
   <header class="header">
-    <div class="container">
-      <img src="logo.webp" alt="Logo Cell City" class="logo" onclick="window.location.href='index.html'">
-      <nav class="menu">
-        <ul>
-          <li><a href="index.html">Início</a></li>
-          <li class="dropdown">
-            <a href="#">Serviços</a>
-            <ul class="submenu">
-              <li><a href="conserto.html">Conserto de Celular</a></li>
-              <li><a href="formatacao.html">Formatação de Celulares</a></li>
-              <li><a href="computador.html">Manutenção de Computadores</a></li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
-    </div>
+    <img src="logo.webp" alt="Logo Cell City" class="logo" />
+    <ul class="menu">
+      <li><a href="index.html">Início</a></li>
+      <li>
+        <a href="#">Serviços</a>
+        <div class="submenu">
+          <a href="conserto.html">Conserto de Celulares</a>
+          <a href="formatacao.html">Formatação de Celulares</a>
+          <a href="computador.html">Manutenção de Computadores</a>
+        </div>
+      </li>
+    </ul>
   </header>
 
-  <main class="main">
-    <div class="whatsapp-top">
-      <a href="https://wa.me/5562981605863" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp">
-        Chamar no WhatsApp
-      </a>
-    </div>
-
-    <section class="hero">
-      <h1>Bem-vindo!</h1>
-      <h2>Cell City Informática</h2>
-      <p>Formatamos seu computador com Windows e Office instalados — tudo pronto para uso!</p>
-      <img src="tecnico-cellcity-manutencao-pc.webp" alt="Técnico da Cell City" class="imagem-hero">
-      <div class="selo-garantia">
-        <img src="selo-garantia.webp" alt="Selo de Garantia">
-      </div>
-      <div class="whatsapp-botao">
-        <a href="https://wa.me/5562981605863" target="_blank">(62) 98160-5863</a>
-      </div>
-    </section>
-
-    <section class="descricao">
-      <h2>Manutenção Profissional de Computadores</h2>
-      <ul>
-        <li>Formatação com backup de segurança</li>
-        <li>Remoção de vírus, propagandas</li>
-        <li>Instalação de Windows original</li>
-        <li>Troca de HD, SSD, memória e fonte</li>
-        <li>Limpeza interna e melhoria no desempenho</li>
-        <li>+20 anos de experiência técnica</li>
-      </ul>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <p>&copy; 2025 Cell City Informática | Rua 6, nº 455 – Setor Central – Goiânia</p>
-    <p>Todos os serviços são realizados diretamente pela equipe técnica da Cell City, sem terceirização.</p>
-  </footer>
-
-  <a href="https://wa.me/5562981605863" class="whatsapp-float" target="_blank" aria-label="Fale conosco pelo WhatsApp">
-    <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp">
-  </a>
-
+  <!-- Conteúdo da página continuará aqui... -->
 </body>
 </html>
