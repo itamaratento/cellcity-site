@@ -1,10 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Formatação de computadores, instalação de Windows e manutenção técnica especializada em Goiânia. Atendimento rápido com garantia na Cell City, Rua 6, Setor Central.">
-  <title>Cell City | Formatação e Manutenção de Computadores</title>
+  <meta name="description" content="Assistência técnica de celular em Goiânia com garantia, peças originais e atendimento rápido. Cell City, Rua 6, Setor Central.">
+  <title>Cell City | Assistência Técnica em Goiânia</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -16,61 +17,50 @@
   <div class="wrapper">
     <header class="header">
       <div class="container">
-        <img src="logo.webp" alt="Logo Cell City" class="logo" onclick="window.location.href='index.html'" />
-
-        <ul class="menu">
-          <li><a href="index.html">Início</a></li>
-          <li>
-            <a href="#">Serviços</a>
-            <ul>
-              <li><a href="conserto.html">Conserto de Celulares</a></li>
-              <li><a href="formatacao.html">Formatação de Celulares</a></li>
-              <li><a href="computador.html">Manutenção de Computadores</a></li>
-            </ul>
-          </li>
-        </ul>
+        <img src="logo.webp" alt="Logo Cell City" class="logo" loading="lazy">
+        <nav>
+          <ul class="menu">
+            <li><a href="#">Início</a></li>
+            <li class="has-submenu" onclick="toggleMenu(this)">
+              <span class="menu-toggle">Serviços</span>
+              <ul class="submenu">
+                <li><a href="#">📱 Conserto de Celulares</a></li>
+                <li><a href="#">⚙️ Formatação de Celulares</a></li>
+                <li><a href="#">💻 Manutenção de Computadores</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
 
     <main class="main">
       <section class="hero">
         <div class="botao-fixo-topo">
-          <a href="https://wa.me/5562981605863" target="_blank" rel="noopener noreferrer">
+          <a href="https://wa.me/5562981605863" target="_blank">
             <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp" style="width:20px; vertical-align:middle; margin-right:8px;" loading="lazy">
             Chamar no WhatsApp
           </a>
         </div>
 
-        <h1>Bem-vindo!</h1>
-        <h1>Cell City Informática</h1>
-        <p>Formatamos seu computador com Windows e Office instalados — tudo pronto para uso!</p>
+        <h1>Bem-vindo à Cell City</h1>
+        <p>Troca de tela, formatação, reparos e manutenção com garantia!</p>
 
-        <img src="tecnico-cellcity-manutencao-pc.webp" alt="Técnico Cell City" width="720" height="1080" class="imagem-celular-mao">
+        <img src="celular.webp" alt="Imagem Celular" class="imagem-celular-mao" loading="lazy" fetchpriority="high">
 
         <div class="selo-garantia">
-          <img src="selo-garantia.webp" alt="Selo de Garantia">
-        </div>
-
-        <div class="botao-whatsapp-centro">
-          <a href="https://wa.me/5562981605863" target="_blank">
-            <button>
-              <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp">
-              (62) 98160-5863
-            </button>
-          </a>
+          <img src="selo-garantia.webp" alt="Selo de Garantia" style="width: 76px; height: auto;" loading="lazy">
         </div>
       </section>
 
       <section class="descricao">
         <div class="descricao-content">
-          <h2>Manutenção Profissional de Computadores</h2>
+          <h2>Por que escolher a Cell City?</h2>
           <ul>
-            <li>Formatação completa com backup de segurança</li>
-            <li>Remoção de vírus, malwares e propagandas</li>
-            <li>Instalação de Windows original e drivers atualizados</li>
-            <li>Troca de HD, SSD, memória RAM e fonte</li>
-            <li>Limpeza interna e melhoria no desempenho do sistema</li>
-            <li>Mais de 20 anos de experiência em informática técnica</li>
+            <li>Peças com procedência real e testadas</li>
+            <li>Garantia total em troca de tela e reparos</li>
+            <li>Atendimento técnico com agilidade</li>
+            <li>Mais de 10 anos de experiência no setor</li>
           </ul>
         </div>
       </section>
@@ -82,10 +72,18 @@
     </footer>
   </div>
 
-  <!-- Botão flutuante -->
   <a href="https://wa.me/5562981605863" class="whatsapp-float" target="_blank">
-    <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp">
+    <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp" loading="lazy">
   </a>
+
+  <script>
+    function toggleMenu(el) {
+      el.classList.toggle("ativo");
+      document.querySelectorAll('.has-submenu').forEach(item => {
+        if (item !== el) item.classList.remove("ativo");
+      });
+    }
+  </script>
 
 </body>
 </html>
