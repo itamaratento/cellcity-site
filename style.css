@@ -1,124 +1,197 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: Arial, sans-serif;
-  margin: 0;
-  background: #f9f9f9;
+  background-color: #f5f5f5;
   color: #222;
+  line-height: 1.6;
 }
 
+/* Barra topo */
 .barra-topo {
-  background: #d9ffd9;
+  background-color: #c9f8c6;
   text-align: center;
-  padding: 5px 10px;
+  padding: 6px;
   font-size: 14px;
+  font-weight: bold;
+  color: #003300;
 }
 
-.menu-principal {
-  background: #003d00;
+/* Header */
+.header {
+  background-color: #004d00;
+  padding: 10px 20px;
+}
+
+.header .container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 12px 20px;
-  color: white;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 
-.menu-principal .logo {
-  height: 50px;
+.logo {
+  height: 60px;
   cursor: pointer;
 }
 
-.menu-principal nav ul {
+/* Menu */
+.menu {
   list-style: none;
-  margin: 0;
-  padding: 0;
   display: flex;
+  gap: 20px;
 }
 
-.menu-principal nav ul li {
+.menu li {
   position: relative;
-  margin: 0 10px;
 }
 
-.menu-principal nav ul li a {
-  color: white;
+.menu a {
+  color: #fff;
   text-decoration: none;
-  padding: 6px 10px;
+  font-weight: bold;
+  padding: 8px;
+  display: block;
+}
+
+.menu li:hover .submenu {
+  display: block;
 }
 
 .submenu {
   display: none;
   position: absolute;
-  background-color: #006600;
-  padding: 10px;
-  border-radius: 6px;
   top: 35px;
   left: 0;
+  background-color: #009933;
+  border-radius: 0 0 6px 6px;
+  z-index: 999;
 }
 
-.dropdown:hover .submenu {
-  display: block;
+.submenu li a {
+  color: white;
+  padding: 10px 16px;
+  white-space: nowrap;
 }
 
-.submenu li {
-  margin: 5px 0;
+.submenu li a:hover {
+  background-color: #007d29;
 }
 
-.whats-topo {
+/* Hero */
+.hero {
+  padding: 40px 20px;
   text-align: center;
-  margin: 10px 0;
+  background-color: #e9f9ed;
 }
 
-.conteudo {
-  padding: 20px;
-  text-align: center;
-}
-
-.imagem-central {
-  max-width: 90%;
+.imagem-principal {
+  max-width: 100%;
   height: auto;
-  margin: 20px auto;
-  display: block;
+  margin: 20px 0;
 }
 
-.botao-whatsapp-principal button {
+/* Botão fixo topo */
+.botao-topo {
+  display: inline-block;
   background-color: #25D366;
   color: white;
-  font-size: 18px;
-  padding: 12px 25px;
-  border: none;
-  border-radius: 30px;
-  margin-top: 20px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  padding: 12px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-bottom: 20px;
 }
 
+.botao-topo img {
+  width: 18px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+/* Selo */
+.selo-garantia img {
+  width: 80px;
+  height: auto;
+  margin-top: 10px;
+}
+
+/* Botão central */
+.botao-central {
+  background-color: #25D366;
+  color: white;
+  padding: 16px 28px;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* Descrição */
 .descricao {
-  margin-top: 30px;
-  text-align: left;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 30px;
+  background-color: #fff;
+  text-align: center;
 }
 
 .descricao ul {
-  list-style: square;
-  padding-left: 20px;
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
 }
 
-.rodape {
-  background: #004400;
+.descricao li {
+  margin: 8px 0;
+  font-size: 16px;
+}
+
+/* Footer */
+.footer {
+  background-color: #007a2a;
   color: white;
   text-align: center;
-  padding: 15px 10px;
-  font-size: 13px;
+  padding: 20px 10px;
+  font-size: 14px;
 }
 
-.whatsapp-fixo {
+.footer p {
+  margin: 6px 0;
+}
+
+/* WhatsApp flutuante */
+.whatsapp-float {
   position: fixed;
   bottom: 20px;
   right: 20px;
   z-index: 999;
+}
+
+.whatsapp-float img {
+  width: 55px;
+  height: 55px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .botao-central {
+    width: 90%;
+  }
 }
