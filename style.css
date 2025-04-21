@@ -1,198 +1,43 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #fdfdfd;
-}
-
-.barra-topo {
-  background-color: #ccffcc;
-  text-align: center;
-  padding: 5px;
-  font-size: 14px;
-}
-
-.wrapper {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.header {
-  background-color: #003300;
-}
-
-.header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 10px 20px;
-}
-
-.logo {
-  height: 60px;
-  cursor: pointer;
-}
-
-.menu {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-  margin: 0;
-  padding: 0;
-}
-
-.menu li {
-  position: relative;
-}
-
-.menu a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  padding: 8px 12px;
-  display: block;
-  border-radius: 5px;
-}
-
-.menu a:hover {
-  background-color: #006600;
-}
-
-/* Submenu */
-.menu li ul {
-  display: none;
-  position: absolute;
-  background-color: #009933;
-  top: 100%;
-  left: 0;
-  padding: 0;
-  list-style: none;
-  min-width: 200px;
-  z-index: 1000;
-}
-
-.menu li:hover ul {
-  display: block;
-}
-
-.menu li ul li a {
-  padding: 10px;
-  color: white;
-}
-
-/* WhatsApp fixo topo */
-.botao-fixo-topo {
-  text-align: center;
-  margin: 15px 0;
-}
-
-.botao-fixo-topo a {
-  background-color: #25D366;
-  padding: 10px 20px;
-  border-radius: 20px;
-  color: white;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-/* Imagem */
-.imagem-celular-mao {
-  display: block;
-  max-width: 90%;
-  margin: 20px auto;
-}
-
-/* Selo */
-.selo-garantia {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.selo-garantia img {
-  width: 80px;
-  height: auto;
-}
-
-/* Botão centro */
-.botao-whatsapp-centro {
-  display: flex;
-  justify-content: center;
-  margin: 25px 0;
-}
-
-.botao-whatsapp-centro button {
-  background-color: #25D366;
-  padding: 16px 30px;
-  color: white;
-  font-size: 18px;
-  border: none;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  cursor: pointer;
-}
-
-.botao-whatsapp-centro img {
-  width: 26px;
-  height: 26px;
-}
-
-/* Descrição */
-.descricao {
-  padding: 40px 20px;
-  text-align: center;
-}
-
-.descricao-content ul {
-  list-style: none;
-  padding: 0;
-}
-
-.descricao-content li {
-  margin: 10px 0;
-}
-
-/* Rodapé */
-.footer {
-  background-color: #003300;
-  color: white;
-  padding: 20px;
-  text-align: center;
-  font-size: 14px;
-}
-
-.credibilidade {
-  font-style: italic;
-  margin-top: 5px;
-}
-
-/* Botão flutuante */
-.whatsapp-float {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 999;
-}
-
-.whatsapp-float img {
-  width: 60px;
-  height: 60px;
-}
-
-/* Responsivo */
-@media (max-width: 768px) {
-  .header .container {
-    flex-direction: column;
-    align-items: center;
+@media (min-width: 768px) {
+  .menu-principal {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 10px 0;
+    background-color: #004d00;
   }
 
-  .menu {
-    flex-direction: column;
-    align-items: center;
+  .menu-principal li {
+    position: relative;
+    list-style: none;
   }
 
-  .menu li ul {
-    position: static;
+  .menu-principal li ul {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 220px;
+    background-color: #009900;
+    padding: 10px;
+    border-radius: 8px;
+    z-index: 100;
+  }
+
+  .menu-principal li ul li {
+    padding: 5px 10px;
+  }
+
+  .menu-principal li ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .menu-principal li:hover ul {
+    display: block;
+  }
+
+  .menu-principal li ul {
+    display: none;
   }
 }
