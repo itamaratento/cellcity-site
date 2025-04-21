@@ -1,171 +1,124 @@
-/* Estilo geral */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
-  background-color: #f9f9f9;
-  color: #333;
+  background: #f9f9f9;
+  color: #222;
 }
 
 .barra-topo {
-  background-color: #dfffe1;
-  color: #005500;
+  background: #d9ffd9;
   text-align: center;
-  padding: 6px;
+  padding: 5px 10px;
   font-size: 14px;
-  font-weight: bold;
 }
 
-.header {
-  background-color: #004400;
-  padding: 10px 0;
-}
-
-.container {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 20px;
+.menu-principal {
+  background: #003d00;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 12px 20px;
+  color: white;
+  flex-wrap: wrap;
 }
 
-.logo {
-  height: 60px;
+.menu-principal .logo {
+  height: 50px;
+  cursor: pointer;
 }
 
-.menu {
+.menu-principal nav ul {
   list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
   display: flex;
-  gap: 20px;
 }
 
-.menu li {
+.menu-principal nav ul li {
   position: relative;
+  margin: 0 10px;
 }
 
-.menu > li > a {
-  color: #fff;
+.menu-principal nav ul li a {
+  color: white;
   text-decoration: none;
-  font-weight: bold;
-  padding: 8px 12px;
-  display: block;
+  padding: 6px 10px;
 }
 
-.menu li:hover ul {
-  display: block;
-}
-
-.menu ul {
+.submenu {
   display: none;
   position: absolute;
-  top: 100%;
-  left: 0;
   background-color: #006600;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  z-index: 999;
-  min-width: 180px;
-  border-radius: 4px;
+  padding: 10px;
+  border-radius: 6px;
+  top: 35px;
+  left: 0;
 }
 
-.menu ul li a {
-  padding: 10px 12px;
-  color: #fff;
-  text-decoration: none;
+.dropdown:hover .submenu {
   display: block;
 }
 
-.menu ul li a:hover {
-  background-color: #008800;
+.submenu li {
+  margin: 5px 0;
 }
 
-.hero {
+.whats-topo {
   text-align: center;
-  padding: 30px 20px;
-  background-color: #e8f9ef;
+  margin: 10px 0;
 }
 
-.hero img {
-  max-width: 100%;
+.conteudo {
+  padding: 20px;
+  text-align: center;
+}
+
+.imagem-central {
+  max-width: 90%;
   height: auto;
-  margin-top: 15px;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  margin: 20px auto;
+  display: block;
 }
 
-.selo-garantia img {
-  width: 76px;
+.botao-whatsapp-principal button {
+  background-color: #25D366;
+  color: white;
+  font-size: 18px;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 30px;
+  margin-top: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
 .descricao {
-  padding: 40px 20px;
-  text-align: center;
-}
-
-.descricao-content ul {
-  list-style: none;
-  padding: 0;
-  max-width: 700px;
-  margin: 0 auto;
-}
-
-.descricao-content ul li {
-  margin-bottom: 10px;
+  margin-top: 30px;
   text-align: left;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.descricao ul {
+  list-style: square;
   padding-left: 20px;
-  position: relative;
 }
 
-.descricao-content ul li::before {
-  content: "✔";
-  position: absolute;
-  left: 0;
-  color: green;
-}
-
-.footer {
-  background-color: #006600;
+.rodape {
+  background: #004400;
   color: white;
-  padding: 15px;
   text-align: center;
+  padding: 15px 10px;
   font-size: 13px;
 }
 
-.credibilidade {
-  font-size: 12px;
-  color: #ccffcc;
-  margin-top: 5px;
-}
-
-.botao-fixo-topo {
-  margin-bottom: 20px;
-}
-
-.botao-fixo-topo a {
-  background-color: #25D366;
-  padding: 10px 20px;
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 30px;
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-}
-
-/* Botão flutuante */
-.whatsapp-float {
+.whatsapp-fixo {
   position: fixed;
-  bottom: 18px;
-  right: 18px;
+  bottom: 20px;
+  right: 20px;
   z-index: 999;
-}
-
-.whatsapp-float img {
-  width: 56px;
-  height: 56px;
 }
