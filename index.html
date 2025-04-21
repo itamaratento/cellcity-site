@@ -1,54 +1,108 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cell City | Assistência Técnica</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Formatação de computadores, instalação de Windows e manutenção técnica especializada em Goiânia.">
+  <title>Cell City | Manutenção de Computadores</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <header class="topo">
-    <img src="logo.webp" alt="Logo Cell City" class="logo">
-    <nav>
-      <a href="index.html">Início</a>
-      <div class="dropdown">
-        <button class="dropdown-btn">Serviços</button>
-        <div class="dropdown-content">
-          <a href="formatacao.html">Formatação de Celular</a>
-          <a href="conserto.html">Conserto de Celulares</a>
-          <a href="computador.html">Manutenção de Computadores</a>
-          <a href="bateria.html">Troca de Bateria</a>
-          <a href="limpeza.html">Higienização de Aparelhos</a>
-          <a href="acessorios.html">Acessórios</a>
-        </div>
+  <!-- TOPO -->
+  <div class="barra-topo">
+    <p>Atendimento rápido com garantia real e peças com procedência. <strong>Cell City é confiança de verdade!</strong></p>
+  </div>
+
+  <!-- CABEÇALHO -->
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <img src="logo.webp" alt="Logo Cell City" class="logo" onclick="window.location.href='index.html'" />
+        <nav>
+          <ul class="menu">
+            <li><a href="index.html">Início</a></li>
+            <li class="dropdown">
+              <a href="#">Serviços</a>
+              <ul class="submenu">
+                <li><a href="conserto.html">Conserto de Celulares</a></li>
+                <li><a href="formatacao.html">Formatação de Celulares</a></li>
+                <li><a href="computador.html">Manutenção de Computadores</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
       </div>
-    </nav>
-  </header>
+    </header>
 
-  <main class="conteudo">
-    <h1>Bem-vindo à Cell City</h1>
-    <p>Conserto de celulares, formatação de aparelhos e manutenção de computadores com garantia.</p>
-    <img src="celular.webp" alt="Celular com defeito" class="imagem-destaque">
+    <!-- BOTÃO FIXO APÓS MENU -->
+    <div class="botao-fixo-topo">
+      <a href="https://wa.me/5562981605863" target="_blank" rel="noopener noreferrer">
+        <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp" style="width:20px; vertical-align:middle; margin-right:8px;">
+        Chamar no WhatsApp
+      </a>
+    </div>
 
-    <!-- Espaço para conteúdo adicional abaixo de Bem-vindo -->
-    <section>
-      <h2>Nossos Diferenciais</h2>
-      <p>Atendimento direto com técnico, sem enrolação e sem terceirização.</p>
-      <p>Peças com procedência garantida e serviços com garantia real.</p>
-      <p>Estamos no coração de Goiânia, prontos para te atender com rapidez e confiança.</p>
-    </section>
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="main">
+      <section class="hero">
+        <h1>Bem-vindo! </h1>
+        <h1>Cell City Informática</h1>
+        <p>Formatamos seu computador com Windows e Office instalados – tudo pronto para uso!</p>
 
-    <a href="https://wa.me/5562981605863" target="_blank" class="botao-whatsapp">Chamar no WhatsApp</a>
-  </main>
+        <img src="manutencao.webp" alt="Manutenção de Computadores" class="imagem-celular-mao" loading="lazy" />
 
-  <footer class="rodape">
-    <p>© 2025 Cell City - Rua 6, nº 455 - Setor Central - Goiânia</p>
-    <p>Atendimento direto com garantia e sem terceirização.</p>
-  </footer>
+        <div class="selo-garantia" style="text-align: center; margin-top: 20px;">
+          <img src="selo-garantia.webp" alt="Selo de Garantia" style="width: 76px; height: auto;" loading="lazy" />
+        </div>
 
-  <a href="https://wa.me/5562981605863" class="flutuante" target="_blank">
-    <img src="whatsapp-icon.webp" alt="WhatsApp">
+        <!-- BOTÃO GRANDE -->
+        <div style="display: flex; justify-content: center; margin-top: 20px;">
+          <a href="https://wa.me/5562981605863" target="_blank" style="text-decoration: none;">
+            <button style="
+              background-color: #25D366;
+              padding: 20px 35px;
+              border-radius: 12px;
+              color: white;
+              font-size: 21px;
+              border: none;
+              box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+              display: flex;
+              align-items: center;
+              gap: 15px;
+            ">
+              <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp" style="width: 30px; height: 30px;">
+              (62) 98160-5863
+            </button>
+          </a>
+        </div>
+      </section>
+
+      <section class="descricao">
+        <div class="descricao-content">
+          <h2>Manutenção Profissional de Computadores</h2>
+          <ul>
+            <li>Formatação completa com backup de segurança</li>
+            <li>Remoção de vírus, malwares e propagandas</li>
+            <li>Instalação de Windows original e drivers atualizados</li>
+            <li>Troca de HD, SSD, memória RAM e fonte</li>
+            <li>Limpeza interna e melhoria no desempenho do sistema</li>
+            <li>Mais de 20 anos de experiência em informática técnica</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer class="footer">
+      <p>&copy; 2025 Cell City Informática | Rua 6, nº 455, Setor Central - Goiânia</p>
+      <p class="credibilidade">Todos os serviços são realizados diretamente pela equipe técnica da Cell City, sem terceirização.</p>
+    </footer>
+  </div>
+
+  <!-- BOTÃO WHATSAPP FLUTUANTE -->
+  <a href="https://wa.me/5562981605863" class="whatsapp-float" target="_blank" aria-label="Conversar pelo WhatsApp">
+    <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp" />
   </a>
 
 </body>
