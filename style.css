@@ -1,89 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Assistência técnica de celular em Goiânia com garantia, peças originais e atendimento rápido. Cell City, Rua 6, Setor Central.">
-  <title>Cell City | Assistência Técnica em Goiânia</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+html, body {
+  height: 100%;
+}
 
-  <div class="barra-topo">
-    <p>Atendimento rápido com garantia real e peças com procedência. <strong>Cell City é confiança de verdade!</strong></p>
-  </div>
+body {
+  font-family: Arial, sans-serif;
+  background: #f8f8f8;
+  position: relative;
+  min-height: 100%;
+}
 
-  <div class="wrapper">
-    <header class="header">
-      <div class="container">
-        <img src="logo.webp" alt="Logo Cell City" class="logo" loading="lazy">
-        <nav>
-          <ul class="menu">
-            <li><a href="#">Início</a></li>
-            <li class="has-submenu" onclick="toggleMenu(this)">
-              <span class="menu-toggle">Serviços</span>
-              <ul class="submenu">
-                <li><a href="#">📱 Conserto de Celulares</a></li>
-                <li><a href="#">⚙️ Formatação de Celulares</a></li>
-                <li><a href="#">💻 Manutenção de Computadores</a></li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 
-    <main class="main">
-      <section class="hero">
-        <div class="botao-fixo-topo">
-          <a href="https://wa.me/5562981605863" target="_blank">
-            <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp" style="width:20px; vertical-align:middle; margin-right:8px;" loading="lazy">
-            Chamar no WhatsApp
-          </a>
-        </div>
+/* Faixa de confiança */
+.barra-topo {
+  background: #e0ffe0;
+  color: #006600;
+  text-align: center;
+  font-size: 13px;
+  padding: 6px 10px;
+}
 
-        <h1>Bem-vindo à Cell City</h1>
-        <p>Troca de tela, formatação, reparos e manutenção com garantia!</p>
+/* Cabeçalho e menu */
+.header {
+  background: #004d00;
+  padding: 10px 20px;
+}
 
-        <img src="celular.webp" alt="Imagem Celular" class="imagem-celular-mao" loading="lazy" fetchpriority="high">
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
 
-        <div class="selo-garantia">
-          <img src="selo-garantia.webp" alt="Selo de Garantia" style="width: 76px; height: auto;" loading="lazy">
-        </div>
-      </section>
+.logo {
+  height: 72px;
+}
 
-      <section class="descricao">
-        <div class="descricao-content">
-          <h2>Por que escolher a Cell City?</h2>
-          <ul>
-            <li>Peças com procedência real e testadas</li>
-            <li>Garantia total em troca de tela e reparos</li>
-            <li>Atendimento técnico com agilidade</li>
-            <li>Mais de 10 anos de experiência no setor</li>
-          </ul>
-        </div>
-      </section>
-    </main>
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
 
-    <footer class="footer">
-      <p>&copy; 2025 Cell City Informática | Rua 6, nº 455, Setor Central - Goiânia</p>
-      <p class="credibilidade">Todos os serviços são realizados diretamente pela equipe técnica da Cell City, sem terceirização.</p>
-    </footer>
-  </div>
+.menu li {
+  position: relative;
+}
 
-  <a href="https://wa.me/5562981605863" class="whatsapp-float" target="_blank">
-    <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp" loading="lazy">
-  </a>
+.menu a, .menu-toggle {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
 
-  <script>
-    function toggleMenu(el) {
-      el.classList.toggle("ativo");
-      document.querySelectorAll('.has-submenu').forEach(item => {
-        if (item !== el) item.classList.remove("ativo");
-      });
-    }
-  </script>
+.submenu {
+  display: none;
+  position: absolute;
+  background: #004d00;
+  top: 100%;
+  left: 0;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 5px;
+}
 
-</body>
-</html>
+.has-submenu.ativo .submenu {
+  display: flex;
+}
+
+.submenu a i {
+  margin-right: 6px;
+}
+
+/* Conteúdo principal */
+.main {
+  flex: 1;
+  padding: 40px 20px;
+  padding-bottom: 100px;
+}
+
+.hero {
+  background: #e4ffe4;
+  text-align: center;
+  padding: 40px 20px;
+  margin-bottom: 30px;
+}
+
+/* Botão fixo acima do "Bem-vindo" */
+.botao-fixo-topo {
+  margin-bottom: 20px;
+}
+
+.botao-fixo-topo a {
+  background: #25d366;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  display: inline-block;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  font-size: 14px;
+}
+
+.hero h1 {
+  color: #004d00;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+/* Imagem do celular aumentada em 20% */
+.imagem-celular-mao {
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+  margin: 20px auto;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+/* Selo de Garantia */
+.selo-garantia {
+  margin-top: 10px;
+}
+
+.selo-garantia img {
+  width: 76px;
+  height: auto;
+}
+
+/* Bloco de descrição */
+.descricao {
+  background: #ffffff;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.descricao-content h2 {
+  font-size: 22px;
+  color: #004d00;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.descricao-content ul {
+  list-style: disc;
+  max-width: 500px;
+  margin: auto;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.descricao-content li {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+/* Rodapé */
+.footer {
+  background: #004d00;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: auto;
+}
+
+.credibilidade {
+  font-size: 13px;
+  color: #ccc;
+  margin-top: 10px;
+}
+
+/* Botão flutuante do WhatsApp */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+.whatsapp-float img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+/* Responsivo para celular */
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .submenu {
+    position: static;
+    width: 100%;
+  }
+
+  .imagem-celular-mao {
+    max-width: 90%;
+  }
+
+  .descricao-content ul {
+    padding-left: 20px;
+  }
+}
