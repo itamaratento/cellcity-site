@@ -155,11 +155,11 @@ body {
   margin-bottom: 30px;
 }
 
-/* IMAGEM COM DESTAQUE 120% */
+/* IMAGEM AJUSTADA PARA 90% */
 .imagem-celular-mao {
-  width: 120%;
+  width: 90%;
   max-width: 720px;
-  min-width: 300px;
+  min-width: 250px;
   height: auto;
   margin: 20px auto;
   display: block;
