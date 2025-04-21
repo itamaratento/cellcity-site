@@ -78,9 +78,6 @@ body {
   flex-direction: column;
   padding: 10px;
   border-radius: 5px;
-  white-space: nowrap;
-  min-width: 200px;
-  z-index: 999;
 }
 
 .has-submenu.ativo .submenu {
@@ -146,12 +143,11 @@ body {
 
 /* Selo de Garantia */
 .selo-garantia {
-  text-align: center;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .selo-garantia img {
-  width: 100px;
+  width: 76px;
   height: auto;
 }
 
@@ -171,17 +167,15 @@ body {
 
 .descricao-content ul {
   list-style: disc;
-  max-width: 600px;
+  max-width: 500px;
   margin: auto;
-  padding-left: 20px;
   text-align: left;
+  padding-left: 20px;
 }
 
-.descricao-content ul li {
+.descricao-content li {
+  margin: 10px 0;
   font-size: 16px;
-  margin-bottom: 10px;
-  line-height: 1.6;
-  color: #333;
 }
 
 /* Rodapé */
@@ -233,12 +227,5 @@ body {
 
   .descricao-content ul {
     padding-left: 20px;
-  }
-}
-
-/* Ajuste fino do menu no desktop */
-@media (min-width: 769px) {
-  .menu {
-    margin-right: 40px;
   }
 }
