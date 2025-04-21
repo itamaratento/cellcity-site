@@ -9,23 +9,24 @@
   <link rel="preload" as="image" href="tecnico-cellcity-manutencao-pc.webp" type="image/webp">
 
   <style>
-    .menu-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    .menu-wrapper {
+      position: relative;
+      height: 50px;
       width: 100%;
     }
 
     .menu {
-      display: flex;
-      justify-content: center;
+      position: absolute;
+      left: 30%;
+      top: 50%;
+      transform: translateY(-50%);
       list-style: none;
       padding: 0;
       margin: 0;
     }
 
     .menu li {
-      margin: 0 10px;
+      display: inline-block;
     }
 
     .menu a {
@@ -59,17 +60,15 @@
   <div class="wrapper">
     <header class="header">
       <div class="container">
-        <!-- LOGO COM LINK FUNCIONAL PARA VOLTAR -->
+        <!-- LOGO -->
         <img src="logo.webp" alt="Logo Cell City" class="logo" loading="lazy" style="cursor:pointer;"
              onclick="window.location.href='index.html'">
 
-        <!-- MENU CENTRALIZADO -->
-        <div class="menu-container">
-          <nav>
-            <ul class="menu">
-              <li><a href="index.html">Início</a></li>
-            </ul>
-          </nav>
+        <!-- MENU POSICIONADO A 30% -->
+        <div class="menu-wrapper">
+          <ul class="menu">
+            <li><a href="index.html">Início</a></li>
+          </ul>
         </div>
       </div>
     </header>
