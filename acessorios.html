@@ -90,4 +90,46 @@
           </div>
           <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div>
-          <div class="
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2025 Cell City. Todos os direitos reservados. Rua 6, Setor Central, Goiânia.</p>
+    </footer>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Inicialização do Swiper -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      new Swiper('.hero-carousel', {
+        loop: true,
+        navigation: {
+          nextEl: '.hero-carousel .swiper-button-next',
+          prevEl: '.hero-carousel .swiper-button-prev',
+        },
+        pagination: {
+          el: '.hero-carousel .swiper-pagination',
+          clickable: true,
+        },
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+      });
+    });
+
+    // Menu toggle (mantido funcionando)
+    document.querySelectorAll('.has-submenu .menu-toggle').forEach(toggle => {
+      toggle.addEventListener('click', function () {
+        this.parentElement.classList.toggle('ativo');
+      });
+    });
+  </script>
+
+</body>
+</html>
