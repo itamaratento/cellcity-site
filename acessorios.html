@@ -9,21 +9,40 @@
   <!-- Swiper CSS -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f8f8f8;
+    }
+
+    .hero {
+      padding: 20px 10px;
+      background-color: #e9ffe9;
+    }
+
     .swiper-container {
       width: 100%;
       max-width: 720px;
+      height: auto;
       margin: 0 auto;
+    }
+
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     .swiper-slide img {
       width: 100%;
-      height: auto;
+      max-height: 380px;
+      object-fit: cover;
       border-radius: 10px;
     }
 
     .swiper-button-next,
     .swiper-button-prev {
-      color: #fff;
+      color: #00cc66;
     }
 
     .swiper-pagination-bullet {
@@ -51,6 +70,12 @@
       <!-- Paginação -->
       <div class="swiper-pagination"></div>
     </div>
+  </section>
+
+  <!-- Outras seções do seu site -->
+  <section>
+    <h2 style="text-align:center; margin-top: 40px;">Outros conteúdos do site aqui...</h2>
+    <p style="text-align:center;">Agora o carrossel não ocupa mais o site todo.</p>
   </section>
 
   <!-- Swiper JS -->
