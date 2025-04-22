@@ -1,10 +1,15 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html, body {
+<!DOCTYPE html><html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cell City | Assistência Técnica</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }html, body {
   height: 100%;
 }
 
@@ -85,7 +90,7 @@ body {
 }
 
 .submenu {
-  list-style: none; /* REMOVENDO BOLINHAS */
+  list-style: none;
   display: none;
   position: absolute;
   background-color: #e0ffe0;
@@ -157,7 +162,6 @@ body {
   margin-bottom: 30px;
 }
 
-/* IMAGEM AJUSTADA PARA 20% */
 .imagem-celular-mao {
   width: 20%;
   max-width: 300px;
@@ -167,6 +171,15 @@ body {
   display: block;
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+img.melhorada {
+  max-width: 100%;
+  width: 280px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  display: block;
 }
 
 .selo-garantia {
@@ -263,3 +276,40 @@ body {
     padding-left: 20px;
   }
 }
+
+  </style>
+</head>
+<body>
+  <div class="barra-topo">
+    Atendimento rápido com garantia real e peças com procedência. <strong>Cell City é confiança de verdade!</strong>
+  </div>
+  <header class="header">
+    <div class="container">
+      <img src="logo.webp" alt="Logo Cell City" class="logo">
+      <ul class="menu">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="#">Serviços</a></li>
+      </ul>
+    </div>
+  </header>
+  <main class="main">
+    <section class="hero">
+      <div class="botao-fixo-topo">
+        <a href="https://wa.me/5562981605863" target="_blank">Chamar no WhatsApp</a>
+      </div>
+      <h1>Bem-vindo à Cell City!</h1>
+      <p>Assistência técnica especializada em celulares e computadores.</p>
+      <img src="tecnico-cellcity.jpg" alt="Técnico em manutenção" class="melhorada">
+    </section>
+  </main>
+  <footer class="footer">
+    <p>Cell City | Rua 6, Setor Central - Goiânia</p>
+    <div class="credibilidade">Confiança e garantia real.</div>
+  </footer>
+  <div class="whatsapp-float">
+    <a href="https://wa.me/5562981605863" target="_blank">
+      <img src="zap-icon.png" alt="WhatsApp">
+    </a>
+  </div>
+</body>
+</html>
