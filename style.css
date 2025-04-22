@@ -1,15 +1,10 @@
-<!DOCTYPE html><html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cell City | Assistência Técnica</title>
-  <link rel="stylesheet" href="style.css">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }html, body {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
   height: 100%;
 }
 
@@ -205,16 +200,17 @@ img.melhorada {
 }
 
 .descricao-content ul {
-  list-style: disc;
+  list-style-type: disc;
   max-width: 500px;
-  margin: auto;
-  text-align: left;
+  margin: 0 auto; /* Centraliza a lista */
   padding-left: 20px;
+  text-align: left; /* Alinha o texto à esquerda */
 }
 
 .descricao-content li {
   margin: 10px 0;
   font-size: 16px;
+  line-height: 1.6; /* Melhora a legibilidade */
 }
 
 .footer {
@@ -276,40 +272,3 @@ img.melhorada {
     padding-left: 20px;
   }
 }
-
-  </style>
-</head>
-<body>
-  <div class="barra-topo">
-    Atendimento rápido com garantia real e peças com procedência. <strong>Cell City é confiança de verdade!</strong>
-  </div>
-  <header class="header">
-    <div class="container">
-      <img src="logo.webp" alt="Logo Cell City" class="logo">
-      <ul class="menu">
-        <li><a href="index.html">Início</a></li>
-        <li><a href="#">Serviços</a></li>
-      </ul>
-    </div>
-  </header>
-  <main class="main">
-    <section class="hero">
-      <div class="botao-fixo-topo">
-        <a href="https://wa.me/5562981605863" target="_blank">Chamar no WhatsApp</a>
-      </div>
-      <h1>Bem-vindo à Cell City!</h1>
-      <p>Assistência técnica especializada em celulares e computadores.</p>
-      <img src="tecnico-cellcity.jpg" alt="Técnico em manutenção" class="melhorada">
-    </section>
-  </main>
-  <footer class="footer">
-    <p>Cell City | Rua 6, Setor Central - Goiânia</p>
-    <div class="credibilidade">Confiança e garantia real.</div>
-  </footer>
-  <div class="whatsapp-float">
-    <a href="https://wa.me/5562981605863" target="_blank">
-      <img src="zap-icon.png" alt="WhatsApp">
-    </a>
-  </div>
-</body>
-</html>
