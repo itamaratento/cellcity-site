@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Consertos de Celular | Cell City</title>
+  <meta name="description" content="Formatação de computadores, instalação de Windows e manutenção técnica especializada em Goiânia. Atendimento rápido com garantia na Cell City, Rua 6, Setor Central.">
+  <title>Cell City | Formatação e Manutenção de Computadores em Goiânia</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -15,40 +16,74 @@
   <div class="wrapper">
     <header class="header">
       <div class="container">
-        <img src="logo.webp" alt="Logo Cell City" class="logo" loading="lazy"
-             onclick="window.location.href='index.html'" style="cursor:pointer;">
+        <img src="logo.webp" alt="Logo Cell City" class="logo" loading="lazy" onclick="window.location.href='index.html'" style="cursor:pointer;">
         <ul class="menu">
           <li><a href="index.html">Início</a></li>
+          <li class="has-submenu">
+            <span class="menu-toggle">Serviços</span>
+            <ul class="submenu">
+              <li><a href="acessorios.html">Acessórios</a></li>
+              <li><a href="consertos.html">Consertos de Celular</a></li>
+              <li><a href="formatacao.html">Formatação de Celular</a></li>
+              <li><a href="manutencao.html">Manutenção de Computador</a></li>
+              <li><a href="tela.html">Troca de Tela</a></li>
+            </ul>
+          </li>
         </ul>
       </div>
     </header>
 
     <main class="main">
       <section class="hero">
-        <h1>Consertos de Celular</h1>
-        <p>Diagnóstico preciso e reparo completo para todas as marcas. Seu celular volta a funcionar como novo, com garantia e agilidade.</p>
+        <div class="botao-fixo-topo">
+          <a href="https://wa.me/5562981605863" target="_blank" rel="noopener noreferrer">
+            <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp" style="width:20px; vertical-align:middle; margin-right:8px;" loading="lazy">
+            Chamar no WhatsApp
+          </a>
+        </div>
 
-        <img src="tecnico-cellcity-manutencao-pc.webp" alt="Consertos de Celular" class="imagem-celular-mao" loading="lazy">
+        <h1>Bem-vindo! </h1>
+        <h1>Cell City Informática</h1>
+        <p>Formatamos seu computador com Windows e Office instalados – tudo pronto para uso!</p>
 
-        <div style="margin-top: 25px;">
+        <img src="tecnico-cellcity-manutencao-pc.webp" alt="Técnico da Cell City consertando computador" class="imagem-celular-mao" loading="lazy">
+
+        <div class="selo-garantia" style="text-align: center; margin-top: 20px;">
+          <img src="selo-garantia.webp" alt="Selo de Garantia" loading="lazy">
+        </div>
+
+        <div style="display: flex; justify-content: center; margin-top: 20px;">
           <a href="https://wa.me/5562981605863" target="_blank" style="text-decoration: none;">
             <button style="
               background-color: #25D366;
-              padding: 15px 30px;
-              border-radius: 10px;
+              padding: 20px 35px;
+              border-radius: 12px;
               color: white;
-              font-size: 18px;
+              font-size: 21px;
               border: none;
-              box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+              box-shadow: 0 4px 12px rgba(0,0,0,0.25);
               display: flex;
               align-items: center;
-              gap: 10px;
-              cursor: pointer;
+              gap: 15px;
             ">
-              <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp" style="width: 24px; height: 24px;">
-              Falar no WhatsApp
+              <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp" style="width: 30px; height: 30px;">
+              (62) 98160-5863
             </button>
           </a>
+        </div>
+      </section>
+
+      <section class="descricao">
+        <div class="descricao-content">
+          <h2>Manutenção Profissional de Computadores</h2>
+          <ul>
+            <li>Formatação completa com backup de segurança</li>
+            <li>Remoção de vírus, malwares e propagandas</li>
+            <li>Instalação de Windows original e drivers atualizados</li>
+            <li>Troca de HD, SSD, memória RAM e fonte</li>
+            <li>Limpeza interna e melhoria no desempenho do sistema</li>
+            <li>Mais de 20 anos de experiência em informática técnica</li>
+          </ul>
         </div>
       </section>
     </main>
@@ -63,5 +98,12 @@
     <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp" loading="lazy">
   </a>
 
+  <script>
+    document.querySelectorAll('.has-submenu .menu-toggle').forEach(toggle => {
+      toggle.addEventListener('click', function () {
+        this.parentElement.classList.toggle('ativo');
+      });
+    });
+  </script>
 </body>
 </html>
