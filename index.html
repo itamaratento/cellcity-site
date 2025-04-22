@@ -1,330 +1,112 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cell City | Assistência Técnica</title>
-  <link rel="stylesheet" href="style.css">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    html, body {
-      height: 100%;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-      background: #f8f8f8;
-      position: relative;
-      min-height: 100%;
-    }
-
-    .wrapper {
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-    }
-
-    .barra-topo {
-      background: #e0ffe0;
-      color: #006600;
-      text-align: center;
-      font-size: 13px;
-      padding: 6px 10px;
-    }
-
-    .header {
-      background: #004d00;
-      padding: 10px 20px;
-    }
-
-    .container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
-
-    .logo {
-      height: 72px;
-    }
-
-    .menu {
-      list-style: none;
-      display: flex;
-      gap: 20px;
-      padding: 10px 20px;
-      margin: 0 auto;
-      justify-content: center;
-      position: relative;
-      top: 0;
-      transform: none;
-      z-index: 999;
-      background-color: #004d00;
-      border-radius: 6px;
-    }
-
-    .menu li {
-      position: relative;
-    }
-
-    .menu a,
-    .menu-toggle {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      cursor: pointer;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      padding: 8px 16px;
-      line-height: 1.2;
-      height: 100%;
-    }
-
-    .menu-toggle:hover {
-      background-color: #006600;
-    }
-
-    .submenu {
-      list-style: none;
-      display: none;
-      position: absolute;
-      background-color: #e0ffe0;
-      border: 1px solid #c0e0c0;
-      top: 100%;
-      left: 0;
-      flex-direction: column;
-      padding: 10px 15px;
-      border-radius: 8px;
-      z-index: 999;
-      min-width: 180px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-    }
-
-    .submenu a {
-      color: #004d00;
-      font-weight: bold;
-      padding: 5px 0;
-      display: block;
-      transition: color 0.2s ease;
-      text-decoration: none;
-    }
-
-    .submenu a:hover {
-      color: #006600;
-    }
-
-    .has-submenu.ativo .submenu {
-      display: flex;
-    }
-
-    .main {
-      flex: 1;
-      padding: 40px 20px;
-      padding-bottom: 100px;
-    }
-
-    .hero {
-      background: #e4ffe4;
-      text-align: center;
-      padding: 40px 20px;
-      margin-bottom: 30px;
-    }
-
-    .botao-fixo-topo {
-      margin-bottom: 20px;
-    }
-
-    .botao-fixo-topo a {
-      background: #25d366;
-      color: white;
-      text-decoration: none;
-      padding: 10px 20px;
-      border-radius: 25px;
-      font-weight: bold;
-      display: inline-block;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-      font-size: 14px;
-    }
-
-    .hero h1 {
-      color: #004d00;
-      font-size: 28px;
-      margin-bottom: 10px;
-    }
-
-    .hero p {
-      font-size: 18px;
-      margin-bottom: 30px;
-    }
-
-    .imagem-celular-mao {
-      width: 20%;
-      max-width: 300px;
-      min-width: 150px;
-      height: auto;
-      margin: 20px auto;
-      display: block;
-      border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
-    }
-
-    img.melhorada {
-      max-width: 100%;
-      width: 280px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      margin: 20px auto;
-      display: block;
-    }
-
-    .selo-garantia {
-      margin-top: 10px;
-    }
-
-    .selo-garantia img {
-      width: 76px;
-      height: auto;
-    }
-
-    .descricao {
-      background: #ffffff;
-      text-align: center;
-      padding: 30px 20px;
-    }
-
-    .descricao-content h2 {
-      font-size: 22px;
-      color: #004d00;
-      margin-bottom: 15px;
-      text-align: center;
-    }
-
-    .descricao-content ul {
-      list-style-type: disc;
-      max-width: 500px;
-      margin: 0 auto; /* Centraliza a lista */
-      padding-left: 20px;
-      text-align: left; /* Alinha o texto à esquerda */
-    }
-
-    .descricao-content li {
-      margin: 10px 0;
-      font-size: 16px;
-      line-height: 1.6; /* Melhora a legibilidade */
-    }
-
-    .footer {
-      background: #004d00;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      margin-top: auto;
-    }
-
-    .credibilidade {
-      font-size: 13px;
-      color: #ccc;
-      margin-top: 10px;
-    }
-
-    .whatsapp-float {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      z-index: 9999;
-    }
-
-    .whatsapp-float img {
-      width: 55px;
-      height: 55px;
-      border-radius: 50%;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
-    }
-
-    @media (max-width: 768px) {
-      .container {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .menu {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-        margin-top: 15px;
-        background-color: #004d00;
-        border-radius: 6px;
-      }
-
-      .submenu {
-        position: static;
-        width: 100%;
-        text-align: center;
-      }
-
-      .imagem-celular-mao {
-        width: 90%;
-        max-width: none;
-        min-width: unset;
-      }
-
-      .descricao-content ul {
-        padding-left: 20px;
-      }
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Formatação de computadores, instalação de Windows e manutenção técnica especializada em Goiânia. Atendimento rápido com garantia na Cell City, Rua 6, Setor Central.">
+  <title>Cell City | Formatação e Manutenção de Computadores em Goiânia</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preload" as="image" href="tecnico-cellcity-manutencao-pc.webp" type="image/webp">
 </head>
 <body>
+
   <div class="barra-topo">
-    Atendimento rápido com garantia real e peças com procedência. <strong>Cell City é confiança de verdade!</strong>
+    <p>Atendimento rápido com garantia real e peças com procedência. <strong>Cell City é confiança de verdade!</strong></p>
   </div>
-  <header class="header">
-    <div class="container">
-      <img src="logo.webp" alt="Logo Cell City" class="logo">
-      <ul class="menu">
-        <li><a href="index.html">Início</a></li>
-        <li><a href="#">Serviços</a></li>
-      </ul>
-    </div>
-  </header>
-  <main class="main">
-    <section class="hero">
-      <div class="botao-fixo-topo">
-        <a href="https://wa.me/5562981605863" target="_blank">Chamar no WhatsApp</a>
-      </div>
-      <h1>Bem-vindo à Cell City!</h1>
-      <p>Assistência técnica especializada em celulares e computadores.</p>
-      <img src="tecnico-cellcity.jpg" alt="Técnico em manutenção" class="melhorada">
-    </section>
-    <section class="descricao">
-      <div class="descricao-content">
-        <h2>Manutenção Profissional de Computadores</h2>
-        <ul>
-          <li>Formatação completa com backup de segurança</li>
-          <li>Remoção de vírus, malwares e propagandas</li>
-          <li>Instalação de Windows original e drivers atualizados</li>
-          <li>Troca de HD, SSD, memória RAM e fonte</li>
-          <li>Limpeza interna e melhoria no desempenho do sistema</li>
-          <li>Mais de 20 anos de experiência em informática técnica</li>
+
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <img src="logo.webp" alt="Logo Cell City" class="logo" loading="lazy" style="cursor:pointer;"
+             onclick="window.location.href='index.html'">
+
+        <ul class="menu">
+          <li><a href="index.html">Início</a></li>
+          <li class="has-submenu">
+            <span class="menu-toggle">Serviços</span>
+            <ul class="submenu">
+              <li><a href="#">Acessórios</a></li>
+              <li><a href="#">Consertos de Celular</a></li>
+              <li><a href="#">Formatação de Celular</a></li>
+              <li><a href="#">Manutenção de Computador</a></li>
+              <li><a href="#">Troca de Tela</a></li>
+            </ul>
+          </li>
         </ul>
       </div>
-    </section>
-  </main>
-  <footer class="footer">
-    <p>Cell City | Rua 6, Setor Central - Goiânia</p>
-    <div class="credibilidade">Confiança e garantia real.</div>
-  </footer>
-  <div class="whatsapp-float">
-    <a href="https://wa.me/5562981605863" target="_blank">
-      <img src="zap-icon.png" alt="WhatsApp">
-    </a>
+    </header>
+
+    <main class="main">
+      <section class="hero">
+        <div class="botao-fixo-topo">
+          <a href="https://wa.me/5562981605863" target="_blank" rel="noopener noreferrer">
+            <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp" style="width:20px; vertical-align:middle; margin-right:8px;" loading="lazy">
+            Chamar no WhatsApp
+          </a>
+        </div>
+
+        <h1>Bem-vindo! </h1>
+        <h1>Cell City Informática</h1>
+        <p>Formatamos seu computador com Windows e Office instalados – tudo pronto para uso!</p>
+
+        <img src="tecnico-cellcity-manutencao-pc.webp" alt="Técnico da Cell City consertando computador" width="720" height="1080" class="imagem-celular-mao" fetchpriority="high" style="max-width: 100%; height: auto;">
+
+        <div class="selo-garantia" style="text-align: center; margin-top: 20px;">
+          <img src="selo-garantia.webp" alt="Selo de Garantia" style="width: 76px; height: auto;" loading="lazy">
+        </div>
+
+        <div style="display: flex; justify-content: center; margin-top: 20px;">
+          <a href="https://wa.me/5562981605863" target="_blank" style="text-decoration: none;">
+            <button style="
+              background-color: #25D366;
+              padding: 20px 35px;
+              border-radius: 12px;
+              color: white;
+              font-size: 21px;
+              border: none;
+              box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+              display: flex;
+              align-items: center;
+              gap: 15px;
+            ">
+              <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp" style="width: 30px; height: 30px;">
+              (62) 98160-5863
+            </button>
+          </a>
+        </div>
+      </section>
+
+      <section class="descricao">
+        <div class="descricao-content">
+          <h2>Manutenção Profissional de Computadores</h2>
+          <ul>
+            <li>Formatação completa com backup de segurança</li>
+            <li>Remoção de vírus, malwares e propagandas</li>
+            <li>Instalação de Windows original e drivers atualizados</li>
+            <li>Troca de HD, SSD, memória RAM e fonte</li>
+            <li>Limpeza interna e melhoria no desempenho do sistema</li>
+            <li>Mais de 20 anos de experiência em informática técnica</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2025 Cell City Informática | Rua 6, nº 455, Setor Central - Goiânia</p>
+      <p class="credibilidade">Todos os serviços são realizados diretamente pela equipe técnica da Cell City, sem terceirização.</p>
+    </footer>
   </div>
+
+  <a href="https://wa.me/5562981605863" class="whatsapp-float" target="_blank" aria-label="Abrir conversa no WhatsApp com a Cell City">
+    <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp" loading="lazy">
+  </a>
+
+  <script>
+    document.querySelectorAll('.has-submenu .menu-toggle').forEach(toggle => {
+      toggle.addEventListener('click', function () {
+        this.parentElement.classList.toggle('ativo');
+      });
+    });
+  </script>
 </body>
 </html>
