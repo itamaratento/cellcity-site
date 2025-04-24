@@ -3,107 +3,54 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Troca de tela de celular com qualidade, rapidez e garantia real na Cell City, em Goiânia. Atendimento técnico especializado em smartphones.">
+  <meta name="description" content="Troque a tela do seu celular com qualidade, peças originais e garantia de verdade. Atendimento rápido em Goiânia. Cell City é confiança técnica de verdade!">
   <title>Cell City | Troca de Tela de Celular em Goiânia</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-  <style>
-    .menu {
-      list-style: none;
-      display: flex;
-      gap: 30px;
-    }
+  <link rel="preload" as="image" href="tecnico-haroldo-troca-tela.webp" type="image/webp">
 
-    .menu li {
-      position: relative;
-    }
-
-    .menu a, .menu-toggle {
-      text-decoration: none;
-      color: white;
-      font-weight: bold;
-      padding: 10px;
-      display: block;
-      cursor: pointer;
-    }
-
-    .submenu {
-      display: none;
-      position: absolute;
-      background-color: #d5f5d5;
-      padding: 10px;
-      border-radius: 8px;
-      top: 100%;
-      left: 0;
-      z-index: 1000;
-    }
-
-    .has-submenu:hover .submenu {
-      display: block;
-    }
-
-    .submenu.ativo {
-      display: block !important;
-    }
-
-    nav, .header {
-      background-color: #004d00;
-      padding: 10px 20px;
-    }
-
-    .carrossel-cellcity {
-      margin: 40px auto;
-      text-align: center;
-    }
-
-    .carrossel-cellcity .swiper-slide {
-      color: #004d00;
-      font-weight: bold;
-      font-size: 16px;
-      padding-top: 15px;
-    }
-
-    .carrossel-cellcity .swiper-slide img {
-      display: block;
-      margin: 0 auto;
-      height: auto;
-      border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-    }
-
-    /* Desktop: 20% da largura da tela */
-    @media (min-width: 769px) {
-      .carrossel-cellcity .swiper-slide img {
-        width: 20vw;
-        max-width: 100%;
-      }
-    }
-
-    /* Celular: 90% da largura da tela */
-    @media (max-width: 768px) {
-      .carrossel-cellcity .swiper-slide img {
-        width: 90vw;
-        max-width: 100%;
-      }
-    }
-  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Cell City Informática",
+    "image": "https://seusite.com.br/tecnico-haroldo-troca-tela.webp",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rua 6, nº 455",
+      "addressLocality": "Goiânia",
+      "addressRegion": "GO",
+      "postalCode": "74023030",
+      "addressCountry": "BR"
+    },
+    "telephone": "+5562981605863",
+    "url": "https://seusite.com.br",
+    "description": "Troca de tela de celular com garantia e peças de procedência em Goiânia.",
+    "openingHours": "Mo-Sa 08:00-18:00"
+  }
+  </script>
 </head>
 <body>
+
+  <div class="barra-topo">
+    <p>Atendimento rápido com garantia real e peças com procedência. <strong>Cell City é confiança de verdade!</strong></p>
+  </div>
 
   <div class="wrapper">
     <header class="header">
       <div class="container">
-        <img src="logo.webp" alt="Logo Cell City" class="logo">
+        <img src="logo.webp" alt="Logo Cell City" class="logo" loading="lazy" style="cursor:pointer;"
+             onclick="window.location.href='index.html'">
+
         <ul class="menu">
-          <li><a href="#">Início</a></li>
+          <li><a href="index.html">Início</a></li>
           <li class="has-submenu">
             <span class="menu-toggle">Serviços</span>
             <ul class="submenu">
-              <li><a href="acessorios.html">Acessórios</a></li>
-              <li><a href="troca.html">Troca de Tela</a></li>
-              <li><a href="conserto.html">Consertos de Celular</a></li>
-              <li><a href="formatacao.html">Formatação de Celular</a></li>
-              <li><a href="manutencao.html">Manutenção de Computador</a></li>
+              <li><a href="#">Acessórios</a></li>
+              <li><a href="#">Consertos de Celular</a></li>
+              <li><a href="#">Formatação de Celular</a></li>
+              <li><a href="#">Manutenção de Computador</a></li>
+              <li><a href="#">Troca de Tela</a></li>
             </ul>
           </li>
         </ul>
@@ -112,41 +59,49 @@
 
     <main class="main">
       <section class="hero">
-        <h1>Bem-vindo à Cell City</h1>
-        <p>Troca de tela com rapidez, garantia e procedência!</p>
-        <img src="tecnico-haroldo-troca-tela.webp" class="imagem-celular-mao" alt="Técnico Haroldo">
-      </section>
+        <div class="botao-fixo-topo">
+          <a href="https://wa.me/5562981605863" target="_blank" rel="noopener noreferrer">
+            <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp" style="width:20px; vertical-align:middle; margin-right:8px;" loading="lazy">
+            Chamar no WhatsApp
+          </a>
+        </div>
 
-      <section class="carrossel-cellcity">
-        <div class="swiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="tecnico-haroldo-troca-tela.webp" alt="Antes do Reparo">
-              <p>Antes do Reparo</p>
-            </div>
-            <div class="swiper-slide">
-              <img src="tecnico-cellcity-manutencao-pc.webp" alt="Durante o Reparo">
-              <p>Durante o Reparo</p>
-            </div>
-            <div class="swiper-slide">
-              <img src="computador.webp" alt="Depois do Reparo">
-              <p>Depois do Reparo</p>
-            </div>
-          </div>
-          <div class="swiper-pagination"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+        <h1>Bem-vindo! </h1>
+        <h1>Cell City Informática</h1>
+        <p>Trocamos a tela do seu celular com rapidez, qualidade e garantia real!</p>
+
+        <img src="tecnico-haroldo-troca-tela.webp"
+             alt="Técnico da Cell City trocando tela de celular quebrado em Goiânia"
+             title="Troca de tela com garantia na Cell City em Goiânia"
+             width="720" height="1080"
+             class="imagem-celular-mao"
+             fetchpriority="high"
+             style="max-width: 100%; height: auto;">
+
+        <div class="selo-garantia" style="text-align: center; margin-top: 20px;">
+          <img src="selo-garantia.webp" alt="Selo de Garantia" style="width: 76px; height: auto;" loading="lazy">
+        </div>
+
+        <div style="display: flex; justify-content: center; margin-top: 20px;">
+          <a href="https://wa.me/5562981605863" target="_blank" style="text-decoration: none;">
+            <button style="
+              background-color: #25D366;
+              padding: 20px 35px;
+              border-radius: 12px;
+              color: white;
+              font-size: 21px;
+              border: none;
+              box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+              display: flex;
+              align-items: center;
+              gap: 15px;
+            ">
+              <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp" style="width: 30px; height: 30px;">
+              (62) 98160-5863
+            </button>
+          </a>
         </div>
       </section>
-
-      <div class="selo-garantia">
-        <img src="selo-garantia.webp" alt="Garantia Real">
-      </div>
-
-      <a href="https://wa.me/5562981605863" target="_blank" class="botao-whatsapp-destaque">
-        <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp" style="width: 30px;">
-        (62) 98160-5863
-      </a>
 
       <section class="descricao">
         <div class="descricao-content">
@@ -161,37 +116,43 @@
           </ul>
         </div>
       </section>
+
+      <section class="faq" style="margin: 40px 0; text-align: center;">
+        <h2 style="margin-bottom: 20px;">Dúvidas Frequentes sobre Troca de Tela de Celular</h2>
+        <div style="margin-bottom: 15px;">
+          <strong>Quanto tempo leva para trocar a tela?</strong><br>
+          Em média 1 a 2 horas, dependendo do modelo.
+        </div>
+        <div style="margin-bottom: 15px;">
+          <strong>A tela trocada tem garantia?</strong><br>
+          Sim, oferecemos garantia real e suporte técnico pós-serviço.
+        </div>
+        <div>
+          <strong>Trabalham com telas de iPhone e Samsung?</strong><br>
+          Sim! Atendemos diversas marcas com peças de procedência.
+        </div>
+      </section>
+
+      <div style="background-color: #e0ffe0; padding: 20px; margin: 60px auto; text-align: center; font-size: 18px; font-weight: bold;">
+        Clique no botão do WhatsApp e solicite agora sua troca de tela com garantia em Goiânia.<br>
+        A Cell City está pronta para te atender!
+      </div>
     </main>
 
     <footer class="footer">
-      <p>&copy; 2025 Cell City Informática | Rua 6, Setor Central, Goiânia</p>
+      <p>&copy; 2025 Cell City Informática | Rua 6, nº 455, Setor Central - Goiânia</p>
+      <p class="credibilidade">Todos os serviços são realizados diretamente pela equipe técnica da Cell City, sem terceirização.</p>
     </footer>
   </div>
 
-  <!-- Swiper JS -->
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <a href="https://wa.me/5562981605863" class="whatsapp-float" target="_blank" aria-label="Abrir conversa no WhatsApp com a Cell City">
+    <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp" loading="lazy">
+  </a>
+
   <script>
-    const swiper = new Swiper('.swiper', {
-      loop: true,
-      pagination: {
-        el: '.swiper-pagination',
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      autoplay: {
-        delay: 5000,
-        disableOnInteraction: false,
-      },
-    });
-
-    document.addEventListener("DOMContentLoaded", function () {
-      const toggle = document.querySelector(".menu-toggle");
-      const submenu = document.querySelector(".submenu");
-
-      toggle.addEventListener("click", function () {
-        submenu.classList.toggle("ativo");
+    document.querySelectorAll('.has-submenu .menu-toggle').forEach(toggle => {
+      toggle.addEventListener('click', function () {
+        this.parentElement.classList.toggle('ativo');
       });
     });
   </script>
