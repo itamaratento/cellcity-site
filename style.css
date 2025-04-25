@@ -34,12 +34,18 @@ body {
   padding: 10px 20px;
 }
 
-.container {
+.header .container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .header .container {
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 .logo {
@@ -53,10 +59,6 @@ body {
   padding: 10px 20px;
   margin: 0 auto;
   justify-content: center;
-  position: relative;
-  top: 0;
-  transform: none;
-  z-index: 999;
   background-color: #004d00;
   border-radius: 6px;
 }
@@ -85,7 +87,7 @@ body {
 }
 
 .submenu {
-  list-style: none; /* REMOVENDO BOLINHAS */
+  list-style: none;
   display: none;
   position: absolute;
   background-color: #e0ffe0;
@@ -157,7 +159,6 @@ body {
   margin-bottom: 30px;
 }
 
-/* IMAGEM AJUSTADA PARA 20% */
 .imagem-celular-mao {
   width: 20%;
   max-width: 300px;
@@ -169,15 +170,89 @@ body {
   box-shadow: 0 2px 10px rgba(0,0,0,0.2);
 }
 
-.selo-garantia {
-  margin-top: 10px;
+/* CARROSSEL */
+.carrossel-cellcity {
+  margin-top: 40px;
 }
 
+.carrossel-cellcity .swiper-slide {
+  text-align: center;
+  color: #004d00;
+  font-weight: bold;
+  font-size: 16px;
+  padding-top: 15px;
+}
+
+.carrossel-cellcity .swiper-slide img {
+  display: block;
+  margin: 0 auto;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* DESKTOP: imagem com 20% da largura */
+@media (min-width: 769px) {
+  .carrossel-cellcity .swiper-slide img {
+    width: 20vw;
+    max-width: 100%;
+  }
+}
+
+/* CELULAR: imagem com 90% da largura */
+@media (max-width: 768px) {
+  .carrossel-cellcity .swiper-slide img {
+    width: 90vw;
+    max-width: 100%;
+  }
+}
+
+/* TEXTO DOS SLIDES (Antes/Durante/Depois do Reparo) */
+.carrossel-cellcity .swiper-slide p {
+  margin-top: 24px;
+  margin-bottom: 50px;
+  font-size: 16px;
+  color: #004d00;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* SELO DE GARANTIA */
+.selo-garantia {
+  text-align: center;
+  margin: 60px auto 40px;
+}
 .selo-garantia img {
   width: 76px;
   height: auto;
 }
 
+/* BOTÃO WHATSAPP DESTACADO */
+.botao-whatsapp-destaque {
+  background-color: #25D366;
+  padding: 16px 32px;
+  border-radius: 12px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: center;
+  text-decoration: none;
+  margin: 40px auto 60px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: 360px;
+  transition: transform 0.2s ease;
+}
+
+.botao-whatsapp-destaque:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+}
+
+/* DESCRIÇÃO */
 .descricao {
   background: #ffffff;
   text-align: center;
@@ -204,6 +279,7 @@ body {
   font-size: 16px;
 }
 
+/* RODAPÉ */
 .footer {
   background: #004d00;
   color: white;
@@ -218,6 +294,7 @@ body {
   margin-top: 10px;
 }
 
+/* BOTÃO FLUTUANTE WHATSAPP */
 .whatsapp-float {
   position: fixed;
   bottom: 20px;
@@ -232,6 +309,7 @@ body {
   box-shadow: 0 2px 10px rgba(0,0,0,0.3);
 }
 
+/* RESPONSIVO */
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
@@ -262,4 +340,117 @@ body {
   .descricao-content ul {
     padding-left: 20px;
   }
+
+  .botao-whatsapp-destaque {
+    flex-direction: column;
+    gap: 8px;
+    font-size: 16px;
+    padding: 14px 24px;
+  }
+}
+
+
+.duvidas-frequentes {
+  background: #e0ffe0;
+  padding: 40px 20px;
+  text-align: center;
+  margin: 60px 0 40px;
+}
+
+.duvidas-frequentes h2 {
+  color: #004d00;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.duvidas-frequentes p {
+  font-size: 16px;
+  color: #004d00;
+  margin-bottom: 20px;
+}
+
+
+.faq {
+  background: #e0ffe0;
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: 60px auto;
+  border-radius: 12px;
+}
+
+.faq h2 {
+  color: #004d00;
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.faq-item {
+  margin-bottom: 16px;
+}
+
+.faq-question {
+  width: 100%;
+  background: #25D366;
+  color: white;
+  border: none;
+  text-align: left;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.faq-question:hover {
+  background: #1ebe5d;
+}
+
+.faq-answer {
+  display: none;
+  background: white;
+  color: #004d00;
+  padding: 12px 16px;
+  border-radius: 6px;
+  margin-top: 6px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+
+/* Botão WhatsApp fixo no topo */
+.chamar-topo {
+  background: #25D366;
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  display: inline-block;
+  margin: 15px auto;
+  border-radius: 40px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+  text-align: center;
+  font-size: 14px;
+}
+.chamar-topo img {
+  width: 16px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+/* Corrigir alinhamento dos vistos nas listas */
+.descricao-content ul {
+  list-style: none;
+  padding-left: 0;
+}
+.descricao-content ul li {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+.descricao-content ul li::before {
+  content: "✔️";
+  flex-shrink: 0;
+  font-size: 18px;
+  margin-top: 2px;
 }
