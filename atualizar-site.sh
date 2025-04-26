@@ -1,3 +1,4 @@
+#!/bin/bash
 git add .
-git commit -m "Atualização rápida no site"
+git commit -m "Atualização automática"
 git push origin main
