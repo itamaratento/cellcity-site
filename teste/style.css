@@ -1,4 +1,5 @@
-/* CSS OTIMIZADO - Cell City 2025 */
+
+/* CSS Corrigido e Organizado - Cell City 2025 */
 * {
   margin: 0;
   padding: 0;
@@ -110,15 +111,112 @@ html, body {
   padding: 40px 20px 100px;
 }
 
+/* Estilos da seção Hero */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Estilos do vídeo */
+.video-celular-mao {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Botão do WhatsApp */
+.whatsapp-central-incorporado a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    background: #25d366;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.whatsapp-central-incorporado a:hover {
+    background: #1da851;
+}
+
+.whatsapp-central-incorporado img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .video-celular-mao {
+        max-width: 100%;
+    }
+}
 .hero {
   background: #e4ffe4;
   text-align: center;
   padding: 40px 20px;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
 }
 
 .hero h1 { color: #004d00; font-size: 28px; margin-bottom: 10px; }
-.hero p { font-size: 18px; margin-bottom: 30px; }
+.hero p { font-size: 18px; margin-bottom: 20px; }
+
+.whatsapp-central-incorporado {
+  margin: 20px auto 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.whatsapp-central-incorporado a {
+  background-color: #25D366;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.whatsapp-central-incorporado a:hover {
+  background-color: #1ebe5d;
+}
+
+.whatsapp-central-incorporado img {
+  width: 20px;
+  height: 20px;
+}
+
 .imagem-celular-mao {
   width: 20%;
   max-width: 300px;
@@ -130,7 +228,11 @@ html, body {
   box-shadow: 0 2px 10px rgba(0,0,0,0.2);
 }
 
-.carrossel-cellcity { margin-top: 40px; }
+.carrossel-cellcity {
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
 .carrossel-cellcity .swiper-slide {
   text-align: center;
   color: #004d00;
@@ -167,66 +269,6 @@ html, body {
   height: auto;
 }
 
-.botao-whatsapp-destaque {
-  background-color: #25D366;
-  padding: 16px 32px;
-  border-radius: 12px;
-  color: white;
-  font-size: 18px;
-  font-weight: bold;
-  border: none;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  justify-content: center;
-  text-decoration: none;
-  margin: 40px auto 60px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  max-width: 360px;
-  transition: transform 0.2s ease;
-}
-
-.botao-whatsapp-destaque:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
-}
-
-.descricao {
-  background: #ffffff;
-  text-align: center;
-  padding: 30px 20px;
-}
-
-.descricao-content h2 {
-  font-size: 22px;
-  color: #004d00;
-  margin-bottom: 15px;
-  text-align: center;
-}
-
-.descricao-content ul {
-  list-style: none;
-  max-width: 500px;
-  margin: auto;
-  text-align: left;
-  padding-left: 0;
-}
-
-.descricao-content li {
-  display: flex;
-  align-items: flex-start;
-  gap: 8px;
-  margin-bottom: 12px;
-  font-size: 16px;
-}
-
-.descricao-content li::before {
-  content: "✔️";
-  flex-shrink: 0;
-  font-size: 18px;
-  margin-top: 2px;
-}
-
 .footer {
   background: #004d00;
   color: white;
@@ -239,20 +281,6 @@ html, body {
   font-size: 13px;
   color: #ccc;
   margin-top: 10px;
-}
-
-.whatsapp-float {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 9999;
-}
-
-.whatsapp-float img {
-  width: 55px;
-  height: 55px;
-  border-radius: 50%;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
 }
 
 .faq {
@@ -314,4 +342,85 @@ html, body {
     font-size: 16px;
     padding: 14px 24px;
   }
+}
+
+
+/* Centralização da seção de descrição */
+.descricao {
+  background: #ffffff;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.descricao-content {
+  max-width: 700px;
+  margin: auto;
+}
+
+.descricao-content h2 {
+  font-size: 22px;
+  color: #004d00;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.descricao-content ul {
+  list-style: none;
+  padding-left: 0;
+  text-align: center;
+}
+
+.descricao-content li {
+  margin-bottom: 12px;
+  font-size: 16px;
+  position: relative;
+  padding-left: 22px;
+  text-align: left;
+  display: inline-block;
+  width: 100%;
+}
+
+.descricao-content li::before {
+  content: "✔️";
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* Centralizar botão após selo */
+.botao-whatsapp-destaque {
+  background-color: #25D366;
+  padding: 14px 28px;
+  border-radius: 10px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  text-decoration: none;
+  margin: 30px auto 60px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: 320px;
+  transition: transform 0.2s ease;
+}
+
+.botao-whatsapp-destaque:hover {
+  transform: scale(1.05);
+}
+
+/* Botão flutuante do WhatsApp */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+.whatsapp-float img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
 }
