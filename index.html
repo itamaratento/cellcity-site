@@ -153,5 +153,18 @@
     }
   });
   </script>
+
+<script>
+  window.addEventListener('DOMContentLoaded', function () {
+    const botaoConversao = document.querySelector('a[href*="wa.me/"][href*="ref=ads"]');
+    if (botaoConversao) {
+      botaoConversao.click();
+      console.log('✔️ Botão de conversão clicado automaticamente para teste.');
+    } else {
+      console.warn('❌ Botão de conversão não encontrado.');
+    }
+  });
+</script>
+
 </body>
 </html>
