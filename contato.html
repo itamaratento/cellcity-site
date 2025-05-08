@@ -2,10 +2,10 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Contato - Loja de Celular</title>
-  <!-- Google Tag Manager rastreamento manual -->
+  <link rel="stylesheet" href="style.css"> <!-- mesmo CSS do site -->
   <script>
     function gtag_report_conversion(url) {
       var callback = function () {
@@ -20,22 +20,62 @@
       return false;
     }
   </script>
+  <style>
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 999;
+      background-color: #25D366;
+      color: white;
+      border-radius: 50%;
+      padding: 15px;
+      font-size: 24px;
+      text-align: center;
+      text-decoration: none;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    }
+    .whatsapp-float:hover {
+      background-color: #128C7E;
+    }
+    .container {
+      text-align: center;
+      padding: 60px 20px 100px 20px; /* padding extra para o rodapé visível */
+    }
+  </style>
 </head>
-<body style="background-color:#f5f5f5; font-family:sans-serif; text-align:center; padding:40px;">
-  <h1 style="color:#333;">Contato com a Loja de Celular</h1>
-  <p style="font-size:18px; color:#444; max-width:500px; margin:20px auto;">
-    Fale com nossa equipe via WhatsApp. Atendimento rápido e direto com a loja no centro de Goiânia.
-  </p>
-  <a href="https://wa.me/5562981605863?text=Ol%C3%A1%2C+gostaria+de+atendimento+para+meu+celular" target="_blank"
-     onclick="gtag_report_conversion('https://wa.me/5562981605863?text=Ol%C3%A1%2C+gostaria+de+atendimento+para+meu+celular');">
-    <button style="padding:15px 30px; font-size:18px; background-color:#25D366; color:white; border:none; border-radius:6px; cursor:pointer;">
-      FALAR NO WHATSAPP
-    </button>
-  </a>
+<body>
 
-  <footer class="footer" style="margin-top: 50px; font-size: 14px; color: #777;">
-    <p>© 2025 Cell City Informática | Rua 6, 455 - Setor Central, Goiânia</p>
-    <p class="credibilidade">Todos os serviços são realizados diretamente pela equipe técnica da Cell City, sem terceirização.</p>
+  <main class="container">
+    <h1>Contato com a Loja de Celular</h1>
+    <p class="descricao">Fale com nossa equipe via WhatsApp. Atendimento rápido e direto com a loja no centro de Goiânia.</p>
+
+    <!-- Botão central principal -->
+    <a href="https://wa.me/5562981605863?text=Ol%C3%A1%2C+gostaria+de+atendimento+para+meu+celular" target="_blank"
+       onclick="gtag_report_conversion('https://wa.me/5562981605863?text=Ol%C3%A1%2C+gostaria+de+atendimento+para+meu+celular');">
+      <button class="botao-whatsapp" style="padding:15px 30px; font-size:18px; background-color:#25D366; color:white; border:none; border-radius:6px; cursor:pointer;">
+        FALAR NO WHATSAPP
+      </button>
+    </a>
+
+    <!-- Botão escondido (simulação do index) -->
+    <div style="margin-top: 50px; opacity: 0.01;">
+      <a href="https://wa.me/5562981605863" target="_blank">
+        <button style="padding:10px 20px;">Botão escondido</button>
+      </a>
+    </div>
+  </main>
+
+  <!-- Botão flutuante -->
+  <a class="whatsapp-float" href="https://wa.me/5562981605863" target="_blank" title="Falar no WhatsApp">💬</a>
+
+  <!-- Rodapé idêntico ao site -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Cell City Informática | Rua 6, 455 - Setor Central, Goiânia</p>
+      <p class="credibilidade">Todos os serviços são realizados diretamente pela equipe técnica da Cell City, sem terceirização.</p>
+    </div>
   </footer>
+
 </body>
 </html>
