@@ -2,76 +2,97 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contato - Loja de Celular</title>
-  <link rel="stylesheet" href="style.css"> <!-- usa o CSS do site -->
-  <script>
-    function gtag_report_conversion(url) {
-      var callback = function () {
-        if (typeof(url) != 'undefined') {
-          window.location = url;
-        }
-      };
-      gtag('event', 'conversion', {
-          'send_to': 'AW-CONVERSION_ID/label',
-          'event_callback': callback
-      });
-      return false;
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="Fale com a Cell City em Goiânia e tenha atendimento técnico direto via WhatsApp." name="description"/>
+  <meta content="public, max-age=604800" http-equiv="Cache-Control"/>
+  <title>Contato | Cell City Informática</title>
+  <link href="style.css" rel="stylesheet"/>
+  <style>
+    .botao-whatsapp-destaque {
+      outline: none !important;
+      border: none !important;
+      box-shadow: none !important;
     }
-  </script>
+  </style>
 </head>
 <body>
-  <div class="wrapper">
+<div class="barra-topo">
+  <p>Atendimento rápido com garantia real e peças com procedência. <strong>Cell City é confiança de verdade!</strong></p>
+</div>
 
-    <!-- TOPO COM LOGO E BOTÃO INÍCIO -->
-    <header class="topo">
-      <div class="container">
-        <a href="index.html" class="logo">
-          <img src="img/logo-cellcity.png" alt="Cell City" />
-        </a>
-        <nav class="menu-topo">
-          <a href="index.html" class="botao">Início</a>
-        </nav>
-      </div>
-    </header>
+<div class="wrapper">
+  <header class="header">
+    <div class="container">
+      <img alt="Logo Cell City" class="logo" height="72" src="logo.webp" width="150"/>
+      <ul class="menu">
+        <li><a href="index.html">Início</a></li>
+        <li class="has-submenu">
+          <span class="menu-toggle">Serviços</span>
+          <ul class="submenu">
+            <li><a href="acessorios.html">Acessórios</a></li>
+            <li><a href="tela.html">Troca de Tela</a></li>
+            <li><a href="conserto.html">Consertos de Celular</a></li>
+            <li><a href="formatacao.html">Formatação de Celular</a></li>
+            <li><a href="manutencao.html">Manutenção de Computador</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </header>
 
-    <main class="container" style="text-align:center; padding:40px;">
-      <h1>Contato com a Loja de Celular</h1>
-      <p class="descricao">Fale com nossa equipe via WhatsApp. Atendimento rápido e direto com a loja no centro de Goiânia.</p>
+  <main class="main" style="text-align:center; padding:40px;">
+    <h1>Fale com a Cell City</h1>
+    <p class="descricao">Atendimento técnico direto e rápido via WhatsApp.</p>
 
-      <!-- Botão principal -->
-      <a href="https://wa.me/5562981605863?text=Ol%C3%A1%2C+gostaria+de+atendimento+para+meu+celular" target="_blank"
-         onclick="gtag_report_conversion('https://wa.me/5562981605863?text=Ol%C3%A1%2C+gostaria+de+atendimento+para+meu+celular');">
-        <button class="botao-whatsapp-destaque">
-          <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp" width="30" height="30"/>
-          (62) 98160-5863
-        </button>
-      </a>
+    <a href="https://wa.me/5562981605863?text=Ol%C3%A1%2C+quero+atendimento+Cell+City" target="_blank"
+       onclick="gtag_report_conversion('https://wa.me/5562981605863?text=Ol%C3%A1%2C+quero+atendimento+Cell+City');">
+      <button class="botao-whatsapp-destaque">
+        <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp" width="30" height="30"/>
+        (62) 98160-5863
+      </button>
+    </a>
+  </main>
 
-      <!-- Botão escondido -->
-      <div style="text-align:center;margin-top:30px;">
-        <a href="https://wa.me/5562981605863?ref=ads" style="
-            font-size:12px;
-            color:gray;
-            text-decoration:underline;
-            opacity:0.7;" target="_blank">
-            Precisa de ajuda? Clique aqui.
-        </a>
-      </div>
-    </main>
+  <footer class="footer">
+    <p>© 2025 Cell City Informática | Rua 6, 455 - Setor Central, Goiânia</p>
+    <p class="credibilidade">Todos os serviços são realizados diretamente pela equipe técnica da Cell City, sem terceirização.</p>
+  </footer>
+</div>
 
-    <!-- Rodapé -->
-    <footer class="footer">
-      <p>© 2025 Cell City Informática | Rua 6, 455 - Setor Central, Goiânia</p>
-      <p class="credibilidade">Todos os serviços são realizados diretamente pela equipe técnica da Cell City, sem terceirização.</p>
-    </footer>
-
-  </div>
-
-  <!-- Botão flutuante -->
-  <a class="whatsapp-float" href="https://wa.me/5562981605863" target="_blank" title="Falar no WhatsApp">
-    <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" width="55" height="55" alt="WhatsApp">
+<!-- "Precisa de ajuda?" MOVIDO PARA FORA DO FOOTER -->
+<div style="text-align:center;margin:20px 0 40px 0;">
+  <a href="https://wa.me/5562981605863?ref=ads" style="
+      font-size:12px;
+      color:gray;
+      text-decoration:underline;
+      opacity:0.7;" target="_blank">
+      Precisa de ajuda? Clique aqui.
   </a>
+</div>
+
+<!-- Botão flutuante -->
+<a aria-label="WhatsApp" class="whatsapp-float" href="https://wa.me/5562981605863" target="_blank">
+  <img alt="WhatsApp" height="55" src="https://cdn-icons-png.flaticon.com/512/124/124034.png" width="55"/>
+</a>
+
+<script>
+document.addEventListener('click', function(e) {
+  var el = e.target.closest('a');
+  if (el && (el.href.includes('wa.me') || el.href.includes('api.whatsapp.com'))) {
+    if (el.href.includes('ref=ads')) {
+      gtag('event', 'click_whatsapp_conversion', {
+        event_category: 'conversao',
+        event_label: el.href
+      });
+    } else {
+      gtag('event', 'click_whatsapp', {
+        event_category: 'engajamento',
+        event_label: el.href
+      });
+    }
+  }
+});
+</script>
 </body>
 </html>
