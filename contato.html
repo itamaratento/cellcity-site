@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Contato - Loja de Celular</title>
-  <link rel="stylesheet" href="style.css"> <!-- mesmo CSS do site -->
+  <link rel="stylesheet" href="style.css"> <!-- usa o CSS do site -->
   <script>
     function gtag_report_conversion(url) {
       var callback = function () {
@@ -20,62 +20,58 @@
       return false;
     }
   </script>
-  <style>
-    .whatsapp-float {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      z-index: 999;
-      background-color: #25D366;
-      color: white;
-      border-radius: 50%;
-      padding: 15px;
-      font-size: 24px;
-      text-align: center;
-      text-decoration: none;
-      box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
-    }
-    .whatsapp-float:hover {
-      background-color: #128C7E;
-    }
-    .container {
-      text-align: center;
-      padding: 60px 20px 100px 20px; /* padding extra para o rodapé visível */
-    }
-  </style>
 </head>
 <body>
+  <div class="wrapper">
 
-  <main class="container">
-    <h1>Contato com a Loja de Celular</h1>
-    <p class="descricao">Fale com nossa equipe via WhatsApp. Atendimento rápido e direto com a loja no centro de Goiânia.</p>
+    <!-- TOPO COM LOGO E BOTÃO INÍCIO -->
+    <header class="topo">
+      <div class="container">
+        <a href="index.html" class="logo">
+          <img src="img/logo-cellcity.png" alt="Cell City" />
+        </a>
+        <nav class="menu-topo">
+          <a href="index.html" class="botao">Início</a>
+        </nav>
+      </div>
+    </header>
 
-    <!-- Botão central principal -->
-    <a href="https://wa.me/5562981605863?text=Ol%C3%A1%2C+gostaria+de+atendimento+para+meu+celular" target="_blank"
-       onclick="gtag_report_conversion('https://wa.me/5562981605863?text=Ol%C3%A1%2C+gostaria+de+atendimento+para+meu+celular');">
-      <button class="botao-whatsapp" style="padding:15px 30px; font-size:18px; background-color:#25D366; color:white; border:none; border-radius:6px; cursor:pointer;">
-        FALAR NO WHATSAPP
-      </button>
-    </a>
+    <main class="container" style="text-align:center; padding:40px;">
+      <h1>Contato com a Loja de Celular</h1>
+      <p class="descricao">Fale com nossa equipe via WhatsApp. Atendimento rápido e direto com a loja no centro de Goiânia.</p>
 
-    <!-- Botão escondido (simulação do index) -->
-    <div style="margin-top: 50px; opacity: 0.01;">
-      <a href="https://wa.me/5562981605863" target="_blank">
-        <button style="padding:10px 20px;">Botão escondido</button>
+      <!-- Botão principal -->
+      <a href="https://wa.me/5562981605863?text=Ol%C3%A1%2C+gostaria+de+atendimento+para+meu+celular" target="_blank"
+         onclick="gtag_report_conversion('https://wa.me/5562981605863?text=Ol%C3%A1%2C+gostaria+de+atendimento+para+meu+celular');">
+        <button class="botao-whatsapp-destaque">
+          <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp" width="30" height="30"/>
+          (62) 98160-5863
+        </button>
       </a>
-    </div>
-  </main>
 
-  <!-- Botão flutuante -->
-  <a class="whatsapp-float" href="https://wa.me/5562981605863" target="_blank" title="Falar no WhatsApp">💬</a>
+      <!-- Botão escondido -->
+      <div style="text-align:center;margin-top:30px;">
+        <a href="https://wa.me/5562981605863?ref=ads" style="
+            font-size:12px;
+            color:gray;
+            text-decoration:underline;
+            opacity:0.7;" target="_blank">
+            Precisa de ajuda? Clique aqui.
+        </a>
+      </div>
+    </main>
 
-  <!-- Rodapé idêntico ao site -->
-  <footer class="footer">
-    <div class="container">
+    <!-- Rodapé -->
+    <footer class="footer">
       <p>© 2025 Cell City Informática | Rua 6, 455 - Setor Central, Goiânia</p>
       <p class="credibilidade">Todos os serviços são realizados diretamente pela equipe técnica da Cell City, sem terceirização.</p>
-    </div>
-  </footer>
+    </footer>
 
+  </div>
+
+  <!-- Botão flutuante -->
+  <a class="whatsapp-float" href="https://wa.me/5562981605863" target="_blank" title="Falar no WhatsApp">
+    <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" width="55" height="55" alt="WhatsApp">
+  </a>
 </body>
 </html>
